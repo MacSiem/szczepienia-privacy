@@ -1,5 +1,8 @@
 # szczepienia-privacy — manual GH Pages deployment
 
+Operator: Maciej Siemiński.
+Public privacy/support contact: mail@macsiem.dev.
+
 Deployment when gh CLI is authenticated:
 
 ```bash
