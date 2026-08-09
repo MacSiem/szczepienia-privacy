@@ -77,7 +77,7 @@
 <p>For versjonen av appen distribuert via Google Play, er datakontrolleren LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>Denne personvernerklæringen forklarer hvilke personopplysninger Moje Szczepienia behandler, hvordan, hvorfor, og hvilke rettigheter du har.</p>
 <h2>2. Kortfattet sammendrag</h2>
-<p>Moje Szczepienia er en personlig vaksinasjonsorganisator — vaksinasjonsjournaler forblir på enheten din i kryptert lokal lagring. Vi driver ingen server som lagrer dine medisinske data. Vi bruker Google AdMob (kun på Innstillinger-skjermen, aldri på helsedata-skjermer), Sentry for krasjrapportering, valgfri synkronisering til din egen iCloud / Google Drive, og Apple / Google-fakturering for kjøp i appen. Appen er <strong>ikke et medisinsk utstyr</strong> og gir <strong>ikke</strong> diagnose, behandling eller medisinske anbefalinger. Du har fulle GDPR-rettigheter inkludert innsyn, sletting og dataportabilitet – de fleste kan utøves direkte i appen.</p>
+<p>Moje Szczepienia er en personlig vaksinasjonsorganisator — vaksinasjonsjournaler forblir på enheten din i kryptert lokal lagring. Vi driver ingen server som lagrer dine medisinske data. Vi bruker Unity Ads (kun på Innstillinger-skjermen, aldri på helsedata-skjermer), Sentry for krasjrapportering, valgfri synkronisering til din egen iCloud / Google Drive, og Apple / Google-fakturering for kjøp i appen. Appen er <strong>ikke et medisinsk utstyr</strong> og gir <strong>ikke</strong> diagnose, behandling eller medisinske anbefalinger. Du har fulle GDPR-rettigheter inkludert innsyn, sletting og dataportabilitet – de fleste kan utøves direkte i appen.</p>
 <h2>3. Opplysninger vi behandler</h2>
 <h3>3.1 Kun lokal data</h3>
 <p><strong>Vaksinasjonsdata</strong> (familiemedlemsprofiler, vaksinasjoner, datoer, notater, bilder av vaksinasjonsheftet/klistremerket) lagres <strong>kun lokalt på enheten din</strong>, i kryptert MMKV-lagring (nøkkel genereres tilfeldig og lagres i Apple Keychain / Android Keystore). Vi sender aldri disse dataene til våre servere eller til tredjeparter.</p>
@@ -91,13 +91,12 @@
 <li>appversjon og byggnummer.</li>
 </ul>
 <p>Sentry <strong>samler ikke inn</strong> ditt innhold (innførsler, filer, vaksinasjonsjournaler, bilder, arkiver), brukernavn eller annen personlig identifiserbar informasjon (PII). Diagnosedata oppbevares av Sentry i opptil <strong>90 dager</strong>.</p>
-<h3>3.4 Annonsering (AdMob)</h3>
-<p>Moje Szczepienia viser ikke-invasive annonser kun på Innstillinger (ingen annonser på skjermer med vaksinasjonsdata). Annonser leveres av <strong>Google AdMob</strong>, hvis SDK samler inn:</p>
+<h3>3.4 Annonsering (Unity Ads)</h3>
+<p>Moje Szczepienia viser ikke-invasive annonser kun på Innstillinger (ingen annonser på skjermer med vaksinasjonsdata). Annonser leveres av <strong>Unity Ads</strong>, hvis SDK samler inn:</p>
 <ul>
 <li>annonse-ID-en (Android Advertising ID / Apple IDFA), delt med Google for å vise annonser;</li>
 <li>diagnosedata (enhetsmodell, landbasert plassering, språk).</li>
 </ul>
-<p>Ads may also be served by AdMob mediation partners: Meta Platforms, Inc. (<a href="https://www.facebook.com/privacy/policy/">Meta Audience Network</a>) and Unity Technologies (<a href="https://unity.com/legal/privacy-policy">Unity Ads</a>).</p>
 <p>Standardmodus er <strong>ikke-personaliserte annonser</strong>. På iOS ber App Tracking Transparency (ATT)-spørringen om ditt samtykke før noen sporingsgrad-identifikator brukes; på Android kontrollerer du annonse-ID-en under systeminnstillinger. Annonser kan deaktiveres permanent via Lifetime / Premium IAP.</p>
 <h3>3.5 Kjøp i appen (IAP)</h3>
 <p>Moje Szczepienia tilbyr betalte funksjoner gjennom Apple In-App Purchase (iOS) og Google Play Billing (Android). Når du foretar et kjøp:</p>
@@ -129,7 +128,7 @@
 <li><strong>Kjøre appen på enheten din</strong> — lokal lagring og (der det er aktuelt) kryptering lar dataene dine vedvare mellom økter.</li>
 <li><strong>Synkronisere dine egne data på tvers av dine egne enheter</strong> — via din egen iCloud / Google Drive AppFolder; vi ser ikke disse dataene.</li>
 <li><strong>Forbedre stabiliteten</strong> — Sentry-diagnostikk hjelper til med å fikse krasj som påvirker din bruk.</li>
-<li><strong>Opprettholde gratistjenesten</strong> — AdMob leverer ikke-invasive annonser for å finansiere brukere som ikke kjøper premium.</li>
+<li><strong>Opprettholde gratistjenesten</strong> — Unity Ads leverer ikke-invasive annonser for å finansiere brukere som ikke kjøper premium.</li>
 <li><strong>Behandle kjøp</strong> — Apple / Google-fakturering oppfyller premium-rettigheter du velger å kjøpe.</li>
 </ul>
 <h2>5. Rettslig grunnlag (GDPR artikkel 6)</h2>
@@ -145,8 +144,6 @@
 <table>
 <thead><tr><th>Mottaker</th><th>Formål</th><th>Datakategori</th><th>Personvernerklæring</th></tr></thead>
 <tbody>
-<tr><td>Google LLC (AdMob)</td><td>Vise annonser</td><td>Annonse-ID, enhets- og annonsestatistikk</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Meta Platforms, Inc. (Meta Audience Network)</td><td>Vise annonser</td><td>Annonse-ID, enhets- og annonsestatistikk</td><td><a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></td></tr>
 <tr><td>Unity Technologies (Unity Ads)</td><td>Vise annonser</td><td>Annonse-ID, enhets- og annonsestatistikk</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>Krasjrapportering</td><td>Stack-spor, enhetsmetadata</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>Behandling av kjøp i appen på iOS</td><td>Kjøpstoken, kontonivårettighet</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
@@ -169,7 +166,7 @@
 <tbody>
 <tr><td>Dine data i appen</td><td>Kun din enhet (kryptert)</td><td>Til du sletter det, avinstallerer appen eller sletter appdata</td></tr>
 <tr><td>Synkroniseringsdata i din iCloud / Google Drive</td><td>Din egen Apple / Google-konto</td><td>Til du fjerner appens data fra din iCloud / Drive</td></tr>
-<tr><td>Advertising ID</td><td>Google AdMob-systemer</td><td>I henhold til Googles retningslinjer for oppbevaring (vanligvis opptil 14 måneder for annonsestatistikk)</td></tr>
+<tr><td>Advertising ID</td><td>Unity Ads-systemer</td><td>I henhold til Unitys retningslinjer for oppbevaring</td></tr>
 <tr><td>Sentry crash data</td><td>Sentry-systemer</td><td>Opptil 90 dager fra hendelsen</td></tr>
 <tr><td>IAP purchase token / receipt</td><td>Din enhet + Apple / Google</td><td>Til du avinstallerer; Apple / Google beholder transaksjonsoppføringer i henhold til egne retningslinjer</td></tr>
 </tbody></table>
@@ -202,8 +199,8 @@
 </ul>
 <p>Ingen system er 100 % sikkert; vennligst hold enheten din oppdatert og bruk sterke enhetslåser.</p>
 <h2>13. App Tracking Transparency (iOS) og Annonse-ID</h2>
-<p>På iOS, før noen sporingsgrad-identifikator brukes av AdMob, viser Moje Szczepienia systemets <strong>App Tracking Transparency</strong>-spørring. Hvis du nekter, viser Moje Szczepienia kun ikke-personaliserte annonser.</p>
-<p>På Android kan du tilbakestille eller begrense din Advertising ID under <strong>Innstillinger → Google → Annonser</strong>. Ved å velge «Slett annonse-ID» hindrer du AdMob i å bruke en personlig identifikator; ikke-personaliserte annonser vil fortsette å bli vist.</p>
+<p>På iOS, før noen sporingsgrad-identifikator brukes av Unity Ads, viser Moje Szczepienia systemets <strong>App Tracking Transparency</strong>-spørring. Hvis du nekter, viser Moje Szczepienia kun ikke-personaliserte annonser.</p>
+<p>På Android kan du tilbakestille eller begrense din Advertising ID under <strong>Innstillinger → Google → Annonser</strong>. Ved å velge «Slett annonse-ID» hindrer du Unity Ads i å bruke en personlig identifikator; ikke-personaliserte annonser vil fortsette å bli vist.</p>
 <h2>14. Kjøp i appen</h2>
 <p>Moje Szczepienia tilbyr følgende produkter i appen via Apple App Store og Google Play: livstid premium-opplåsning, valgfri tips-krukke, valgfritt årlig abonnement.</p>
 <p>Alle betalingsdata håndteres av <strong>Apple Inc.</strong> (App Store / iTunes-konto) eller <strong>Google LLC</strong> (Play Billing). Vi ser aldri ditt kortnummer, din faktureringsadresse eller din fullstendige Apple ID / Google-konto. Apple og Google returnerer kun et ugjennomsiktig kjøpstoken og rettighetsmetadata som vi bruker til å låse opp funksjoner. Abonnementer kan kanselleres når som helst i iOS Innstillinger → Apple ID → Abonnementer eller i Google Play-appen → Abonnementer; kanselleringsregler styres av Apple / Google.</p>

@@ -77,7 +77,7 @@
 <p>For the version of the app distributed via Google Play, the data controller is LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>This Privacy Policy explains what personal data Moje Szczepienia processes, how, why, and what rights you have.</p>
 <h2>2. Plain-language summary</h2>
-<p>Moje Szczepienia is a personal vaccination organizer — vaccination records stay on your device in encrypted local storage. We do not run a server that stores your medical data. We use Google AdMob (only on the Settings screen, never on health-data screens), Sentry for crash reporting, optional sync to your own iCloud / Google Drive, and Apple / Google billing for in-app purchases. The app is <strong>not a medical device</strong> and does <strong>not</strong> provide diagnosis, treatment, or medical recommendations. You have full GDPR rights including access, deletion, and portability — most exercisable directly in the app.</p>
+<p>Moje Szczepienia is a personal vaccination organizer — vaccination records stay on your device in encrypted local storage. We do not run a server that stores your medical data. We use Unity Ads (only on the Settings screen, never on health-data screens), Sentry for crash reporting, optional sync to your own iCloud / Google Drive, and Apple / Google billing for in-app purchases. The app is <strong>not a medical device</strong> and does <strong>not</strong> provide diagnosis, treatment, or medical recommendations. You have full GDPR rights including access, deletion, and portability — most exercisable directly in the app.</p>
 <h2>3. Data we process</h2>
 <h3>3.1 Local-only data</h3>
 <p><strong>Vaccination data</strong> (family member profiles, vaccinations, dates, notes, photos of the vaccination booklet/sticker) are stored <strong>only locally on your device</strong>, in encrypted MMKV storage (key generated randomly and kept in Apple Keychain / Android Keystore). We never send this data to our servers or to any third party.</p>
@@ -91,13 +91,12 @@
 <li>app version and build number.</li>
 </ul>
 <p>Sentry <strong>does not</strong> collect your content (entries, files, vaccination records, photos, archives), usernames, or other PII. Diagnostic data is retained by Sentry for up to <strong>90 days</strong>.</p>
-<h3>3.4 Advertising (AdMob)</h3>
-<p>Moje Szczepienia shows non-invasive ads on Settings only (no ads on vaccination data screens). Ads are delivered by <strong>Google AdMob</strong>, whose SDK collects:</p>
+<h3>3.4 Advertising (Unity Ads)</h3>
+<p>Moje Szczepienia shows non-invasive ads on Settings only (no ads on vaccination data screens). Ads are delivered by <strong>Unity Ads</strong>, whose SDK collects:</p>
 <ul>
 <li>the <strong>Advertising ID</strong> (Android Advertising ID / Apple IDFA), shared with Google to serve ads;</li>
 <li>diagnostic data (device model, country-level location, language).</li>
 </ul>
-<p>Ads may also be delivered through AdMob mediation partners: Meta Platforms, Inc. (Meta Audience Network, <a href="https://www.facebook.com/privacy/policy/">privacy policy</a>) and Unity Technologies (Unity Ads, <a href="https://unity.com/legal/privacy-policy">privacy policy</a>). These partners receive ad requests under the same configuration — non-personalized ads.</p>
 <p>Default mode is <strong>non-personalized ads</strong>. On iOS, the App Tracking Transparency (ATT) prompt asks for your consent before any tracking-grade identifier is used; on Android you control the Advertising ID under system Settings. Ads can be permanently disabled via the Lifetime / Premium IAP.</p>
 <h3>3.5 In-app purchases (IAP)</h3>
 <p>Moje Szczepienia offers paid features through Apple In-App Purchase (iOS) and Google Play Billing (Android). When you make a purchase:</p>
@@ -129,7 +128,7 @@
 <li><strong>Run the app on your device</strong> — local storage and (where present) encryption let your data persist between sessions.</li>
 <li><strong>Sync your own data across your own devices</strong> — through your own iCloud / Google Drive AppFolder; we do not see this data.</li>
 <li><strong>Improve stability</strong> — Sentry diagnostics help fix crashes that affect your usage.</li>
-<li><strong>Sustain the free tier</strong> — AdMob delivers non-invasive ads to fund users who do not buy premium.</li>
+<li><strong>Sustain the free tier</strong> — Unity Ads delivers non-invasive ads to fund users who do not buy premium.</li>
 <li><strong>Process purchases</strong> — Apple / Google billing fulfils premium entitlements you choose to buy.</li>
 </ul>
 <h2>5. Legal basis (GDPR Article 6)</h2>
@@ -145,8 +144,6 @@
 <table>
 <thead><tr><th>Recipient</th><th>Purpose</th><th>Data category</th><th>Privacy policy</th></tr></thead>
 <tbody>
-<tr><td>Google LLC (AdMob)</td><td>Serve ads</td><td>Advertising ID, device &amp; ad metrics</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Meta Platforms, Inc. (Meta Audience Network)</td><td>Serve ads</td><td>Advertising ID, device &amp; ad metrics</td><td><a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></td></tr>
 <tr><td>Unity Technologies (Unity Ads)</td><td>Serve ads</td><td>Advertising ID, device &amp; ad metrics</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>Crash reporting</td><td>Stack traces, device metadata</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>In-app purchase processing on iOS</td><td>Purchase token, account-level entitlement</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
@@ -169,7 +166,7 @@
 <tbody>
 <tr><td>Your in-app data</td><td>Your device only (encrypted)</td><td>Until you delete it, uninstall the app, or wipe app data</td></tr>
 <tr><td>Sync data in your iCloud / Google Drive</td><td>Your own Apple / Google account</td><td>Until you remove the app's data from your iCloud / Drive</td></tr>
-<tr><td>Advertising ID</td><td>Google AdMob systems</td><td>Per Google's retention policy (typically up to 14 months for ad metrics)</td></tr>
+<tr><td>Advertising ID</td><td>Unity Ads systems</td><td>Per Unity's retention policy</td></tr>
 <tr><td>Sentry crash data</td><td>Sentry systems</td><td>Up to 90 days from the event</td></tr>
 <tr><td>IAP purchase token / receipt</td><td>Your device + Apple / Google</td><td>Until you uninstall; Apple / Google keep transaction records per their own policies</td></tr>
 </tbody></table>
@@ -202,8 +199,8 @@
 </ul>
 <p>No system is 100% secure; please keep your device updated and use strong device locks.</p>
 <h2>13. App Tracking Transparency (iOS) and Advertising ID</h2>
-<p>On iOS, before any tracking-grade identifier is used by AdMob, Moje Szczepienia shows the system <strong>App Tracking Transparency</strong> prompt. If you decline, Moje Szczepienia serves only non-personalized ads.</p>
-<p>On Android, you can reset or limit your Advertising ID under <strong>Settings → Google → Ads</strong>. Choosing "Delete advertising ID" stops AdMob from using a personal identifier; non-personalized ads continue to be shown.</p>
+<p>On iOS, before any tracking-grade identifier is used by Unity Ads, Moje Szczepienia shows the system <strong>App Tracking Transparency</strong> prompt. If you decline, Moje Szczepienia serves only non-personalized ads.</p>
+<p>On Android, you can reset or limit your Advertising ID under <strong>Settings → Google → Ads</strong>. Choosing "Delete advertising ID" stops Unity Ads from using a personal identifier; non-personalized ads continue to be shown.</p>
 <h2>14. In-app purchases</h2>
 <p>Moje Szczepienia offers the following in-app products through Apple App Store and Google Play: lifetime premium unlock, optional tip jar, optional annual subscription.</p>
 <p>All payment data is handled by <strong>Apple Inc.</strong> (App Store / iTunes account) or <strong>Google LLC</strong> (Play Billing). We never see your card number, your billing address, or your full Apple ID / Google account. Apple and Google return only an opaque purchase token and entitlement metadata that we use to unlock features. Subscriptions can be cancelled at any time in iOS Settings → Apple ID → Subscriptions or in the Google Play app → Subscriptions; cancellation rules are governed by Apple / Google.</p>

@@ -77,7 +77,7 @@
 <p>สำหรับแอปเวอร์ชันที่เผยแพร่ผ่าน Google Play ผู้ควบคุมข้อมูลคือ LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>นโยบายความเป็นส่วนตัวนี้อธิบายว่า Moje Szczepienia ประมวลผลข้อมูลส่วนบุคคลใด อย่างไร ทำไม และคุณมีสิทธิ์อะไรบ้าง</p>
 <h2>2. สรุปอย่างง่าย</h2>
-<p>Moje Szczepienia เป็นผู้จัดระเบียบการฉีดวัคซีนส่วนบุคคล — บันทึกการฉีดวัคซีนจะอยู่บนอุปกรณ์ของคุณในพื้นที่เก็บข้อมูลในเครื่องที่เข้ารหัสไว้ เราไม่ได้ใช้เซิร์ฟเวอร์ที่จัดเก็บข้อมูลทางการแพทย์ของคุณ เราใช้ Google AdMob (เฉพาะบนหน้าจอการตั้งค่า ไม่เคยใช้บนหน้าจอข้อมูลสุขภาพ), Sentry สำหรับการรายงานข้อผิดพลาด, การซิงค์เสริมไปยัง iCloud / Google Drive ของคุณเอง, และการเรียกเก็บเงินของ Apple / Google สำหรับการซื้อภายในแอป แอปนี้<strong>ไม่ใช่เครื่องมือทางการแพทย์</strong>และ<strong>ไม่</strong>ให้การวินิจฉัย การรักษา หรือคำแนะนำทางการแพทย์ คุณมีสิทธิ์ GDPR เต็มรูปแบบ รวมถึงการเข้าถึง การลบ และการย้ายข้อมูล — ส่วนใหญ่สามารถใช้ได้โดยตรงในแอป</p>
+<p>Moje Szczepienia เป็นผู้จัดระเบียบการฉีดวัคซีนส่วนบุคคล — บันทึกการฉีดวัคซีนจะอยู่บนอุปกรณ์ของคุณในพื้นที่เก็บข้อมูลในเครื่องที่เข้ารหัสไว้ เราไม่ได้ใช้เซิร์ฟเวอร์ที่จัดเก็บข้อมูลทางการแพทย์ของคุณ เราใช้ Unity Ads (เฉพาะบนหน้าจอการตั้งค่า ไม่เคยใช้บนหน้าจอข้อมูลสุขภาพ), Sentry สำหรับการรายงานข้อผิดพลาด, การซิงค์เสริมไปยัง iCloud / Google Drive ของคุณเอง, และการเรียกเก็บเงินของ Apple / Google สำหรับการซื้อภายในแอป แอปนี้<strong>ไม่ใช่เครื่องมือทางการแพทย์</strong>และ<strong>ไม่</strong>ให้การวินิจฉัย การรักษา หรือคำแนะนำทางการแพทย์ คุณมีสิทธิ์ GDPR เต็มรูปแบบ รวมถึงการเข้าถึง การลบ และการย้ายข้อมูล — ส่วนใหญ่สามารถใช้ได้โดยตรงในแอป</p>
 <h2>3. ข้อมูลที่เราประมวลผล</h2>
 <h3>3.1 ข้อมูลที่เก็บไว้ในเครื่องเท่านั้น</h3>
 <p><strong>ข้อมูลการฉีดวัคซีน</strong> (โปรไฟล์สมาชิกในครอบครัว, การฉีดวัคซีน, วันที่, บันทึก, รูปภาพสมุดวัคซีน/สติกเกอร์) จะถูกจัดเก็บ<strong>บนอุปกรณ์ของคุณเท่านั้น</strong> ในพื้นที่เก็บข้อมูล MMKV ที่เข้ารหัส (กุญแจถูกสร้างขึ้นแบบสุ่มและเก็บไว้ใน Apple Keychain / Android Keystore) เราไม่เคยส่งข้อมูลนี้ไปยังเซิร์ฟเวอร์ของเราหรือบุคคลที่สามใดๆ</p>
@@ -91,13 +91,12 @@
 <li>เวอร์ชันแอปและหมายเลขบิลด์</li>
 </ul>
 <p>Sentry <strong>ไม่</strong>รวบรวมเนื้อหาของคุณ (รายการ, ไฟล์, บันทึกการฉีดวัคซีน, รูปภาพ, ไฟล์เก็บถาวร), ชื่อผู้ใช้ หรือ PII อื่นๆ Sentry เก็บข้อมูลการวินิจฉัยไว้ไม่เกิน <strong>90 วัน</strong></p>
-<h3>3.4 การโฆษณา (AdMob)</h3>
-<p>Moje Szczepienia แสดงโฆษณาที่ไม่รบกวนเฉพาะในการตั้งค่าเท่านั้น (ไม่มีโฆษณาบนหน้าจอข้อมูลการฉีดวัคซีน) โฆษณาถูกส่งโดย <strong>Google AdMob</strong> ซึ่ง SDK จะรวบรวม:</p>
+<h3>3.4 การโฆษณา (Unity Ads)</h3>
+<p>Moje Szczepienia แสดงโฆษณาที่ไม่รบกวนเฉพาะในการตั้งค่าเท่านั้น (ไม่มีโฆษณาบนหน้าจอข้อมูลการฉีดวัคซีน) โฆษณาถูกส่งโดย <strong>Unity Ads</strong> ซึ่ง SDK จะรวบรวม:</p>
 <ul>
 <li><strong>Advertising ID</strong> (Android Advertising ID / Apple IDFA) ซึ่งแชร์กับ Google เพื่อแสดงโฆษณา;</li>
 <li>ข้อมูลการวินิจฉัย (รุ่นอุปกรณ์, ตำแหน่งระดับประเทศ, ภาษา)</li>
 </ul>
-<p>Ads may also be served by AdMob mediation partners: Meta Platforms, Inc. (<a href="https://www.facebook.com/privacy/policy/">Meta Audience Network</a>) and Unity Technologies (<a href="https://unity.com/legal/privacy-policy">Unity Ads</a>).</p>
 <p>โหมดเริ่มต้นคือ <strong>โฆษณาที่ไม่ปรับให้เป็นส่วนตัว</strong> บน iOS, ข้อความแจ้ง App Tracking Transparency (ATT) จะขอความยินยอมจากคุณก่อนที่จะมีการใช้ตัวระบุการติดตามใดๆ; บน Android คุณสามารถควบคุม Advertising ID ได้ภายใต้การตั้งค่าระบบ โฆษณาสามารถปิดใช้งานได้อย่างถาวรผ่าน Lifetime / Premium IAP</p>
 <h3>3.5 การซื้อภายในแอป (IAP)</h3>
 <p>Moje Szczepienia เสนอคุณสมบัติแบบชำระเงินผ่าน Apple In-App Purchase (iOS) และ Google Play Billing (Android) เมื่อคุณทำการซื้อ:</p>
@@ -129,7 +128,7 @@
 <li><strong>เรียกใช้แอปบนอุปกรณ์ของคุณ</strong> — พื้นที่เก็บข้อมูลในเครื่องและการเข้ารหัส (ในกรณีที่มี) ช่วยให้ข้อมูลของคุณคงอยู่ระหว่างเซสชัน</li>
 <li><strong>ซิงค์ข้อมูลของคุณเองข้ามอุปกรณ์ของคุณเอง</strong> — ผ่าน iCloud / Google Drive AppFolder ของคุณเอง; เราไม่เห็นข้อมูลนี้</li>
 <li><strong>ปรับปรุงความเสถียร</strong> — การวินิจฉัยของ Sentry ช่วยแก้ไขข้อผิดพลาดที่ส่งผลต่อการใช้งานของคุณ</li>
-<li><strong>รักษาระดับฟรี</strong> — AdMob แสดงโฆษณาที่ไม่รบกวนเพื่อสนับสนุนผู้ใช้ที่ไม่ซื้อพรีเมียม</li>
+<li><strong>รักษาระดับฟรี</strong> — Unity Ads แสดงโฆษณาที่ไม่รบกวนเพื่อสนับสนุนผู้ใช้ที่ไม่ซื้อพรีเมียม</li>
 <li><strong>ประมวลผลการซื้อ</strong> — การเรียกเก็บเงินของ Apple / Google จะตอบสนองสิทธิ์พรีเมียมที่คุณเลือกซื้อ</li>
 </ul>
 <h2>5. หลักการทางกฎหมาย (GDPR Art. 6)</h2>
@@ -145,8 +144,6 @@
 <table>
 <thead><tr><th>ผู้รับ</th><th>วัตถุประสงค์</th><th>ประเภทข้อมูล</th><th>นโยบายความเป็นส่วนตัว</th></tr></thead>
 <tbody>
-<tr><td>Google LLC (AdMob)</td><td>แสดงโฆษณา</td><td>Advertising ID, device &amp; ad metrics</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Meta Platforms, Inc. (Meta Audience Network)</td><td>แสดงโฆษณา</td><td>Advertising ID, device &amp; ad metrics</td><td><a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></td></tr>
 <tr><td>Unity Technologies (Unity Ads)</td><td>แสดงโฆษณา</td><td>Advertising ID, device &amp; ad metrics</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>การรายงานข้อผิดพลาด</td><td>Stack traces, device metadata</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>การประมวลผลการซื้อภายในแอปบน iOS</td><td>Purchase token, account-level entitlement</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
@@ -169,7 +166,7 @@
 <tbody>
 <tr><td>ข้อมูลในแอปของคุณ</td><td>บนอุปกรณ์ของคุณเท่านั้น (เข้ารหัส)</td><td>จนกว่าคุณจะลบออก, ถอนการติดตั้งแอป, หรือล้างข้อมูลแอป</td></tr>
 <tr><td>ข้อมูลการซิงค์ใน iCloud / Google Drive ของคุณ</td><td>บัญชี Apple / Google ของคุณเอง</td><td>จนกว่าคุณจะลบข้อมูลของแอปออกจาก iCloud / Drive ของคุณ</td></tr>
-<tr><td>Advertising ID</td><td>ระบบ Google AdMob</td><td>ตามนโยบายการเก็บรักษาของ Google (โดยทั่วไปไม่เกิน 14 เดือนสำหรับเมตริกโฆษณา)</td></tr>
+<tr><td>Advertising ID</td><td>ระบบ Unity Ads</td><td>ตามนโยบายการเก็บรักษาของ Unity</td></tr>
 <tr><td>ข้อมูลข้อผิดพลาดของ Sentry</td><td>ระบบ Sentry</td><td>ไม่เกิน 90 วันนับจากเหตุการณ์</td></tr>
 <tr><td>โทเค็นการซื้อ / ใบเสร็จ IAP</td><td>อุปกรณ์ของคุณ + Apple / Google</td><td>จนกว่าคุณจะถอนการติดตั้ง; Apple / Google เก็บบันทึกการทำธุรกรรมตามนโยบายของตนเอง</td></tr>
 </tbody></table>
@@ -202,8 +199,8 @@
 </ul>
 <p>ไม่มีระบบใดปลอดภัย 100%; โปรดอัปเดตอุปกรณ์ของคุณให้เป็นปัจจุบันและใช้การล็อกอุปกรณ์ที่แข็งแกร่ง</p>
 <h2>13. ความโปร่งใสในการติดตามแอป (iOS) และ Advertising ID</h2>
-<p>บน iOS ก่อนที่ AdMob จะใช้ตัวระบุระดับการติดตามใดๆ Moje Szczepienia จะแสดงข้อความแจ้งเตือน <strong>App Tracking Transparency</strong> ของระบบ หากคุณปฏิเสธ Moje Szczepienia จะแสดงโฆษณาที่ไม่ปรับให้เป็นส่วนตัวเท่านั้น</p>
-<p>บน Android คุณสามารถรีเซ็ตหรือจำกัด Advertising ID ของคุณได้ภายใต้ <strong>การตั้งค่า → Google → โฆษณา</strong> การเลือก "ลบรหัสโฆษณา" จะหยุด AdMob จากการใช้ตัวระบุส่วนบุคคล; โฆษณาที่ไม่ปรับให้เป็นส่วนตัวยังคงแสดงอยู่</p>
+<p>บน iOS ก่อนที่ Unity Ads จะใช้ตัวระบุระดับการติดตามใดๆ Moje Szczepienia จะแสดงข้อความแจ้งเตือน <strong>App Tracking Transparency</strong> ของระบบ หากคุณปฏิเสธ Moje Szczepienia จะแสดงโฆษณาที่ไม่ปรับให้เป็นส่วนตัวเท่านั้น</p>
+<p>บน Android คุณสามารถรีเซ็ตหรือจำกัด Advertising ID ของคุณได้ภายใต้ <strong>การตั้งค่า → Google → โฆษณา</strong> การเลือก "ลบรหัสโฆษณา" จะหยุด Unity Ads จากการใช้ตัวระบุส่วนบุคคล; โฆษณาที่ไม่ปรับให้เป็นส่วนตัวยังคงแสดงอยู่</p>
 <h2>14. การซื้อภายในแอป</h2>
 <p>Moje Szczepienia มีผลิตภัณฑ์ในแอปดังต่อไปนี้ผ่าน Apple App Store และ Google Play: ปลดล็อกพรีเมียมตลอดชีพ, ทิปเสริม, การสมัครสมาชิกรายปีเสริม</p>
 <p>ข้อมูลการชำระเงินทั้งหมดถูกจัดการโดย <strong>Apple Inc.</strong> (App Store / บัญชี iTunes) หรือ <strong>Google LLC</strong> (Play Billing) เราไม่เคยเห็นหมายเลขบัตรของคุณ ที่อยู่สำหรับเรียกเก็บเงิน หรือ Apple ID / บัญชี Google เต็มรูปแบบของคุณ Apple และ Google จะส่งคืนเฉพาะโทเค็นการซื้อที่ไม่โปร่งใสและข้อมูลเมตาของสิทธิ์ที่เราใช้เพื่อปลดล็อกคุณสมบัติ การสมัครสมาชิกสามารถยกเลิกได้ตลอดเวลาในการตั้งค่า iOS → Apple ID → การสมัครสมาชิก หรือในแอป Google Play → การสมัครสมาชิก; กฎการยกเลิกอยู่ภายใต้การกำกับดูแลของ Apple / Google</p>

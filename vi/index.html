@@ -77,7 +77,7 @@
 <p>Đối với phiên bản ứng dụng được phân phối qua Google Play, bộ điều khiển dữ liệu là LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>Chính sách quyền riêng tư này giải thích dữ liệu cá nhân nào Moje Szczepienia xử lý, cách thức, lý do và các quyền của bạn.</p>
 <h2>2. Tóm tắt ngôn ngữ dễ hiểu</h2>
-<p>Moje Szczepienia là một trình tổ chức tiêm chủng cá nhân — hồ sơ tiêm chủng vẫn nằm trên thiết bị của bạn trong bộ nhớ cục bộ được mã hóa. Chúng tôi không vận hành máy chủ nào để lưu trữ dữ liệu y tế của bạn. Chúng tôi sử dụng Google AdMob (chỉ trên màn hình Cài đặt, không bao giờ trên các màn hình dữ liệu sức khỏe), Sentry để báo cáo sự cố, đồng bộ hóa tùy chọn với iCloud / Google Drive của riêng bạn, và hệ thống thanh toán của Apple / Google cho các giao dịch mua trong ứng dụng. Ứng dụng này <strong>không phải là thiết bị y tế</strong> và <strong>không</strong> cung cấp chẩn đoán, điều trị hoặc khuyến nghị y tế. Bạn có đầy đủ các quyền GDPR bao gồm truy cập, xóa và khả năng di chuyển dữ liệu — hầu hết có thể thực hiện trực tiếp trong ứng dụng.</p>
+<p>Moje Szczepienia là một trình tổ chức tiêm chủng cá nhân — hồ sơ tiêm chủng vẫn nằm trên thiết bị của bạn trong bộ nhớ cục bộ được mã hóa. Chúng tôi không vận hành máy chủ nào để lưu trữ dữ liệu y tế của bạn. Chúng tôi sử dụng Unity Ads (chỉ trên màn hình Cài đặt, không bao giờ trên các màn hình dữ liệu sức khỏe), Sentry để báo cáo sự cố, đồng bộ hóa tùy chọn với iCloud / Google Drive của riêng bạn, và hệ thống thanh toán của Apple / Google cho các giao dịch mua trong ứng dụng. Ứng dụng này <strong>không phải là thiết bị y tế</strong> và <strong>không</strong> cung cấp chẩn đoán, điều trị hoặc khuyến nghị y tế. Bạn có đầy đủ các quyền GDPR bao gồm truy cập, xóa và khả năng di chuyển dữ liệu — hầu hết có thể thực hiện trực tiếp trong ứng dụng.</p>
 <h2>3. Dữ liệu chúng tôi xử lý</h2>
 <h3>3.1 Dữ liệu chỉ lưu trữ cục bộ</h3>
 <p><strong>Dữ liệu tiêm chủng</strong> (hồ sơ thành viên gia đình, các mũi tiêm chủng, ngày tháng, ghi chú, ảnh sổ/phiếu tiêm chủng) được lưu trữ <strong>chỉ cục bộ trên thiết bị của bạn</strong>, trong bộ nhớ MMKV được mã hóa (khóa được tạo ngẫu nhiên và giữ trong Apple Keychain / Android Keystore). Chúng tôi không bao giờ gửi dữ liệu này đến máy chủ của chúng tôi hoặc bất kỳ bên thứ ba nào.</p>
@@ -91,13 +91,12 @@
 <li>phiên bản ứng dụng và số bản dựng.</li>
 </ul>
 <p>Sentry <strong>không</strong> thu thập nội dung của bạn (mục nhập, tệp, hồ sơ tiêm chủng, ảnh, lưu trữ), tên người dùng hoặc các PII khác. Dữ liệu chẩn đoán được Sentry lưu giữ trong tối đa <strong>90 ngày</strong>.</p>
-<h3>3.4 Quảng cáo (AdMob)</h3>
-<p>Moje Szczepienia hiển thị quảng cáo không xâm lấn chỉ trên màn hình Cài đặt (không có quảng cáo trên các màn hình dữ liệu tiêm chủng). Quảng cáo được phân phối bởi <strong>Google AdMob</strong>, SDK của họ thu thập:</p>
+<h3>3.4 Quảng cáo (Unity Ads)</h3>
+<p>Moje Szczepienia hiển thị quảng cáo không xâm lấn chỉ trên màn hình Cài đặt (không có quảng cáo trên các màn hình dữ liệu tiêm chủng). Quảng cáo được phân phối bởi <strong>Unity Ads</strong>, SDK của họ thu thập:</p>
 <ul>
 <li><strong>ID Quảng cáo</strong> (Android Advertising ID / Apple IDFA), được chia sẻ với Google để phân phát quảng cáo;</li>
 <li>dữ liệu chẩn đoán (mẫu thiết bị, vị trí cấp quốc gia, ngôn ngữ).</li>
 </ul>
-<p>Ads may also be served by AdMob mediation partners: Meta Platforms, Inc. (<a href="https://www.facebook.com/privacy/policy/">Meta Audience Network</a>) and Unity Technologies (<a href="https://unity.com/legal/privacy-policy">Unity Ads</a>).</p>
 <p>Chế độ mặc định là <strong>quảng cáo không cá nhân hóa</strong>. Trên iOS, lời nhắc App Tracking Transparency (ATT) yêu cầu sự đồng ý của bạn trước khi bất kỳ định danh theo dõi nào được sử dụng; trên Android bạn kiểm soát ID Quảng cáo trong Cài đặt hệ thống. Quảng cáo có thể bị tắt vĩnh viễn thông qua IAP Trọn đời / Premium.</p>
 <h3>3.5 Mua hàng trong ứng dụng (IAP)</h3>
 <p>Moje Szczepienia cung cấp các tính năng trả phí thông qua Mua hàng trong ứng dụng của Apple (iOS) và Thanh toán Google Play (Android). Khi bạn thực hiện mua hàng:</p>
@@ -129,7 +128,7 @@
 <li><strong>Chạy ứng dụng trên thiết bị của bạn</strong> — bộ nhớ cục bộ và (nếu có) mã hóa cho phép dữ liệu của bạn duy trì giữa các phiên.</li>
 <li><strong>Đồng bộ hóa dữ liệu của riêng bạn giữa các thiết bị của bạn</strong> — thông qua iCloud / Google Drive AppFolder của riêng bạn; chúng tôi không thấy dữ liệu này.</li>
 <li><strong>Cải thiện độ ổn định</strong> — chẩn đoán của Sentry giúp sửa các sự cố ảnh hưởng đến việc sử dụng của bạn.</li>
-<li><strong>Duy trì phiên bản miễn phí</strong> — AdMob phân phát quảng cáo không xâm lấn để tài trợ cho những người dùng không mua gói premium.</li>
+<li><strong>Duy trì phiên bản miễn phí</strong> — Unity Ads phân phát quảng cáo không xâm lấn để tài trợ cho những người dùng không mua gói premium.</li>
 <li><strong>Xử lý giao dịch mua</strong> — hệ thống thanh toán của Apple / Google thực hiện các quyền lợi premium mà bạn chọn mua.</li>
 </ul>
 <h2>5. Cơ sở pháp lý (GDPR Article 6)</h2>
@@ -145,8 +144,6 @@
 <table>
 <thead><tr><th>Người nhận</th><th>Mục đích</th><th>Danh mục dữ liệu</th><th>Chính sách quyền riêng tư</th></tr></thead>
 <tbody>
-<tr><td>Google LLC (AdMob)</td><td>Phân phát quảng cáo</td><td>ID Quảng cáo, chỉ số thiết bị &amp; quảng cáo</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Meta Platforms, Inc. (Meta Audience Network)</td><td>Phân phát quảng cáo</td><td>ID Quảng cáo, chỉ số thiết bị &amp; quảng cáo</td><td><a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></td></tr>
 <tr><td>Unity Technologies (Unity Ads)</td><td>Phân phát quảng cáo</td><td>ID Quảng cáo, chỉ số thiết bị &amp; quảng cáo</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>Báo cáo sự cố</td><td>Dấu vết ngăn xếp, siêu dữ liệu thiết bị</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>Xử lý mua hàng trong ứng dụng trên iOS</td><td>Mã thông báo mua hàng, quyền lợi cấp tài khoản</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
@@ -169,7 +166,7 @@
 <tbody>
 <tr><td>Dữ liệu trong ứng dụng của bạn</td><td>Chỉ trên thiết bị của bạn (được mã hóa)</td><td>Cho đến khi bạn xóa nó, gỡ cài đặt ứng dụng hoặc xóa dữ liệu ứng dụng</td></tr>
 <tr><td>Dữ liệu đồng bộ hóa trong iCloud / Google Drive của bạn</td><td>Tài khoản Apple / Google của riêng bạn</td><td>Cho đến khi bạn xóa dữ liệu ứng dụng khỏi iCloud / Drive của mình</td></tr>
-<tr><td>ID Quảng cáo</td><td>Hệ thống Google AdMob</td><td>Theo chính sách lưu giữ của Google (thường là tối đa 14 tháng đối với các chỉ số quảng cáo)</td></tr>
+<tr><td>ID Quảng cáo</td><td>Hệ thống Unity Ads</td><td>Theo chính sách lưu giữ của Unity</td></tr>
 <tr><td>Dữ liệu sự cố Sentry</td><td>Hệ thống Sentry</td><td>Tối đa 90 ngày kể từ sự kiện</td></tr>
 <tr><td>Mã thông báo mua hàng / biên lai IAP</td><td>Thiết bị của bạn + Apple / Google</td><td>Cho đến khi bạn gỡ cài đặt; Apple / Google lưu giữ hồ sơ giao dịch theo chính sách riêng của họ</td></tr>
 </tbody></table>
@@ -202,8 +199,8 @@
 </ul>
 <p>Không có hệ thống nào an toàn 100%; vui lòng giữ thiết bị của bạn được cập nhật và sử dụng khóa thiết bị mạnh.</p>
 <h2>13. Minh bạch theo dõi ứng dụng (iOS) và ID Quảng cáo</h2>
-<p>Trên iOS, trước khi bất kỳ định danh theo dõi nào được AdMob sử dụng, Moje Szczepienia hiển thị lời nhắc hệ thống <strong>Minh bạch theo dõi ứng dụng</strong>. Nếu bạn từ chối, Moje Szczepienia chỉ phân phát quảng cáo không cá nhân hóa.</p>
-<p>Trên Android, bạn có thể đặt lại hoặc giới hạn ID Quảng cáo của mình trong <strong>Cài đặt → Google → Quảng cáo</strong>. Chọn "Xóa ID quảng cáo" sẽ ngừng AdMob sử dụng một định danh cá nhân; quảng cáo không cá nhân hóa vẫn tiếp tục được hiển thị.</p>
+<p>Trên iOS, trước khi bất kỳ định danh theo dõi nào được Unity Ads sử dụng, Moje Szczepienia hiển thị lời nhắc hệ thống <strong>Minh bạch theo dõi ứng dụng</strong>. Nếu bạn từ chối, Moje Szczepienia chỉ phân phát quảng cáo không cá nhân hóa.</p>
+<p>Trên Android, bạn có thể đặt lại hoặc giới hạn ID Quảng cáo của mình trong <strong>Cài đặt → Google → Quảng cáo</strong>. Chọn "Xóa ID quảng cáo" sẽ ngừng Unity Ads sử dụng một định danh cá nhân; quảng cáo không cá nhân hóa vẫn tiếp tục được hiển thị.</p>
 <h2>14. Mua hàng trong ứng dụng</h2>
 <p>Moje Szczepienia cung cấp các sản phẩm trong ứng dụng sau thông qua Apple App Store và Google Play: mở khóa premium trọn đời, hộp tiền boa tùy chọn, gói đăng ký hàng năm tùy chọn.</p>
 <p>Tất cả dữ liệu thanh toán được xử lý bởi <strong>Apple Inc.</strong> (tài khoản App Store / iTunes) hoặc <strong>Google LLC</strong> (Play Billing). Chúng tôi không bao giờ thấy số thẻ, địa chỉ thanh toán hoặc tài khoản Apple ID / Google đầy đủ của bạn. Apple và Google chỉ trả về một mã thông báo mua hàng mờ và siêu dữ liệu quyền lợi mà chúng tôi sử dụng để mở khóa các tính năng. Các gói đăng ký có thể bị hủy bất cứ lúc nào trong Cài đặt iOS → Apple ID → Đăng ký hoặc trong ứng dụng Google Play → Đăng ký; các quy tắc hủy được điều chỉnh bởi Apple / Google.</p>

@@ -77,7 +77,7 @@
 <p>עבור גרסת האפליקציה המופצת דרך Google Play, בקר הנתונים הוא LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>מדיניות פרטיות זו מסבירה אילו נתונים אישיים Moje Szczepienia מעבד, כיצד, מדוע, ואילו זכויות עומדות לרשותך.</p>
 <h2>2. תקציר בשפה פשוטה</h2>
-<p>Moje Szczepienia הוא מארגן חיסונים אישי — רישומי החיסונים נשארים במכשיר שלך באחסון מקומי מוצפן. איננו מפעילים שרת המאחסן את הנתונים הרפואיים שלך. אנו משתמשים ב-Google AdMob (רק במסך ההגדרות, לעולם לא במסכי נתוני בריאות), Sentry לדיווח על קריסות, סנכרון אופציונלי ל-iCloud / Google Drive שלך, וחיוב של Apple / Google עבור רכישות בתוך האפליקציה. האפליקציה <strong>אינה מכשיר רפואי</strong> ו<strong>אינה</strong> מספקת אבחון, טיפול או המלצות רפואיות. עומדות לרשותך מלוא זכויות ה-GDPR, כולל גישה, מחיקה וניידות — רובן ניתנות למימוש ישירות באפליקציה.</p>
+<p>Moje Szczepienia הוא מארגן חיסונים אישי — רישומי החיסונים נשארים במכשיר שלך באחסון מקומי מוצפן. איננו מפעילים שרת המאחסן את הנתונים הרפואיים שלך. אנו משתמשים ב-Unity Ads (רק במסך ההגדרות, לעולם לא במסכי נתוני בריאות), Sentry לדיווח על קריסות, סנכרון אופציונלי ל-iCloud / Google Drive שלך, וחיוב של Apple / Google עבור רכישות בתוך האפליקציה. האפליקציה <strong>אינה מכשיר רפואי</strong> ו<strong>אינה</strong> מספקת אבחון, טיפול או המלצות רפואיות. עומדות לרשותך מלוא זכויות ה-GDPR, כולל גישה, מחיקה וניידות — רובן ניתנות למימוש ישירות באפליקציה.</p>
 <h2>3. נתונים שאנו מעבדים</h2>
 <h3>3.1 נתונים מקומיים בלבד</h3>
 <p><strong>נתוני חיסונים</strong> (פרופילי בני משפחה, חיסונים, תאריכים, הערות, תמונות של פנקס/מדבקת חיסונים) נשמרים <strong>רק באופן מקומי במכשיר שלך</strong>, באחסון MMKV מוצפן (מפתח נוצר אקראית ונשמר ב-Apple Keychain / Android Keystore). איננו שולחים נתונים אלה לשרתים שלנו או לצד שלישי כלשהו.</p>
@@ -91,13 +91,12 @@
 <li>גרסת האפליקציה ומספר Build.</li>
 </ul>
 <p>Sentry <strong>אינו</strong> אוסף את התוכן שלך (רשומות, קבצים, רישומי חיסונים, תמונות, ארכיונים), שמות משתמש, או PII אחרים. נתוני אבחון נשמרים על ידי Sentry למשך עד <strong>90 יום</strong>.</p>
-<h3>3.4 פרסום (AdMob)</h3>
-<p>Moje Szczepienia מציג פרסומות לא פולשניות במסך ההגדרות בלבד (אין פרסומות במסכי נתוני חיסונים). פרסומות מוגשות על ידי <strong>Google AdMob</strong>, אשר ה-SDK שלו אוסף:</p>
+<h3>3.4 פרסום (Unity Ads)</h3>
+<p>Moje Szczepienia מציג פרסומות לא פולשניות במסך ההגדרות בלבד (אין פרסומות במסכי נתוני חיסונים). פרסומות מוגשות על ידי <strong>Unity Ads</strong>, אשר ה-SDK שלו אוסף:</p>
 <ul>
 <li>את <strong>מזהה הפרסום</strong> (Android Advertising ID / Apple IDFA), המשותף ל-Google להצגת פרסומות;</li>
 <li>נתוני אבחון (דגם מכשיר, מיקום ברמת מדינה, שפה).</li>
 </ul>
-<p>Ads may also be served by AdMob mediation partners: Meta Platforms, Inc. (<a href="https://www.facebook.com/privacy/policy/">Meta Audience Network</a>) and Unity Technologies (<a href="https://unity.com/legal/privacy-policy">Unity Ads</a>).</p>
 <p>מצב ברירת המחדל הוא <strong>מודעות לא מותאמות אישית</strong>. ב-iOS, הנחיית App Tracking Transparency (ATT) מבקשת את הסכמתך לפני השימוש בכל מזהה ברמת מעקב; ב-Android אתה שולט במזהה הפרסום תחת הגדרות המערכת. ניתן להשבית פרסומות לצמיתות באמצעות IAP Lifetime / Premium.</p>
 <h3>3.5 רכישות בתוך האפליקציה (IAP)</h3>
 <p>Moje Szczepienia מציע תכונות בתשלום באמצעות Apple In-App Purchase (iOS) ו-Google Play Billing (Android). כאשר אתה מבצע רכישה:</p>
@@ -129,7 +128,7 @@
 <li><strong>הפעלת האפליקציה במכשיר שלך</strong> — אחסון מקומי ו (כאשר קיים) הצפנה מאפשרים לנתונים שלך להישמר בין הפעלות.</li>
 <li><strong>סנכרון הנתונים שלך בין המכשירים שלך</strong> — דרך ה-iCloud / Google Drive AppFolder שלך; איננו רואים נתונים אלה.</li>
 <li><strong>שיפור היציבות</strong> — אבחוני Sentry עוזרים לתקן קריסות המשפיעות על השימוש שלך.</li>
-<li><strong>תמיכה בשכבה החינמית</strong> — AdMob מציג פרסומות לא פולשניות כדי לממן משתמשים שאינם רוכשים פרימיום.</li>
+<li><strong>תמיכה בשכבה החינמית</strong> — Unity Ads מציג פרסומות לא פולשניות כדי לממן משתמשים שאינם רוכשים פרימיום.</li>
 <li><strong>עיבוד רכישות</strong> — חיוב Apple / Google ממלא זכאויות פרימיום שבחרת לרכוש.</li>
 </ul>
 <h2>5. בסיס משפטי (GDPR Article 6)</h2>
@@ -145,8 +144,6 @@
 <table>
 <thead><tr><th>נמען</th><th>מטרה</th><th>קטגוריית נתונים</th><th>מדיניות פרטיות</th></tr></thead>
 <tbody>
-<tr><td>Google LLC (AdMob)</td><td>הצגת מודעות</td><td>Advertising ID, מדדי מכשיר ומודעות</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Meta Platforms, Inc. (Meta Audience Network)</td><td>הצגת מודעות</td><td>Advertising ID, מדדי מכשיר ומודעות</td><td><a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></td></tr>
 <tr><td>Unity Technologies (Unity Ads)</td><td>הצגת מודעות</td><td>Advertising ID, מדדי מכשיר ומודעות</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>דיווח על קריסות</td><td>עקבות מחסנית, מטא-נתונים של מכשיר</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>עיבוד רכישות בתוך האפליקציה ב-iOS</td><td>אסימון רכישה, זכאות ברמת חשבון</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
@@ -169,7 +166,7 @@
 <tbody>
 <tr><td>הנתונים שלך בתוך האפליקציה</td><td>במכשיר שלך בלבד (מוצפן)</td><td>עד שתמחק אותם, תסיר את האפליקציה, או תמחק את נתוני האפליקציה</td></tr>
 <tr><td>נתוני סנכרון ב-iCloud / Google Drive שלך</td><td>בחשבון Apple / Google שלך</td><td>עד שתסיר את נתוני האפליקציה מ-iCloud / Drive שלך</td></tr>
-<tr><td>Advertising ID</td><td>מערכות Google AdMob</td><td>לפי מדיניות השמירה של Google (בדרך כלל עד 14 חודשים למדדי מודעות)</td></tr>
+<tr><td>Advertising ID</td><td>מערכות Unity Ads</td><td>לפי מדיניות השמירה של Unity</td></tr>
 <tr><td>נתוני קריסה של Sentry</td><td>מערכות Sentry</td><td>עד 90 יום מהאירוע</td></tr>
 <tr><td>אסימון/קבלה של רכישת IAP</td><td>במכשיר שלך + Apple / Google</td><td>עד שתסיר את ההתקנה; Apple / Google שומרות רשומות עסקאות לפי מדיניותן</td></tr>
 </tbody></table>
@@ -202,8 +199,8 @@
 </ul>
 <p>שום מערכת אינה מאובטחת ב-100%; אנא שמור את מכשירך מעודכן והשתמש במנעולי מכשיר חזקים.</p>
 <h2>13. App Tracking Transparency (iOS) ומזהה פרסום</h2>
-<p>ב-iOS, לפני שימוש במזהה כלשהו ברמת מעקב על ידי AdMob, Moje Szczepienia מציג את הנחיית המערכת <strong>App Tracking Transparency</strong>. אם תסרב, Moje Szczepienia תציג רק מודעות לא מותאמות אישית.</p>
-<p>ב-Android, תוכל לאפס או להגביל את מזהה הפרסום שלך תחת <strong>הגדרות → Google → מודעות</strong>. בחירה ב"מחק מזהה פרסום" מונעת מ-AdMob להשתמש במזהה אישי; מודעות לא מותאמות אישית ימשיכו להיות מוצגות.</p>
+<p>ב-iOS, לפני שימוש במזהה כלשהו ברמת מעקב על ידי Unity Ads, Moje Szczepienia מציג את הנחיית המערכת <strong>App Tracking Transparency</strong>. אם תסרב, Moje Szczepienia תציג רק מודעות לא מותאמות אישית.</p>
+<p>ב-Android, תוכל לאפס או להגביל את מזהה הפרסום שלך תחת <strong>הגדרות → Google → מודעות</strong>. בחירה ב"מחק מזהה פרסום" מונעת מ-Unity Ads להשתמש במזהה אישי; מודעות לא מותאמות אישית ימשיכו להיות מוצגות.</p>
 <h2>14. רכישות בתוך האפליקציה</h2>
 <p>Moje Szczepienia מציע את המוצרים הבאים בתוך האפליקציה דרך Apple App Store ו-Google Play: פתיחת פרימיום לכל החיים, קופת טיפים אופציונלית, מנוי שנתי אופציונלי.</p>
 <p>כל נתוני התשלום מטופלים על ידי <strong>Apple Inc.</strong> (App Store / חשבון iTunes) או <strong>Google LLC</strong> (Play Billing). לעולם איננו רואים את מספר הכרטיס שלך, כתובת החיוב שלך, או חשבון Apple ID / Google המלא שלך. Apple ו-Google מחזירות רק אסימון רכישה אטום ומטא-נתוני זכאות שבהם אנו משתמשים כדי לפתוח תכונות. ניתן לבטל מנויים בכל עת בהגדרות iOS → Apple ID → מנויים או באפליקציית Google Play → מנויים; כללי הביטול כפופים ל-Apple / Google.</p>

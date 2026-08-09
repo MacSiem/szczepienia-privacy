@@ -77,7 +77,7 @@
 <p>Für die über Google Play vertriebene Version der App ist der für die Datenverarbeitung Verantwortliche LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>Diese Datenschutzerklärung erläutert, welche personenbezogenen Daten Moje Szczepienia verarbeitet, wie, warum und welche Rechte Sie haben.</p>
 <h2>2. Kurzfassung in einfacher Sprache</h2>
-<p>Moje Szczepienia ist ein persönlicher Impfplaner – Impfdaten bleiben auf Ihrem Gerät in verschlüsseltem lokalen Speicher. Wir betreiben keinen Server, der Ihre medizinischen Daten speichert. Wir verwenden Google AdMob (nur auf dem Einstellungsbildschirm, niemals auf Bildschirmen mit Gesundheitsdaten), Sentry für Absturzberichte, eine optionale Synchronisierung mit Ihrem eigenen iCloud / Google Drive und Apple / Google Abrechnung für In-App-Käufe. Die App ist <strong>kein Medizinprodukt</strong> und bietet <strong>keine</strong> Diagnose, Behandlung oder medizinische Empfehlungen. Sie haben volle DSGVO-Rechte, einschließlich Zugriff, Löschung und Datenübertragbarkeit – die meisten können direkt in der App ausgeübt werden.</p>
+<p>Moje Szczepienia ist ein persönlicher Impfplaner – Impfdaten bleiben auf Ihrem Gerät in verschlüsseltem lokalen Speicher. Wir betreiben keinen Server, der Ihre medizinischen Daten speichert. Wir verwenden Unity Ads (nur auf dem Einstellungsbildschirm, niemals auf Bildschirmen mit Gesundheitsdaten), Sentry für Absturzberichte, eine optionale Synchronisierung mit Ihrem eigenen iCloud / Google Drive und Apple / Google Abrechnung für In-App-Käufe. Die App ist <strong>kein Medizinprodukt</strong> und bietet <strong>keine</strong> Diagnose, Behandlung oder medizinische Empfehlungen. Sie haben volle DSGVO-Rechte, einschließlich Zugriff, Löschung und Datenübertragbarkeit – die meisten können direkt in der App ausgeübt werden.</p>
 <h2>3. Daten, die wir verarbeiten</h2>
 <h3>3.1 Nur-lokale Daten</h3>
 <p><strong>Impfdaten</strong> (Familienmitgliederprofile, Impfungen, Daten, Notizen, Fotos des Impfbuchs/-aufklebers) werden <strong>nur lokal auf Ihrem Gerät</strong> in verschlüsseltem MMKV-Speicher abgelegt (der Schlüssel wird zufällig generiert und im Apple Keychain / Android Keystore aufbewahrt). Wir senden diese Daten niemals an unsere Server oder an Dritte.</p>
@@ -91,13 +91,12 @@
 <li>App-Version und Build-Nummer.</li>
 </ul>
 <p>Sentry sammelt <strong>nicht</strong> Ihre Inhalte (Einträge, Dateien, Impfdaten, Fotos, Archive), Benutzernamen oder andere PII. Diagnosedaten werden von Sentry bis zu <strong>90 Tage</strong> aufbewahrt.</p>
-<h3>3.4 Werbung (AdMob)</h3>
-<p>Moje Szczepienia zeigt nicht-invasive Werbung nur in den Einstellungen (keine Werbung auf Impfdatenbildschirmen). Anzeigen werden von <strong>Google AdMob</strong> ausgeliefert, dessen SDK sammelt:</p>
+<h3>3.4 Werbung (Unity Ads)</h3>
+<p>Moje Szczepienia zeigt nicht-invasive Werbung nur in den Einstellungen (keine Werbung auf Impfdatenbildschirmen). Anzeigen werden von <strong>Unity Ads</strong> ausgeliefert, dessen SDK sammelt:</p>
 <ul>
 <li>die <strong>Werbe-ID</strong> (Android Advertising ID / Apple IDFA), die mit Google geteilt wird, um Anzeigen auszuspielen;</li>
 <li>Diagnosedaten (Gerätemodell, länderbezogener Standort, Sprache).</li>
 </ul>
-<p>Ads may also be served by AdMob mediation partners: Meta Platforms, Inc. (<a href="https://www.facebook.com/privacy/policy/">Meta Audience Network</a>) and Unity Technologies (<a href="https://unity.com/legal/privacy-policy">Unity Ads</a>).</p>
 <p>Der Standardmodus ist <strong>nicht-personalisierte Werbung</strong>. Unter iOS fragt die App Tracking Transparency (ATT)-Abfrage nach Ihrer Zustimmung, bevor ein Tracking-Identifikator verwendet wird; unter Android steuern Sie die Werbe-ID in den Systemeinstellungen. Werbung kann dauerhaft über den Lifetime- / Premium-In-App-Kauf deaktiviert werden.</p>
 <h3>3.5 In-App-Käufe (IAP)</h3>
 <p>Moje Szczepienia bietet kostenpflichtige Funktionen über Apple In-App Purchase (iOS) und Google Play Billing (Android) an. Wenn Sie einen Kauf tätigen:</p>
@@ -129,7 +128,7 @@
 <li><strong>Betrieb der App auf Ihrem Gerät</strong> – lokale Speicherung und (wo vorhanden) Verschlüsselung ermöglichen die Persistenz Ihrer Daten zwischen den Sitzungen.</li>
 <li><strong>Synchronisierung Ihrer eigenen Daten über Ihre eigenen Geräte hinweg</strong> – über Ihr eigenes iCloud / Google Drive AppFolder; wir sehen diese Daten nicht.</li>
 <li><strong>Verbesserung der Stabilität</strong> – Sentry-Diagnosen helfen, Abstürze zu beheben, die Ihre Nutzung beeinträchtigen.</li>
-<li><strong>Aufrechterhaltung des kostenlosen Angebots</strong> – AdMob liefert nicht-invasive Werbung, um Benutzer zu finanzieren, die kein Premium kaufen.</li>
+<li><strong>Aufrechterhaltung des kostenlosen Angebots</strong> – Unity Ads liefert nicht-invasive Werbung, um Benutzer zu finanzieren, die kein Premium kaufen.</li>
 <li><strong>Verarbeitung von Käufen</strong> – Apple / Google Abrechnung erfüllt Premium-Berechtigungen, die Sie erwerben möchten.</li>
 </ul>
 <h2>5. Rechtsgrundlagen (Art. 6 DSGVO)</h2>
@@ -145,8 +144,6 @@
 <table>
 <thead><tr><th>Empfänger</th><th>Zweck</th><th>Datenkategorie</th><th>Datenschutzerklärung</th></tr></thead>
 <tbody>
-<tr><td>Google LLC (AdMob)</td><td>Anzeigen schalten</td><td>Werbe-ID, Geräte- &amp; Anzeigenmetriken</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Meta Platforms, Inc. (Meta Audience Network)</td><td>Anzeigen schalten</td><td>Werbe-ID, Geräte- &amp; Anzeigenmetriken</td><td><a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></td></tr>
 <tr><td>Unity Technologies (Unity Ads)</td><td>Anzeigen schalten</td><td>Werbe-ID, Geräte- &amp; Anzeigenmetriken</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>Absturzberichte</td><td>Stack-Traces, Gerätemetadaten</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>In-App-Kaufabwicklung unter iOS</td><td>Kauf-Token, kontoebene Berechtigung</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
@@ -169,7 +166,7 @@
 <tbody>
 <tr><td>Ihre In-App-Daten</td><td>Nur Ihr Gerät (verschlüsselt)</td><td>Bis Sie sie löschen, die App deinstallieren oder App-Daten löschen</td></tr>
 <tr><td>Synchronisierungsdaten in Ihrem iCloud / Google Drive</td><td>Ihr eigenes Apple / Google Konto</td><td>Bis Sie die App-Daten aus Ihrem iCloud / Drive entfernen</td></tr>
-<tr><td>Werbe-ID</td><td>Google AdMob Systeme</td><td>Gemäß Googles Aufbewahrungsrichtlinie (typischerweise bis zu 14 Monate für Werbemesswerte)</td></tr>
+<tr><td>Werbe-ID</td><td>Unity Ads Systeme</td><td>Gemäß Unitys Aufbewahrungsrichtlinie</td></tr>
 <tr><td>Sentry Absturzdaten</td><td>Sentry Systeme</td><td>Bis zu 90 Tage ab dem Ereignis</td></tr>
 <tr><td>IAP Kauf-Token / Beleg</td><td>Ihr Gerät + Apple / Google</td><td>Bis zur Deinstallation; Apple / Google bewahren Transaktionsaufzeichnungen gemäß ihren eigenen Richtlinien auf</td></tr>
 </tbody></table>
@@ -202,8 +199,8 @@
 </ul>
 <p>Kein System ist 100% sicher; bitte halten Sie Ihr Gerät auf dem neuesten Stand und verwenden Sie starke Gerätesperren.</p>
 <h2>13. App Tracking Transparency (iOS) und Werbe-ID</h2>
-<p>Unter iOS zeigt Moje Szczepienia vor der Verwendung eines Tracking-Identifikators durch AdMob die Systemabfrage <strong>App Tracking Transparency</strong> an. Wenn Sie ablehnen, schaltet Moje Szczepienia nur nicht-personalisierte Werbung.</p>
-<p>Unter Android können Sie Ihre Werbe-ID unter <strong>Einstellungen → Google → Anzeigen</strong> zurücksetzen oder einschränken. Die Auswahl „Werbe-ID löschen“ verhindert, dass AdMob einen persönlichen Identifikator verwendet; nicht-personalisierte Werbung wird weiterhin angezeigt.</p>
+<p>Unter iOS zeigt Moje Szczepienia vor der Verwendung eines Tracking-Identifikators durch Unity Ads die Systemabfrage <strong>App Tracking Transparency</strong> an. Wenn Sie ablehnen, schaltet Moje Szczepienia nur nicht-personalisierte Werbung.</p>
+<p>Unter Android können Sie Ihre Werbe-ID unter <strong>Einstellungen → Google → Anzeigen</strong> zurücksetzen oder einschränken. Die Auswahl „Werbe-ID löschen“ verhindert, dass Unity Ads einen persönlichen Identifikator verwendet; nicht-personalisierte Werbung wird weiterhin angezeigt.</p>
 <h2>14. In-App-Käufe</h2>
 <p>Moje Szczepienia bietet die folgenden In-App-Produkte über den Apple App Store und Google Play an: lebenslange Premium-Freischaltung, optionaler Trinkgeld-Container, optionales Jahresabonnement.</p>
 <p>Alle Zahlungsdaten werden von <strong>Apple Inc.</strong> (App Store / iTunes-Konto) oder <strong>Google LLC</strong> (Play Billing) verarbeitet. Wir sehen niemals Ihre Kartennummer, Ihre Rechnungsadresse oder Ihr vollständiges Apple ID / Google-Konto. Apple und Google geben nur einen undurchsichtigen Kauf-Token und Metadaten zur Berechtigung zurück, die wir zum Freischalten von Funktionen verwenden. Abonnements können jederzeit in den iOS-Einstellungen → Apple ID → Abonnements oder in der Google Play App → Abonnements gekündigt werden; die Kündigungsregeln werden von Apple / Google festgelegt.</p>

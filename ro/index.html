@@ -77,7 +77,7 @@
 <p>Pentru versiunea aplicației distribuită prin Google Play, operatorul de date este LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>Această Politică de confidențialitate explică ce date cu caracter personal procesează Moje Szczepienia, cum, de ce și ce drepturi aveți.</p>
 <h2>2. Rezumat într-un limbaj simplu</h2>
-<p>Moje Szczepienia este un organizator personal de vaccinări — înregistrările vaccinării rămân pe dispozitivul dumneavoastră în stocarea locală criptată. Nu operăm un server care să stocheze datele dumneavoastră medicale. Utilizăm Google AdMob (doar pe ecranul de Setări, niciodată pe ecranele cu date de sănătate), Sentry pentru raportarea erorilor, sincronizare opțională cu propriul dumneavoastră iCloud / Google Drive și facturare Apple / Google pentru achizițiile în aplicație. Aplicația <strong>nu este un dispozitiv medical</strong> și <strong>nu</strong> oferă diagnostic, tratament sau recomandări medicale. Aveți drepturi complete conform RGPD, inclusiv acces, ștergere și portabilitate — majoritatea exercitabile direct în aplicație.</p>
+<p>Moje Szczepienia este un organizator personal de vaccinări — înregistrările vaccinării rămân pe dispozitivul dumneavoastră în stocarea locală criptată. Nu operăm un server care să stocheze datele dumneavoastră medicale. Utilizăm Unity Ads (doar pe ecranul de Setări, niciodată pe ecranele cu date de sănătate), Sentry pentru raportarea erorilor, sincronizare opțională cu propriul dumneavoastră iCloud / Google Drive și facturare Apple / Google pentru achizițiile în aplicație. Aplicația <strong>nu este un dispozitiv medical</strong> și <strong>nu</strong> oferă diagnostic, tratament sau recomandări medicale. Aveți drepturi complete conform RGPD, inclusiv acces, ștergere și portabilitate — majoritatea exercitabile direct în aplicație.</p>
 <h2>3. Datele pe care le procesăm</h2>
 <h3>3.1 Date doar locale</h3>
 <p><strong>Datele de vaccinare</strong> (profiluri de membri ai familiei, vaccinări, date, notițe, fotografii ale carnetului/stickerului de vaccinare) sunt stocate <strong>doar local pe dispozitivul dumneavoastră</strong>, în stocare MMKV criptată (cheia generată aleatoriu și păstrată în Apple Keychain / Android Keystore). Nu trimitem niciodată aceste date serverelor noastre sau vreunui terț.</p>
@@ -91,13 +91,12 @@
 <li>versiunea aplicației și numărul build-ului.</li>
 </ul>
 <p>Sentry <strong>nu</strong> colectează conținutul dumneavoastră (înregistrări, fișiere, registre de vaccinare, fotografii, arhive), nume de utilizator sau alte PII. Datele diagnostice sunt reținute de Sentry pentru o perioadă de până la <strong>90 de zile</strong>.</p>
-<h3>3.4 Publicitate (AdMob)</h3>
-<p>Moje Szczepienia afișează reclame non-invazive doar pe ecranul de Setări (fără reclame pe ecranele cu date de vaccinare). Reclamele sunt livrate de <strong>Google AdMob</strong>, al cărui SDK colectează:</p>
+<h3>3.4 Publicitate (Unity Ads)</h3>
+<p>Moje Szczepienia afișează reclame non-invazive doar pe ecranul de Setări (fără reclame pe ecranele cu date de vaccinare). Reclamele sunt livrate de <strong>Unity Ads</strong>, al cărui SDK colectează:</p>
 <ul>
 <li><strong>ID-ul de publicitate</strong> (ID-ul de publicitate Android / IDFA Apple), partajat cu Google pentru a difuza reclame;</li>
 <li>date diagnostice (modelul dispozitivului, locația la nivel de țară, limba).</li>
 </ul>
-<p>Ads may also be served by AdMob mediation partners: Meta Platforms, Inc. (<a href="https://www.facebook.com/privacy/policy/">Meta Audience Network</a>) and Unity Technologies (<a href="https://unity.com/legal/privacy-policy">Unity Ads</a>).</p>
 <p>Modul implicit este <strong>reclame non-personalizate</strong>. Pe iOS, solicitarea App Tracking Transparency (ATT) cere consimțământul dumneavoastră înainte de utilizarea oricărui identificator de urmărire; pe Android, controlați ID-ul de publicitate în Setările sistemului. Reclamele pot fi dezactivate permanent prin IAP-ul Lifetime / Premium.</p>
 <h3>3.5 Achiziții în aplicație (IAP)</h3>
 <p>Moje Szczepienia oferă funcționalități plătite prin Apple In-App Purchase (iOS) și Google Play Billing (Android). Când efectuați o achiziție:</p>
@@ -129,7 +128,7 @@
 <li><strong>Rularea aplicației pe dispozitivul dumneavoastră</strong> — stocarea locală și (acolo unde există) criptarea permit datelor dumneavoastră să persiste între sesiuni.</li>
 <li><strong>Sincronizarea propriilor date pe propriile dispozitive</strong> — prin propriul dumneavoastră iCloud / Google Drive AppFolder; nu vedem aceste date.</li>
 <li><strong>Îmbunătățirea stabilității</strong> — diagnosticele Sentry ajută la remedierea blocajelor care vă afectează utilizarea.</li>
-<li><strong>Susținerea nivelului gratuit</strong> — AdMob livrează reclame non-invazive pentru a finanța utilizatorii care nu cumpără premium.</li>
+<li><strong>Susținerea nivelului gratuit</strong> — Unity Ads livrează reclame non-invazive pentru a finanța utilizatorii care nu cumpără premium.</li>
 <li><strong>Procesarea achizițiilor</strong> — facturarea Apple / Google îndeplinește drepturile premium pe care alegeți să le cumpărați.</li>
 </ul>
 <h2>5. Temei juridic (Articolul 6 RGPD)</h2>
@@ -145,8 +144,6 @@
 <table>
 <thead><tr><th>Destinatar</th><th>Scop</th><th>Categoria de date</th><th>Politica de confidențialitate</th></tr></thead>
 <tbody>
-<tr><td>Google LLC (AdMob)</td><td>Difuzare reclame</td><td>ID de publicitate, metrici dispozitiv și reclame</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Meta Platforms, Inc. (Meta Audience Network)</td><td>Difuzare reclame</td><td>ID de publicitate, metrici dispozitiv și reclame</td><td><a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></td></tr>
 <tr><td>Unity Technologies (Unity Ads)</td><td>Difuzare reclame</td><td>ID de publicitate, metrici dispozitiv și reclame</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>Raportare erori</td><td>Urme ale stivei de erori, metadate dispozitiv</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>Procesare achiziții în aplicație pe iOS</td><td>Token de achiziție, drept la nivel de cont</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
@@ -169,7 +166,7 @@
 <tbody>
 <tr><td>Datele dumneavoastră din aplicație</td><td>Doar pe dispozitivul dumneavoastră (criptate)</td><td>Până când le ștergeți, dezinstalați aplicația sau ștergeți datele aplicației</td></tr>
 <tr><td>Datele de sincronizare din iCloud / Google Drive</td><td>Propriul dumneavoastră cont Apple / Google</td><td>Până când eliminați datele aplicației din iCloud / Drive</td></tr>
-<tr><td>ID de publicitate</td><td>Sistemele Google AdMob</td><td>Conform politicii de retenție a Google (tipic până la 14 luni pentru metricile publicitare)</td></tr>
+<tr><td>ID de publicitate</td><td>Sistemele Unity Ads</td><td>Conform politicii de retenție a Unity</td></tr>
 <tr><td>Date de blocare Sentry</td><td>Sistemele Sentry</td><td>Până la 90 de zile de la eveniment</td></tr>
 <tr><td>Token de achiziție / chitanță IAP</td><td>Dispozitivul dumneavoastră + Apple / Google</td><td>Până la dezinstalare; Apple / Google păstrează înregistrările tranzacțiilor conform propriilor politici</td></tr>
 </tbody></table>
@@ -202,8 +199,8 @@
 </ul>
 <p>Niciun sistem nu este 100% sigur; vă rugăm să vă mențineți dispozitivul actualizat și să utilizați blocaje puternice ale dispozitivului.</p>
 <h2>13. App Tracking Transparency (iOS) și ID-ul de publicitate</h2>
-<p>Pe iOS, înainte ca orice identificator de urmărire să fie utilizat de AdMob, Moje Szczepienia afișează solicitarea sistemului <strong>App Tracking Transparency</strong>. Dacă refuzați, Moje Szczepienia difuzează doar reclame non-personalizate.</p>
-<p>Pe Android, puteți reseta sau limita ID-ul dumneavoastră de publicitate în Setări → Google → Reclame. Alegerea „Ștergeți ID-ul de publicitate” oprește AdMob să utilizeze un identificator personal; reclamele non-personalizate continuă să fie afișate.</p>
+<p>Pe iOS, înainte ca orice identificator de urmărire să fie utilizat de Unity Ads, Moje Szczepienia afișează solicitarea sistemului <strong>App Tracking Transparency</strong>. Dacă refuzați, Moje Szczepienia difuzează doar reclame non-personalizate.</p>
+<p>Pe Android, puteți reseta sau limita ID-ul dumneavoastră de publicitate în Setări → Google → Reclame. Alegerea „Ștergeți ID-ul de publicitate” oprește Unity Ads să utilizeze un identificator personal; reclamele non-personalizate continuă să fie afișate.</p>
 <h2>14. Achiziții în aplicație</h2>
 <p>Moje Szczepienia oferă următoarele produse în aplicație prin Apple App Store și Google Play: deblocare premium pe viață, borcan opțional pentru bacșișuri, abonament anual opțional.</p>
 <p>Toate datele de plată sunt gestionate de <strong>Apple Inc.</strong> (App Store / cont iTunes) sau <strong>Google LLC</strong> (Play Billing). Nu vedem niciodată numărul cardului dumneavoastră, adresa de facturare sau contul dumneavoastră complet Apple ID / Google. Apple și Google returnează doar un token de achiziție opac și metadate de drept pe care le folosim pentru a debloca funcționalitățile. Abonamentele pot fi anulate oricând în Setări iOS → Apple ID → Abonamente sau în aplicația Google Play → Abonamente; regulile de anulare sunt guvernate de Apple / Google.</p>

@@ -77,7 +77,7 @@
 <p>بالنسبة لإصدار التطبيق الموزع عبر Google Play، فإن المتحكم في البيانات هو LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>تشرح سياسة الخصوصية هذه أنواع البيانات الشخصية التي يعالجها Moje Szczepienia، وكيف ولماذا، وما هي حقوقك.</p>
 <h2>2. ملخص بلغة بسيطة</h2>
-<p>Moje Szczepienia هو منظم تطعيمات شخصي — تبقى سجلات التطعيم على جهازك في مساحة تخزين محلية مشفرة. لا نقوم بتشغيل خادم يخزّن بياناتك الطبية. نستخدم Google AdMob (فقط على شاشة الإعدادات، وليس أبدًا على شاشات بيانات الصحة)، و Sentry للإبلاغ عن الأعطال، ومزامنة اختيارية مع iCloud / Google Drive الخاص بك، ونظام فوترة Apple / Google للمشتريات داخل التطبيق. التطبيق <strong>ليس جهازًا طبيًا</strong> و<strong>لا</strong> يقدم تشخيصًا أو علاجًا أو توصيات طبية. لديك حقوق GDPR الكاملة بما في ذلك الوصول والحذف وقابلية النقل — معظمها قابل للممارسة مباشرة داخل التطبيق.</p>
+<p>Moje Szczepienia هو منظم تطعيمات شخصي — تبقى سجلات التطعيم على جهازك في مساحة تخزين محلية مشفرة. لا نقوم بتشغيل خادم يخزّن بياناتك الطبية. نستخدم Unity Ads (فقط على شاشة الإعدادات، وليس أبدًا على شاشات بيانات الصحة)، و Sentry للإبلاغ عن الأعطال، ومزامنة اختيارية مع iCloud / Google Drive الخاص بك، ونظام فوترة Apple / Google للمشتريات داخل التطبيق. التطبيق <strong>ليس جهازًا طبيًا</strong> و<strong>لا</strong> يقدم تشخيصًا أو علاجًا أو توصيات طبية. لديك حقوق GDPR الكاملة بما في ذلك الوصول والحذف وقابلية النقل — معظمها قابل للممارسة مباشرة داخل التطبيق.</p>
 <h2>3. البيانات التي نعالجها</h2>
 <h3>3.1 بيانات محلية فقط</h3>
 <p><strong>بيانات التطعيم</strong> (ملفات تعريف أفراد العائلة، التطعيمات، التواريخ، الملاحظات، صور كتيب/ملصق التطعيم) تُخزّن <strong>محليًا فقط على جهازك</strong>، في مساحة تخزين MMKV مشفرة (المفتاح يُنشأ عشوائيًا ويُحفظ في Apple Keychain / Android Keystore). لا نرسل هذه البيانات أبدًا إلى خوادمنا أو إلى أي طرف ثالث.</p>
@@ -91,13 +91,12 @@
 <li>إصدار التطبيق ورقم البناء.</li>
 </ul>
 <p>Sentry <strong>لا</strong> تجمع المحتوى الخاص بك (الإدخالات، الملفات، سجلات التطعيم، الصور، الأرشيفات)، أسماء المستخدمين، أو أي معلومات تعريف شخصية أخرى. يتم الاحتفاظ ببيانات التشخيص بواسطة Sentry لمدة تصل إلى <strong>90 يومًا</strong>.</p>
-<h3>3.4 الإعلانات (AdMob)</h3>
-<p>يعرض Moje Szczepienia إعلانات غير تدخلية في شاشة الإعدادات فقط (لا توجد إعلانات على شاشات بيانات التطعيم). تُقدم الإعلانات بواسطة <strong>Google AdMob</strong>، الذي يجمع SDK الخاص به:</p>
+<h3>3.4 الإعلانات (Unity Ads)</h3>
+<p>يعرض Moje Szczepienia إعلانات غير تدخلية في شاشة الإعدادات فقط (لا توجد إعلانات على شاشات بيانات التطعيم). تُقدم الإعلانات بواسطة <strong>Unity Ads</strong>، الذي يجمع SDK الخاص به:</p>
 <ul>
 <li><strong>معرّف الإعلان</strong> (Android Advertising ID / Apple IDFA)، المشترك مع Google لتقديم الإعلانات؛</li>
 <li>بيانات التشخيص (طراز الجهاز، الموقع على مستوى البلد، اللغة).</li>
 </ul>
-<p>Ads may also be served by AdMob mediation partners: Meta Platforms, Inc. (<a href="https://www.facebook.com/privacy/policy/">Meta Audience Network</a>) and Unity Technologies (<a href="https://unity.com/legal/privacy-policy">Unity Ads</a>).</p>
 <p>الوضع الافتراضي هو <strong>إعلانات غير مخصصة</strong>. على نظام iOS، يطلب تنبيه App Tracking Transparency (ATT) موافقتك قبل استخدام أي معرّف لتتبع؛ على نظام Android تتحكم في Advertising ID ضمن إعدادات النظام. يمكن تعطيل الإعلانات بشكل دائم عبر IAP Lifetime / Premium.</p>
 <h3>3.5 المشتريات داخل التطبيق (IAP)</h3>
 <p>يقدم Moje Szczepienia ميزات مدفوعة من خلال Apple In-App Purchase (iOS) و Google Play Billing (Android). عند إجراء عملية شراء:</p>
@@ -129,7 +128,7 @@
 <li><strong>تشغيل التطبيق على جهازك</strong> — التخزين المحلي (وحيثما وُجد) التشفير يسمح لبياناتك بالاستمرار بين الجلسات.</li>
 <li><strong>مزامنة بياناتك الخاصة عبر أجهزتك الخاصة</strong> — من خلال iCloud / Google Drive AppFolder الخاص بك؛ لا نرى هذه البيانات.</li>
 <li><strong>تحسين الاستقرار</strong> — تساعد تشخيصات Sentry في إصلاح الأعطال التي تؤثر على استخدامك.</li>
-<li><strong>دعم الطبقة المجانية</strong> — يقدم AdMob إعلانات غير تدخلية لتمويل المستخدمين الذين لا يشترون النسخة المميزة.</li>
+<li><strong>دعم الطبقة المجانية</strong> — يقدم Unity Ads إعلانات غير تدخلية لتمويل المستخدمين الذين لا يشترون النسخة المميزة.</li>
 <li><strong>معالجة المشتريات</strong> — تُلبي فوترة Apple / Google استحقاقات النسخة المميزة التي تختار شراءها.</li>
 </ul>
 <h2>5. الأساس القانوني (GDPR Art. 6)</h2>
@@ -145,8 +144,6 @@
 <table>
 <thead><tr><th>المستلم</th><th>الغرض</th><th>فئة البيانات</th><th>سياسة الخصوصية</th></tr></thead>
 <tbody>
-<tr><td>Google LLC (AdMob)</td><td>عرض الإعلانات</td><td>Advertising ID، مقاييس الجهاز والإعلانات</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Meta Platforms, Inc. (Meta Audience Network)</td><td>عرض الإعلانات</td><td>Advertising ID، مقاييس الجهاز والإعلانات</td><td><a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></td></tr>
 <tr><td>Unity Technologies (Unity Ads)</td><td>عرض الإعلانات</td><td>Advertising ID، مقاييس الجهاز والإعلانات</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>الإبلاغ عن الأعطال</td><td>تتبع المكدس، بيانات تعريف الجهاز</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>معالجة المشتريات داخل التطبيق على iOS</td><td>رمز الشراء، الاستحقاق على مستوى الحساب</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
@@ -169,7 +166,7 @@
 <tbody>
 <tr><td>بياناتك داخل التطبيق</td><td>جهازك فقط (مشفرة)</td><td>حتى تحذفها، أو تقوم بإلغاء تثبيت التطبيق، أو مسح بيانات التطبيق</td></tr>
 <tr><td>بيانات المزامنة في iCloud / Google Drive الخاص بك</td><td>حساب Apple / Google الخاص بك</td><td>حتى تقوم بإزالة بيانات التطبيق من iCloud / Drive الخاص بك</td></tr>
-<tr><td>Advertising ID</td><td>أنظمة Google AdMob</td><td>وفقًا لسياسة الاحتفاظ بـ Google (عادةً ما يصل إلى 14 شهرًا لمقاييس الإعلان)</td></tr>
+<tr><td>Advertising ID</td><td>أنظمة Unity Ads</td><td>وفقًا لسياسة الاحتفاظ بـ Unity</td></tr>
 <tr><td>بيانات أعطال Sentry</td><td>أنظمة Sentry</td><td>حتى 90 يومًا من الحدث</td></tr>
 <tr><td>رمز/إيصال شراء IAP</td><td>جهازك + Apple / Google</td><td>حتى تقوم بإلغاء التثبيت؛ تحتفظ Apple / Google بسجلات المعاملات وفقًا لسياساتها الخاصة</td></tr>
 </tbody></table>
@@ -202,8 +199,8 @@
 </ul>
 <p>لا يوجد نظام آمن بنسبة 100%؛ يرجى تحديث جهازك واستخدام أقفال جهاز قوية.</p>
 <h2>13. شفافية تتبع التطبيقات (iOS) و Advertising ID</h2>
-<p>على نظام iOS، قبل استخدام AdMob لأي معرّف ذي درجة تتبع، يعرض Moje Szczepienia تنبيه نظام <strong>App Tracking Transparency</strong>. إذا رفضت، يقدم Moje Szczepienia إعلانات غير مخصصة فقط.</p>
-<p>على نظام Android، يمكنك إعادة تعيين أو تقييد Advertising ID الخاص بك ضمن <strong>Settings → Google → Ads</strong>. اختيار "Delete advertising ID" يوقف AdMob عن استخدام معرّف شخصي؛ وتستمر الإعلانات غير المخصصة في الظهور.</p>
+<p>على نظام iOS، قبل استخدام Unity Ads لأي معرّف ذي درجة تتبع، يعرض Moje Szczepienia تنبيه نظام <strong>App Tracking Transparency</strong>. إذا رفضت، يقدم Moje Szczepienia إعلانات غير مخصصة فقط.</p>
+<p>على نظام Android، يمكنك إعادة تعيين أو تقييد Advertising ID الخاص بك ضمن <strong>Settings → Google → Ads</strong>. اختيار "Delete advertising ID" يوقف Unity Ads عن استخدام معرّف شخصي؛ وتستمر الإعلانات غير المخصصة في الظهور.</p>
 <h2>14. المشتريات داخل التطبيق</h2>
 <p>يقدم Moje Szczepienia المنتجات التالية داخل التطبيق من خلال Apple App Store و Google Play: فتح الميزات المميزة مدى الحياة، صندوق إكرامية اختياري، اشتراك سنوي اختياري.</p>
 <p>تتم معالجة جميع بيانات الدفع بواسطة <strong>Apple Inc.</strong> (حساب App Store / iTunes) أو <strong>Google LLC</strong> (Play Billing). نحن لا نرى أبدًا رقم بطاقتك، عنوان الفوترة الخاص بك، أو حساب Apple ID / Google الكامل الخاص بك. تُعيد Apple و Google فقط رمز شراء غير شفاف وبيانات تعريف استحقاق نستخدمها لفتح الميزات. يمكن إلغاء الاشتراكات في أي وقت في iOS Settings → Apple ID → Subscriptions أو في تطبيق Google Play → Subscriptions؛ تخضع قواعد الإلغاء لـ Apple / Google.</p>

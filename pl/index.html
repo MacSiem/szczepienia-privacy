@@ -77,7 +77,7 @@
 <p>W przypadku wersji aplikacji dystrybuowanej przez Google Play administratorem danych jest LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>Niniejsza polityka opisuje, jakie dane osobowe Moje Szczepienia przetwarza, w jaki sposób, w jakim celu i jakie prawa przysługują Tobie.</p>
 <h2>2. Streszczenie w prostym języku</h2>
-<p>Moje Szczepienia to osobisty organizer szczepień — wpisy szczepień pozostają na Twoim urządzeniu w zaszyfrowanej pamięci lokalnej. Nie utrzymujemy serwera, który przechowywałby Twoje dane medyczne. Korzystamy z Google AdMob (wyłącznie na ekranie Ustawień, nigdy na ekranach z danymi szczepień), Sentry (raportowanie awarii), opcjonalnej synchronizacji do Twojego iCloud / Google Drive oraz Apple / Google billing (zakupy w aplikacji). Aplikacja <strong>nie jest urządzeniem medycznym</strong> i <strong>nie</strong> świadczy diagnozy, leczenia ani rekomendacji medycznych. Masz pełne prawa wynikające z RODO: dostęp, sprostowanie, usunięcie, przenośność — większość możesz wykonać samodzielnie w aplikacji.</p>
+<p>Moje Szczepienia to osobisty organizer szczepień — wpisy szczepień pozostają na Twoim urządzeniu w zaszyfrowanej pamięci lokalnej. Nie utrzymujemy serwera, który przechowywałby Twoje dane medyczne. Korzystamy z Unity Ads (wyłącznie na ekranie Ustawień, nigdy na ekranach z danymi szczepień), Sentry (raportowanie awarii), opcjonalnej synchronizacji do Twojego iCloud / Google Drive oraz Apple / Google billing (zakupy w aplikacji). Aplikacja <strong>nie jest urządzeniem medycznym</strong> i <strong>nie</strong> świadczy diagnozy, leczenia ani rekomendacji medycznych. Masz pełne prawa wynikające z RODO: dostęp, sprostowanie, usunięcie, przenośność — większość możesz wykonać samodzielnie w aplikacji.</p>
 <h2>3. Jakie dane przetwarzamy</h2>
 <h3>3.1 Dane wyłącznie lokalne</h3>
 <p><strong>Dane szczepień</strong> (profile członków rodziny, szczepienia, daty, notatki, zdjęcia książeczki/naklejki) są przechowywane <strong>wyłącznie lokalnie na Twoim urządzeniu</strong>, w zaszyfrowanym storage MMKV (klucz wygenerowany losowo i trzymany w Apple Keychain / Android Keystore). Nigdy nie przekazujemy tych danych na nasze serwery ani do osób trzecich.</p>
@@ -91,13 +91,12 @@
 <li>wersję aplikacji i build number.</li>
 </ul>
 <p>Sentry <strong>nie</strong> zbiera Twoich treści (wpisów, plików, danych szczepień, zdjęć, archiwów), nazw użytkownika ani innych PII. Dane diagnostyczne są przechowywane przez Sentry do <strong>90 dni</strong>.</p>
-<h3>3.4 Reklamy (AdMob)</h3>
-<p>Moje Szczepienia wyświetla nieinwazyjne reklamy na ekranach: wyłącznie Ustawienia (brak reklam na ekranach z danymi o szczepieniach). Reklamy są dostarczane przez <strong>Google AdMob</strong>, którego SDK zbiera:</p>
+<h3>3.4 Reklamy (Unity Ads)</h3>
+<p>Moje Szczepienia wyświetla nieinwazyjne reklamy na ekranach: wyłącznie Ustawienia (brak reklam na ekranach z danymi o szczepieniach). Reklamy są dostarczane przez <strong>Unity Ads</strong>, którego SDK zbiera:</p>
 <ul>
 <li><strong>identyfikator reklamowy</strong> (Android Advertising ID / Apple IDFA), udostępniany Google w celu serwowania reklam;</li>
 <li>dane diagnostyczne (model urządzenia, lokalizacja na poziomie kraju, język).</li>
 </ul>
-<p>Reklamy mogą być dostarczane także przez partnerów mediacji AdMob: Meta Platforms, Inc. (Meta Audience Network, <a href="https://www.facebook.com/privacy/policy/">polityka prywatności</a>) oraz Unity Technologies (Unity Ads, <a href="https://unity.com/legal/privacy-policy">polityka prywatności</a>). Partnerzy ci otrzymują żądania reklam na tych samych zasadach — reklamy niespersonalizowane.</p>
 <p>Domyślnym trybem są <strong>reklamy nie-spersonalizowane</strong>. Na iOS, przed użyciem identyfikatora typu tracking, Moje Szczepienia wyświetla systemowy monit App Tracking Transparency (ATT); na Androidzie identyfikatorem reklamowym zarządzasz w ustawieniach systemu. Reklamy możesz trwale wyłączyć jednorazowym zakupem IAP Lifetime / Premium.</p>
 <h3>3.5 Zakupy w aplikacji (IAP)</h3>
 <p>Moje Szczepienia oferuje funkcje płatne przez Apple In-App Purchase (iOS) i Google Play Billing (Android). Przy zakupie:</p>
@@ -129,7 +128,7 @@
 <li><strong>Uruchamianie aplikacji na Twoim urządzeniu</strong> — lokalna pamięć i (gdy ma to zastosowanie) szyfrowanie pozwalają zachować dane między sesjami.</li>
 <li><strong>Synchronizacja Twoich własnych danych między Twoimi urządzeniami</strong> — przez Twoje własne iCloud / Google Drive AppFolder; my nie widzimy tych danych.</li>
 <li><strong>Poprawa stabilności</strong> — diagnostyka Sentry pomaga naprawiać awarie wpływające na korzystanie.</li>
-<li><strong>Utrzymanie wersji bezpłatnej</strong> — AdMob dostarcza nieinwazyjne reklamy, finansujące użytkowników nieopłacających.</li>
+<li><strong>Utrzymanie wersji bezpłatnej</strong> — Unity Ads dostarcza nieinwazyjne reklamy, finansujące użytkowników nieopłacających.</li>
 <li><strong>Realizacja zakupów</strong> — Apple / Google billing realizuje wykupione przez Ciebie uprawnienia premium.</li>
 </ul>
 <h2>5. Podstawa prawna (RODO art. 6)</h2>
@@ -145,8 +144,6 @@
 <table>
 <thead><tr><th>Odbiorca</th><th>Cel</th><th>Kategoria danych</th><th>Polityka prywatności</th></tr></thead>
 <tbody>
-<tr><td>Google LLC (AdMob)</td><td>Serwowanie reklam</td><td>Identyfikator reklamowy, metryki urządzenia i reklam</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Meta Platforms, Inc. (Meta Audience Network)</td><td>Serwowanie reklam</td><td>Identyfikator reklamowy, metryki urządzenia i reklam</td><td><a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></td></tr>
 <tr><td>Unity Technologies (Unity Ads)</td><td>Serwowanie reklam</td><td>Identyfikator reklamowy, metryki urządzenia i reklam</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>Raportowanie awarii</td><td>Stack traces, metadane urządzenia</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>Realizacja zakupów na iOS</td><td>Token zakupu, uprawnienia konta</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
@@ -169,7 +166,7 @@
 <tbody>
 <tr><td>Twoje dane w aplikacji</td><td>Wyłącznie Twoje urządzenie (zaszyfrowane)</td><td>Do momentu usunięcia, odinstalowania aplikacji lub wyczyszczenia danych aplikacji</td></tr>
 <tr><td>Dane synchronizacji w Twoim iCloud / Google Drive</td><td>Twoje konto Apple / Google</td><td>Do momentu usunięcia danych aplikacji z Twojego iCloud / Drive</td></tr>
-<tr><td>Identyfikator reklamowy</td><td>Systemy Google AdMob</td><td>Zgodnie z polityką retencji Google (zwykle do 14 miesięcy dla metryk reklam)</td></tr>
+<tr><td>Identyfikator reklamowy</td><td>Systemy Unity Ads</td><td>Zgodnie z polityką retencji Unity</td></tr>
 <tr><td>Dane awarii Sentry</td><td>Systemy Sentry</td><td>Do 90 dni od zdarzenia</td></tr>
 <tr><td>Token zakupu / paragon IAP</td><td>Twoje urządzenie + Apple / Google</td><td>Do odinstalowania; Apple / Google przechowują rekordy transakcji wg własnych polityk</td></tr>
 </tbody></table>
@@ -202,8 +199,8 @@
 </ul>
 <p>Żaden system nie jest w 100% bezpieczny; pamiętaj, aby aktualizować urządzenie i używać silnych blokad ekranu.</p>
 <h2>13. App Tracking Transparency (iOS) i Identyfikator Reklamowy</h2>
-<p>Na iOS, zanim AdMob użyje identyfikatora typu tracking, Moje Szczepienia wyświetla systemowy monit <strong>App Tracking Transparency</strong>. Jeśli odmówisz, Moje Szczepienia serwuje wyłącznie reklamy nie-spersonalizowane.</p>
-<p>Na Androidzie identyfikator reklamowy możesz zresetować lub ograniczyć w <strong>Ustawienia → Google → Reklamy</strong>. Wybór "Usuń identyfikator reklam" zatrzymuje wykorzystanie identyfikatora przez AdMob; reklamy nie-spersonalizowane są nadal serwowane.</p>
+<p>Na iOS, zanim Unity Ads użyje identyfikatora typu tracking, Moje Szczepienia wyświetla systemowy monit <strong>App Tracking Transparency</strong>. Jeśli odmówisz, Moje Szczepienia serwuje wyłącznie reklamy nie-spersonalizowane.</p>
+<p>Na Androidzie identyfikator reklamowy możesz zresetować lub ograniczyć w <strong>Ustawienia → Google → Reklamy</strong>. Wybór "Usuń identyfikator reklam" zatrzymuje wykorzystanie identyfikatora przez Unity Ads; reklamy nie-spersonalizowane są nadal serwowane.</p>
 <h2>14. Zakupy w aplikacji</h2>
 <p>Moje Szczepienia oferuje następujące produkty IAP w App Store i Google Play: jednorazowe odblokowanie Premium Lifetime, opcjonalny tip jar, opcjonalna subskrypcja roczna.</p>
 <p>Wszystkie dane płatnicze obsługuje <strong>Apple Inc.</strong> (konto App Store / iTunes) lub <strong>Google LLC</strong> (Play Billing). Nie widzimy numeru karty, adresu rozliczeniowego ani pełnego konta Apple ID / Google. Apple i Google zwracają wyłącznie nieprzejrzysty token zakupu i metadane uprawnień, które wykorzystujemy do odblokowania funkcji. Subskrypcję możesz anulować w iOS Ustawienia → Apple ID → Subskrypcje lub w Google Play → Subskrypcje; zasady anulowania reguluje Apple / Google.</p>

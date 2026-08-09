@@ -77,7 +77,7 @@
 <p>Pro verzi aplikace distribuovanou přes Google Play je správcem údajů LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>Tyto Zásady ochrany osobních údajů vysvětlují, jaké osobní údaje Moje Szczepienia zpracovává, jak, proč a jaká máte práva.</p>
 <h2>2. Souhrn ve srozumitelném jazyce</h2>
-<p>Moje Szczepienia je osobní organizátor očkování — záznamy o očkování zůstávají na vašem zařízení v šifrovaném lokálním úložišti. Neprovozujeme server, který by ukládal vaše lékařské údaje. Používáme Google AdMob (pouze na obrazovce Nastavení, nikdy na obrazovkách s údaji o zdraví), Sentry pro hlášení pádů, volitelnou synchronizaci s vaším vlastním iCloud / Google Drive a fakturaci Apple / Google pro nákupy v aplikaci. Aplikace <strong>není zdravotnickým prostředkem</strong> a <strong>neposkytuje</strong> diagnostiku, léčbu ani lékařská doporučení. Máte plná práva podle GDPR, včetně přístupu, výmazu a přenositelnosti — většinu z nich můžete uplatnit přímo v aplikaci.</p>
+<p>Moje Szczepienia je osobní organizátor očkování — záznamy o očkování zůstávají na vašem zařízení v šifrovaném lokálním úložišti. Neprovozujeme server, který by ukládal vaše lékařské údaje. Používáme Unity Ads (pouze na obrazovce Nastavení, nikdy na obrazovkách s údaji o zdraví), Sentry pro hlášení pádů, volitelnou synchronizaci s vaším vlastním iCloud / Google Drive a fakturaci Apple / Google pro nákupy v aplikaci. Aplikace <strong>není zdravotnickým prostředkem</strong> a <strong>neposkytuje</strong> diagnostiku, léčbu ani lékařská doporučení. Máte plná práva podle GDPR, včetně přístupu, výmazu a přenositelnosti — většinu z nich můžete uplatnit přímo v aplikaci.</p>
 <h2>3. Údaje, které zpracováváme</h2>
 <h3>3.1 Pouze lokální data</h3>
 <p><strong>Údaje o očkování</strong> (profily členů rodiny, očkování, data, poznámky, fotografie očkovacího průkazu/nálepky) jsou uloženy <strong>pouze lokálně na vašem zařízení</strong>, v šifrovaném MMKV úložišti (klíč je generován náhodně a uchováván v Apple Keychain / Android Keystore). Tyto údaje nikdy neposíláme na naše servery ani žádné třetí straně.</p>
@@ -91,13 +91,12 @@
 <li>verze aplikace a číslo sestavení.</li>
 </ul>
 <p>Sentry <strong>nesbírá</strong> váš obsah (záznamy, soubory, očkovací záznamy, fotografie, archivy), uživatelská jména ani jiné PII. Diagnostická data jsou společností Sentry uchovávána po dobu až <strong>90 dnů</strong>.</p>
-<h3>3.4 Reklama (AdMob)</h3>
-<p>Moje Szczepienia zobrazuje neinvazivní reklamy pouze v Nastavení (žádné reklamy na obrazovkách s údaji o očkování). Reklamy jsou doručovány službou <strong>Google AdMob</strong>, jejíž SDK shromažďuje:</p>
+<h3>3.4 Reklama (Unity Ads)</h3>
+<p>Moje Szczepienia zobrazuje neinvazivní reklamy pouze v Nastavení (žádné reklamy na obrazovkách s údaji o očkování). Reklamy jsou doručovány službou <strong>Unity Ads</strong>, jejíž SDK shromažďuje:</p>
 <ul>
 <li><strong>Advertising ID</strong> (Android Advertising ID / Apple IDFA), sdílené se společností Google pro zobrazování reklam;</li>
 <li>diagnostická data (model zařízení, lokalita na úrovni země, jazyk).</li>
 </ul>
-<p>Ads may also be served by AdMob mediation partners: Meta Platforms, Inc. (<a href="https://www.facebook.com/privacy/policy/">Meta Audience Network</a>) and Unity Technologies (<a href="https://unity.com/legal/privacy-policy">Unity Ads</a>).</p>
 <p>Výchozí režim je <strong>nepersonalizovaná reklama</strong>. Na iOS se před použitím jakéhokoli identifikátoru pro sledování zobrazí výzva App Tracking Transparency (ATT) k udělení vašeho souhlasu; na Androidu ovládáte Advertising ID v systémovém Nastavení. Reklamy lze trvale zakázat prostřednictvím Lifetime / Premium IAP.</p>
 <h3>3.5 Nákupy v aplikaci (IAP)</h3>
 <p>Moje Szczepienia nabízí placené funkce prostřednictvím Apple In-App Purchase (iOS) a Google Play Billing (Android). Když provedete nákup:</p>
@@ -129,7 +128,7 @@
 <li><strong>Spouštění aplikace na vašem zařízení</strong> — lokální úložiště a (tam, kde je přítomno) šifrování umožňují uchování vašich dat mezi relacemi.</li>
 <li><strong>Synchronizace vašich vlastních dat napříč vašimi vlastními zařízeními</strong> — prostřednictvím vašeho vlastního iCloud / Google Drive AppFolder; tato data nevidíme.</li>
 <li><strong>Zlepšení stability</strong> — diagnostika Sentry pomáhá opravovat pády, které ovlivňují vaše používání.</li>
-<li><strong>Udržení bezplatné verze</strong> — AdMob doručuje neinvazivní reklamy pro financování uživatelů, kteří si nekupují prémiovou verzi.</li>
+<li><strong>Udržení bezplatné verze</strong> — Unity Ads doručuje neinvazivní reklamy pro financování uživatelů, kteří si nekupují prémiovou verzi.</li>
 <li><strong>Zpracování nákupů</strong> — fakturace Apple / Google plní prémiová oprávnění, která se rozhodnete zakoupit.</li>
 </ul>
 <h2>5. Právní základ (čl. 6 GDPR)</h2>
@@ -145,8 +144,6 @@
 <table>
 <thead><tr><th>Příjemce</th><th>Účel</th><th>Kategorie dat</th><th>Zásady ochrany osobních údajů</th></tr></thead>
 <tbody>
-<tr><td>Google LLC (AdMob)</td><td>Zobrazování reklam</td><td>Advertising ID, metriky zařízení a reklam</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Meta Platforms, Inc. (Meta Audience Network)</td><td>Zobrazování reklam</td><td>Advertising ID, metriky zařízení a reklam</td><td><a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></td></tr>
 <tr><td>Unity Technologies (Unity Ads)</td><td>Zobrazování reklam</td><td>Advertising ID, metriky zařízení a reklam</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>Hlášení pádů</td><td>Trasování zásobníku chyb, metadata zařízení</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>Zpracování nákupů v aplikaci na iOS</td><td>Token nákupu, oprávnění na úrovni účtu</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
@@ -169,7 +166,7 @@
 <tbody>
 <tr><td>Vaše data v aplikaci</td><td>Pouze na vašem zařízení (šifrovaná)</td><td>Dokud je nesmažete, neodinstalujete aplikaci nebo nevymažete data aplikace</td></tr>
 <tr><td>Data synchronizace ve vašem iCloud / Google Drive</td><td>Váš vlastní účet Apple / Google</td><td>Dokud neodstraníte data aplikace z vašeho iCloud / Drive</td></tr>
-<tr><td>Advertising ID</td><td>Systémy Google AdMob</td><td>Dle zásad uchovávání dat společnosti Google (obvykle až 14 měsíců pro metriky reklam)</td></tr>
+<tr><td>Advertising ID</td><td>Systémy Unity Ads</td><td>Dle zásad uchovávání dat společnosti Unity</td></tr>
 <tr><td>Sentry crash data</td><td>Systémy Sentry</td><td>Až 90 dnů od události</td></tr>
 <tr><td>Token nákupu / účtenka IAP</td><td>Vaše zařízení + Apple / Google</td><td>Dokud neodinstalujete; Apple / Google uchovávají záznamy o transakcích dle svých vlastních zásad</td></tr>
 </tbody></table>
@@ -202,8 +199,8 @@
 </ul>
 <p>Žádný systém není 100% bezpečný; udržujte své zařízení aktualizované a používejte silné zámky zařízení.</p>
 <h2>13. App Tracking Transparency (iOS) a Advertising ID</h2>
-<p>Na iOS, předtím než AdMob použije jakýkoli identifikátor pro sledování, Moje Szczepienia zobrazí systémovou výzvu <strong>App Tracking Transparency</strong>. Pokud odmítnete, Moje Szczepienia bude zobrazovat pouze nepersonalizované reklamy.</p>
-<p>Na Androidu můžete resetovat nebo omezit své Advertising ID v <strong>Nastavení → Google → Reklamy</strong>. Zvolení „Smazat reklamní ID“ zabrání AdMob v používání osobního identifikátoru; nepersonalizované reklamy se budou nadále zobrazovat.</p>
+<p>Na iOS, předtím než Unity Ads použije jakýkoli identifikátor pro sledování, Moje Szczepienia zobrazí systémovou výzvu <strong>App Tracking Transparency</strong>. Pokud odmítnete, Moje Szczepienia bude zobrazovat pouze nepersonalizované reklamy.</p>
+<p>Na Androidu můžete resetovat nebo omezit své Advertising ID v <strong>Nastavení → Google → Reklamy</strong>. Zvolení „Smazat reklamní ID“ zabrání Unity Ads v používání osobního identifikátoru; nepersonalizované reklamy se budou nadále zobrazovat.</p>
 <h2>14. Nákupy v aplikaci</h2>
 <p>Moje Szczepienia nabízí následující produkty v aplikaci prostřednictvím Apple App Store a Google Play: doživotní prémiové odemknutí, volitelná spropitné, volitelné roční předplatné.</p>
 <p>Všechna platební data zpracovávají <strong>Apple Inc.</strong> (App Store / účet iTunes) nebo <strong>Google LLC</strong> (Play Billing). Nikdy nevidíme číslo vaší karty, vaši fakturační adresu ani váš plný Apple ID / Google účet. Apple a Google vrací pouze neprůhledný token nákupu a metadata oprávnění, které používáme k odemknutí funkcí. Předplatné lze kdykoli zrušit v Nastavení iOS → Apple ID → Předplatná nebo v aplikaci Google Play → Předplatná; pravidla zrušení se řídí společností Apple / Google.</p>
