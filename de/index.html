@@ -70,7 +70,7 @@
     </div>
 
 <h1>Datenschutzerklärung — Moje Szczepienia</h1>
-<p>Zuletzt aktualisiert: 2026-05-06 · Gültigkeitsdatum: 2026-05-06</p>
+<p>Zuletzt aktualisiert: 2026-09-15 · Gültigkeitsdatum: 2026-05-06</p>
 <h2>1. Wer wir sind</h2>
 <p><strong>Moje Szczepienia</strong> ist ein mobiler <strong>Impfplaner</strong> für Familien: ein Kalender, eine Historie und Erinnerungen für Impfungen von Familienmitgliedern. Die App dient <strong>ausschließlich zu Informations- und Organisationszwecken</strong> — sie diagnostiziert, behandelt oder verhindert keine Krankheiten und ersetzt keine medizinische Beratung. Alle Impfeinträge werden <strong>lokal auf Ihrem Gerät</strong> in verschlüsseltem Speicher abgelegt; es werden keine medizinischen Daten an unsere Server gesendet.</p>
 <p><strong>Verantwortlicher:</strong> Maciej Siemiński — der Entwickler von Moje Szczepienia. <strong>Kontakt:</strong> <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a></p>
@@ -82,7 +82,7 @@
 <h3>3.1 Nur-lokale Daten</h3>
 <p><strong>Impfdaten</strong> (Familienmitgliederprofile, Impfungen, Daten, Notizen, Fotos des Impfbuchs/-aufklebers) werden <strong>nur lokal auf Ihrem Gerät</strong> in verschlüsseltem MMKV-Speicher abgelegt (der Schlüssel wird zufällig generiert und im Apple Keychain / Android Keystore aufbewahrt). Wir senden diese Daten niemals an unsere Server oder an Dritte.</p>
 <h3>3.2 Optionale Synchronisierung (Ihr eigenes iCloud / Google Drive)</h3>
-<p>Moje Szczepienia kann eine optionale Synchronisierung zwischen Ihren eigenen Geräten über <strong>Ihre eigenen</strong> iCloud (iOS) oder Google Drive AppFolder (Android) Konten anbieten. <strong>Ihre Daten verbleiben auf Ihrem Apple / Google Konto – sie erreichen niemals unsere Server.</strong> Die App speichert Daten im dedizierten AppFolder-Bereich, der privat für die App ist und nur von Ihnen zugänglich ist. Sie können die Synchronisierung jederzeit in den Einstellungen deaktivieren; das Deaktivieren der Synchronisierung stoppt weitere Uploads, löscht jedoch keine Inhalte, die sich bereits in Ihrem iCloud / Google Drive befinden.</p>
+<p>Moje Szczepienia kann eine optionale verschlüsselte Sicherung anbieten, die mit Ihrem Konto verknüpft ist. Nach der Anmeldung mit Apple oder Google wird eine verschlüsselte Kopie Ihrer Daten auf unserem Server gespeichert. <strong>Der Schlüssel wird auf Ihrem Gerät aus Ihren Wiederherstellungswörtern abgeleitet und niemals an uns gesendet, daher können wir diese Kopie nicht lesen.</strong> Sie können Daten auch direkt zwischen Ihren eigenen Geräten synchronisieren: Dieser Kanal ist Ende-zu-Ende-verschlüsselt, und unser Relay sieht ausschließlich Chiffretext. Unabhängig davon können Sie eine verschlüsselte Datei exportieren und dort ablegen, wo Sie möchten, zum Beispiel in iCloud Drive, Google Drive oder Dateien. Die Kontosicherung ist optional; Sie können sie jederzeit in den Einstellungen deaktivieren, was weitere Uploads stoppt, und das Löschen Ihres Kontos in der App entfernt die gespeicherte Kopie von unserem Server.</p>
 <h3>3.3 Diagnosedaten (Sentry)</h3>
 <p>Moje Szczepienia integriert Sentry (sentry.io) für Absturz- und Fehlerberichte. Sentry sammelt:</p>
 <ul>
@@ -192,7 +192,7 @@
 <h2>12. Sicherheit</h2>
 <ul>
 <li><strong>Lokal verschlüsselter Speicher im Ruhezustand</strong> – Impfeinträge, Profile und Erinnerungen werden in MMKV mit einem vom Gerät abgeleiteten Verschlüsselungsschlüssel gespeichert, der im Apple Keychain (iOS) / Android Keystore (Android) aufbewahrt wird. Der Schlüssel verlässt niemals Ihr Gerät.</li>
-<li><strong>Keine Netzwerkübertragung medizinischer Daten</strong> – Impfeinträge werden niemals über das Netzwerk an unsere Server gesendet. Der einzige optionale Cloud-Berührungspunkt ist Ihr <strong>eigenes</strong> iCloud / Google Drive AppFolder, auf das nur Sie zugreifen können.</li>
+<li><strong>Wir können Ihre Impfdaten nicht lesen</strong> – Einträge werden lokal gespeichert und verlassen Ihr Gerät ausschließlich als Chiffretext, und nur wenn Sie die Kontosicherung oder die Gerät-zu-Gerät-Synchronisierung aktivieren. Der Schlüssel bleibt auf Ihrem Gerät, sodass weder wir noch jemand, der die Daten weiterleitet, sie entschlüsseln kann.</li>
 <li><strong>Keine HealthKit- / Health Connect-Integration</strong> – wir lesen oder schreiben nicht in System-Gesundheitsspeicher; Impfeinträge sind lediglich vom Benutzer eingegebene Organisationsdaten.</li>
 <li><strong>Transportsicherheit</strong> – alle Netzwerkaufrufe (Aktualisierung von Impfstoff-Referenzdaten, Werbung, IAP) verwenden HTTPS / TLS 1.2+.</li>
 <li><strong>Datenminimierung</strong> – wir sammeln nur das, was für die genannten organisatorischen Zwecke erforderlich ist.</li>

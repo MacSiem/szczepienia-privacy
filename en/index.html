@@ -70,7 +70,7 @@
     </div>
 
 <h1>Privacy Policy — Moje Szczepienia</h1>
-<p>Last updated: 2026-08-12 · Effective date: 2026-05-06</p>
+<p>Last updated: 2026-09-15 · Effective date: 2026-05-06</p>
 <h2>1. Who we are</h2>
 <p><strong>Moje Szczepienia</strong> is a mobile <strong>vaccination organizer</strong> for families: a calendar, history, and reminders for vaccinations of family members. The app is <strong>informational and organizational only</strong> — it does not diagnose, treat, prevent illness, nor replace medical consultation. All vaccination entries are stored <strong>locally on your device</strong> in encrypted storage; no medical data is sent to our servers.</p>
 <p><strong>Data controller:</strong> Maciej Siemiński — the developer of Moje Szczepienia. <strong>Contact:</strong> <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a></p>
@@ -82,7 +82,7 @@
 <h3>3.1 Local-only data</h3>
 <p><strong>Vaccination data</strong> (family member profiles, vaccinations, dates, notes, photos of the vaccination booklet/sticker) are stored <strong>only locally on your device</strong>, in encrypted MMKV storage (key generated randomly and kept in Apple Keychain / Android Keystore). We never send this data to our servers or to any third party.</p>
 <h3>3.2 Optional sync (your own iCloud / Google Drive)</h3>
-<p>Moje Szczepienia may offer optional sync between your own devices using <strong>your own</strong> iCloud (iOS) or Google Drive AppFolder (Android) accounts. <strong>Your data stays on your Apple / Google account — it never reaches our servers.</strong> The app stores data in the dedicated AppFolder area, which is private to the app and accessible only by you. You can disable sync at any time in Settings; disabling sync stops further uploads but does not delete content already in your iCloud / Google Drive.</p>
+<p>Moje Szczepienia may offer an optional encrypted backup tied to your account. After you sign in with Apple or Google, an encrypted copy of your data is stored on our server. <strong>The encryption key is derived from your recovery words on your device and is never sent to us, so we cannot read that copy.</strong> You can also sync directly between your own devices: that channel is end-to-end encrypted and our relay only ever sees ciphertext. Separately, you can export an encrypted file and keep it wherever you choose, for example iCloud Drive, Google Drive or Files. Account backup is optional; you can disable it at any time in Settings, which stops further uploads, and deleting your account in the app removes the stored copy from our server.</p>
 <h3>3.3 Diagnostic data (Sentry)</h3>
 <p>Moje Szczepienia integrates Sentry (sentry.io) for crash and error reporting. Sentry collects:</p>
 <ul>
@@ -192,7 +192,7 @@
 <h2>12. Security</h2>
 <ul>
 <li><strong>Encrypted-at-rest local storage</strong> — vaccination entries, profiles, and reminders are stored in MMKV with a device-derived encryption key kept in Apple Keychain (iOS) / Android Keystore (Android). The key never leaves your device.</li>
-<li><strong>No medical-data network transmission</strong> — vaccination entries are never sent over the network to our servers. The only optional cloud touch-point is your <strong>own</strong> iCloud / Google Drive AppFolder, which only you can access.</li>
+<li><strong>We cannot read your vaccination data</strong> — entries are stored locally and leave your device only as ciphertext, and only if you turn on account backup or device-to-device sync. The encryption key stays on your device, so neither we nor anyone relaying the data can decrypt it.</li>
 <li><strong>No HealthKit / Health Connect integration</strong> — we do not read from or write to system health stores; vaccination entries are user-typed organizational data only.</li>
 <li><strong>Transport security</strong> — all network calls (remote vaccine reference data refresh, ads, IAP) use HTTPS / TLS 1.2+.</li>
 <li><strong>Minimization</strong> — we collect only what is required for the listed organizational purposes.</li>

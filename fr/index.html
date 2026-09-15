@@ -70,7 +70,7 @@
     </div>
 
 <h1>Politique de Confidentialité — Moje Szczepienia</h1>
-<p>Dernière mise à jour : 2026-05-06 · Date d'entrée en vigueur : 2026-05-06</p>
+<p>Dernière mise à jour : 2026-09-15 · Date d'entrée en vigueur : 2026-05-06</p>
 <h2>1. Qui nous sommes</h2>
 <p><strong>Moje Szczepienia</strong> est un <strong>organisateur de vaccinations</strong> mobile pour les familles : un calendrier, un historique et des rappels pour les vaccinations des membres de la famille. L'application est <strong>uniquement informationnelle et organisationnelle</strong> — elle ne diagnostique, ne traite, ne prévient aucune maladie et ne remplace pas une consultation médicale. Toutes les entrées de vaccination sont stockées <strong>localement sur votre appareil</strong> dans un stockage chiffré ; aucune donnée médicale n'est envoyée à nos serveurs.</p>
 <p><strong>Responsable du traitement des données :</strong> Maciej Siemiński — le développeur de Moje Szczepienia. <strong>Contact :</strong> <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a></p>
@@ -82,7 +82,7 @@
 <h3>3.1 Données uniquement locales</h3>
 <p>Les <strong>données de vaccination</strong> (profils des membres de la famille, vaccinations, dates, notes, photos du carnet de vaccination/autocollant) sont stockées <strong>uniquement localement sur votre appareil</strong>, dans un stockage MMKV chiffré (clé générée aléatoirement et conservée dans le Trousseau Apple / Android Keystore). Nous n'envoyons jamais ces données à nos serveurs ou à un tiers.</p>
 <h3>3.2 Synchronisation facultative (votre propre iCloud / Google Drive)</h3>
-<p>Moje Szczepienia peut proposer une synchronisation facultative entre vos propres appareils en utilisant <strong>vos propres</strong> comptes iCloud (iOS) ou Google Drive AppFolder (Android). <strong>Vos données restent sur votre compte Apple / Google — elles n'atteignent jamais nos serveurs.</strong> L'application stocke les données dans la zone AppFolder dédiée, qui est privée pour l'application et accessible uniquement par vous. Vous pouvez désactiver la synchronisation à tout moment dans les Paramètres ; la désactivation de la synchronisation arrête les téléchargements futurs mais ne supprime pas le contenu déjà présent dans votre iCloud / Google Drive.</p>
+<p>Moje Szczepienia peut proposer une sauvegarde chiffrée facultative liée à votre compte. Après connexion avec Apple ou Google, une copie chiffrée de vos données est stockée sur notre serveur. <strong>La clé de chiffrement est dérivée de vos mots de récupération sur votre appareil et ne nous est jamais transmise, nous ne pouvons donc pas lire cette copie.</strong> Vous pouvez également synchroniser directement entre vos propres appareils : ce canal est chiffré de bout en bout et notre relais ne voit que du texte chiffré. Par ailleurs, vous pouvez exporter un fichier chiffré et le conserver où vous le souhaitez, par exemple dans iCloud Drive, Google Drive ou Fichiers. La sauvegarde de compte est facultative ; vous pouvez la désactiver à tout moment dans les réglages, ce qui arrête les envois suivants, et la suppression de votre compte dans l'application efface la copie stockée sur notre serveur.</p>
 <h3>3.3 Données de diagnostic (Sentry)</h3>
 <p>Moje Szczepienia intègre Sentry (sentry.io) pour les rapports de plantage et d'erreur. Sentry collecte :</p>
 <ul>
@@ -192,7 +192,7 @@
 <h2>12. Sécurité</h2>
 <ul>
 <li><strong>Stockage local chiffré au repos</strong> — les entrées de vaccination, les profils et les rappels sont stockés dans MMKV avec une clé de chiffrement dérivée de l'appareil et conservée dans le Trousseau Apple (iOS) / Android Keystore (Android). La clé ne quitte jamais votre appareil.</li>
-<li><strong>Pas de transmission de données médicales sur le réseau</strong> — les entrées de vaccination ne sont jamais envoyées sur le réseau à nos serveurs. Le seul point de contact cloud facultatif est votre <strong>propre</strong> iCloud / Google Drive AppFolder, auquel vous seul pouvez accéder.</li>
+<li><strong>Nous ne pouvons pas lire vos données de vaccination</strong> — les entrées sont stockées localement et ne quittent votre appareil que sous forme chiffrée, et uniquement si vous activez la sauvegarde de compte ou la synchronisation entre appareils. La clé de chiffrement reste sur votre appareil, de sorte que ni nous ni quiconque relayant les données ne peut les déchiffrer.</li>
 <li><strong>Pas d'intégration HealthKit / Health Connect</strong> — nous ne lisons ni n'écrivons dans les magasins de santé du système ; les entrées de vaccination sont uniquement des données organisationnelles saisies par l'utilisateur.</li>
 <li><strong>Sécurité du transport</strong> — tous les appels réseau (actualisation des données de référence des vaccins à distance, publicités, IAP) utilisent HTTPS / TLS 1.2+.</li>
 <li><strong>Minimisation</strong> — nous ne collectons que ce qui est nécessaire aux fins organisationnelles listées.</li>

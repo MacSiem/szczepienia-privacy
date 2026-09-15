@@ -70,7 +70,7 @@
     </div>
 
 <h1>Polityka prywatności — Moje Szczepienia</h1>
-<p>Ostatnia aktualizacja: 2026-08-12 · Data wejścia w życie: 2026-05-06</p>
+<p>Ostatnia aktualizacja: 2026-09-15 · Data wejścia w życie: 2026-05-06</p>
 <h2>1. Kim jesteśmy</h2>
 <p><strong>Moje Szczepienia</strong> to mobilny <strong>organizer szczepień</strong> dla rodziny: kalendarz, historia i przypomnienia o szczepieniach członków rodziny. Aplikacja ma charakter <strong>informacyjny i organizacyjny</strong> — nie diagnozuje, nie leczy, nie zapobiega chorobom ani nie zastępuje konsultacji medycznej. Wszystkie wpisy szczepień są przechowywane <strong>lokalnie na Twoim urządzeniu</strong> w zaszyfrowanym storage; żadne dane medyczne nie są wysyłane na nasze serwery.</p>
 <p><strong>Administrator danych:</strong> Maciej Siemiński — twórca aplikacji Moje Szczepienia. <strong>Kontakt:</strong> <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a></p>
@@ -82,7 +82,7 @@
 <h3>3.1 Dane wyłącznie lokalne</h3>
 <p><strong>Dane szczepień</strong> (profile członków rodziny, szczepienia, daty, notatki, zdjęcia książeczki/naklejki) są przechowywane <strong>wyłącznie lokalnie na Twoim urządzeniu</strong>, w zaszyfrowanym storage MMKV (klucz wygenerowany losowo i trzymany w Apple Keychain / Android Keystore). Nigdy nie przekazujemy tych danych na nasze serwery ani do osób trzecich.</p>
 <h3>3.2 Opcjonalna synchronizacja (Twoje własne iCloud / Google Drive)</h3>
-<p>Moje Szczepienia może oferować opcjonalną synchronizację między Twoimi własnymi urządzeniami przy użyciu <strong>Twojego</strong> konta iCloud (iOS) lub Google Drive AppFolder (Android). <strong>Twoje dane pozostają na Twoim koncie Apple / Google — nigdy nie trafiają na nasze serwery.</strong> Aplikacja zapisuje dane w dedykowanym obszarze AppFolder, który jest prywatny dla aplikacji i dostępny tylko dla Ciebie. Synchronizację możesz wyłączyć w dowolnym momencie w ustawieniach; wyłączenie zatrzymuje dalsze uploady, ale nie usuwa treści już znajdujących się w Twoim iCloud / Drive.</p>
+<p>Moje Szczepienia może oferować opcjonalną zaszyfrowaną kopię powiązaną z Twoim kontem. Po zalogowaniu się kontem Apple lub Google zaszyfrowana kopia Twoich danych jest przechowywana na naszym serwerze. <strong>Klucz szyfrujący powstaje z Twoich słów odzyskiwania na Twoim urządzeniu i nigdy do nas nie trafia, więc nie jesteśmy w stanie odczytać tej kopii.</strong> Możesz też synchronizować dane bezpośrednio między swoimi urządzeniami — ten kanał jest szyfrowany od końca do końca, a nasz pośrednik widzi wyłącznie szyfrogram. Niezależnie od tego możesz wyeksportować zaszyfrowany plik i trzymać go tam, gdzie chcesz, na przykład w iCloud Drive, na Dysku Google albo w Plikach. Kopia na koncie jest opcjonalna; możesz ją wyłączyć w dowolnym momencie w ustawieniach, co zatrzymuje dalsze uploady, a usunięcie konta w aplikacji kasuje przechowywaną kopię z naszego serwera.</p>
 <h3>3.3 Dane diagnostyczne (Sentry)</h3>
 <p>Moje Szczepienia integruje Sentry (sentry.io) do raportowania awarii i błędów. Sentry zbiera:</p>
 <ul>
@@ -192,7 +192,7 @@
 <h2>12. Bezpieczeństwo</h2>
 <ul>
 <li><strong>Lokalna pamięć szyfrowana at-rest</strong> — wpisy szczepień, profile i przypomnienia są zapisane w MMKV z kluczem szyfrującym wyprowadzanym z urządzenia, trzymanym w Apple Keychain (iOS) / Android Keystore (Android). Klucz nigdy nie opuszcza Twojego urządzenia.</li>
-<li><strong>Brak transmisji danych medycznych przez sieć</strong> — wpisy szczepień nigdy nie są wysyłane przez sieć na nasze serwery. Jedyny opcjonalny punkt styku z chmurą to <strong>Twoje</strong> iCloud / Google Drive AppFolder, do których dostęp masz tylko Ty.</li>
+<li><strong>Nie jesteśmy w stanie odczytać Twoich danych szczepień</strong> — wpisy są przechowywane lokalnie i opuszczają urządzenie wyłącznie jako szyfrogram, i tylko jeśli włączysz kopię na koncie albo synchronizację między urządzeniami. Klucz szyfrujący zostaje na Twoim urządzeniu, więc ani my, ani nikt pośredniczący w transmisji nie jest w stanie ich odszyfrować.</li>
 <li><strong>Brak integracji z HealthKit / Health Connect</strong> — nie czytamy ani nie zapisujemy danych w systemowych magazynach zdrowia; wpisy szczepień są wyłącznie wprowadzanymi przez użytkownika danymi organizacyjnymi.</li>
 <li><strong>Bezpieczeństwo transportu</strong> — wszystkie połączenia sieciowe (odświeżenie referencyjnych danych szczepień, reklamy, IAP) używają HTTPS / TLS 1.2+.</li>
 <li><strong>Minimalizacja</strong> — zbieramy wyłącznie dane niezbędne do wymienionych celów organizacyjnych.</li>
