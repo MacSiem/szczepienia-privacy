@@ -70,19 +70,23 @@
     </div>
 
 <h1>Fortrolighedspolitik — Moje Szczepienia</h1>
-<p>Sidst opdateret: 2026-05-06 · Ikrafttrædelsesdato: 2026-05-06</p>
+<p>Sidst opdateret: 2026-09-16 · Ikrafttrædelsesdato: 2026-05-06</p>
 <h2>1. Hvem vi er</h2>
-<p><strong>Moje Szczepienia</strong> er en mobil <strong>vaccinationsorganisator</strong> for familier: en kalender, historik og påmindelser for familiemedlemmers vaccinationer. Appen er <strong>kun til informations- og organisationsformål</strong> — den diagnosticerer, behandler eller forebygger ikke sygdom, og erstatter heller ikke medicinsk konsultation. Alle vaccinationsoplysninger gemmes <strong>lokalt på din enhed</strong> i krypteret lagring; ingen medicinske data sendes til vores servere.</p>
+<p><strong>Moje Szczepienia</strong> er en mobil <strong>vaccinationsorganisator</strong> for familier: en kalender, historik og påmindelser for familiemedlemmers vaccinationer. Appen er <strong>kun til informations- og organisationsformål</strong> — den diagnosticerer, behandler eller forebygger ikke sygdom, og erstatter heller ikke medicinsk konsultation. Alle vaccinationsoplysninger gemmes <strong>lokalt på din enhed</strong> i krypteret lagring; ingen læsbare medicinske data sendes nogensinde til vores servere. Det, der passerer gennem vores servere, er anført i afsnit 3.2: valgfrie loginoplysninger, end-to-end-krypterede synkroniseringsdata, som vi ikke kan dekryptere, og tekniske data, der er nødvendige for at levere meddelelser.</p>
 <p><strong>Dataansvarlig:</strong> Maciej Siemiński — udvikleren af Moje Szczepienia. <strong>Kontakt:</strong> <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a></p>
 <p>For versionen af appen distribueret via Google Play er datakontrolløren LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>Denne Fortrolighedspolitik forklarer, hvilke personoplysninger Moje Szczepienia behandler, hvordan, hvorfor og hvilke rettigheder du har.</p>
 <h2>2. Opsummering i almindeligt sprog</h2>
-<p>Moje Szczepienia er en personlig vaccinationsorganisator — vaccinationsregistre forbliver på din enhed i krypteret lokal lagring. Vi driver ikke en server, der gemmer dine medicinske data. Vi bruger Unity Ads (kun på Indstillinger-skærmen, aldrig på skærme med sundhedsdata), Sentry til rapportering af nedbrud, valgfri synkronisering til din egen iCloud / Google Drev og Apple / Google-fakturering for køb i appen. Appen er <strong>ikke et medicinsk udstyr</strong> og giver <strong>ikke</strong> diagnose, behandling eller medicinske anbefalinger. Du har fulde GDPR-rettigheder, herunder adgang, sletning og dataportabilitet — de fleste kan udøves direkte i appen.</p>
+<p>Moje Szczepienia er en personlig vaccinationsorganisator — vaccinationsregistre forbliver på din enhed i krypteret lokal lagring. Vi driver ikke en server, der gemmer læsbare medicinske data. Vi bruger Unity Ads (kun på Indstillinger-skærmen, aldrig på skærme med sundhedsdata), Sentry til rapportering af nedbrud, en valgfri sikkerhedskopi på dit eget Google Drev, valgfri end-to-end-krypteret synkronisering mellem dine enheder og Apple / Google-fakturering for køb i appen. Appen er <strong>ikke et medicinsk udstyr</strong> og giver <strong>ikke</strong> diagnose, behandling eller medicinske anbefalinger. Du har fulde GDPR-rettigheder, herunder adgang, sletning og dataportabilitet — de fleste kan udøves direkte i appen.</p>
 <h2>3. Data vi behandler</h2>
 <h3>3.1 Kun lokalt lagret data</h3>
-<p><strong>Vaccinationsdata</strong> (familiemedlemsprofiler, vaccinationer, datoer, noter, fotos af vaccinationshæftet/mærkaten) gemmes <strong>kun lokalt på din enhed</strong>, i krypteret MMKV-lagring (nøgle genereret tilfældigt og opbevaret i Apple Keychain / Android Keystore). Vi sender aldrig disse data til vores servere eller til tredjeparter.</p>
-<h3>3.2 Valgfri synkronisering (din egen iCloud / Google Drev)</h3>
-<p>Moje Szczepienia kan tilbyde valgfri synkronisering mellem dine egne enheder ved hjælp af <strong>dine egne</strong> iCloud (iOS) eller Google Drev AppFolder (Android) konti. <strong>Dine data forbliver på din Apple / Google-konto — de når aldrig vores servere.</strong> Appen gemmer data i det dedikerede AppFolder-område, som er privat for appen og kun tilgængeligt for dig. Du kan til enhver tid deaktivere synkronisering under Indstillinger; deaktivering af synkronisering stopper yderligere uploads, men sletter ikke indhold, der allerede er i din iCloud / Google Drev.</p>
+<p><strong>Vaccinationsdata</strong> (familiemedlemsprofiler, vaccinationer, datoer, noter, fotos af vaccinationshæftet/mærkaten) gemmes <strong>lokalt på din enhed</strong>, i krypteret MMKV-lagring (nøgle genereret tilfældigt og opbevaret i Apple Keychain / Android Keystore). Vi sender aldrig disse data i læsbar form til vores servere eller til nogen tredjepart. De forlader kun din enhed, hvis du aktiverer en af de valgfrie funktioner, der er beskrevet i afsnit 3.2.</p>
+<h3>3.2 Valgfri konto, sikkerhedskopi på dit eget Google Drev, synkronisering mellem dine enheder og meddelelser</h3>
+<p><strong>Kontologin.</strong> Du kan logge ind med Apple eller Google. Vores kontotjeneste (hostet af Cloudflare) gemmer derefter et internt bruger-id, id'et for din Apple / Google-konto og din e-mailadresse, hvis udbyderen deler den. Den gemmer ingen vaccinationsdata. Sletning af kontoen i appen fjerner disse oplysninger.</p>
+<p><strong>Sikkerhedskopi på dit eget Google Drev.</strong> Hvis du tilknytter en Google-konto, opbevarer appen en krypteret sikkerhedskopi af dine data, herunder fotos af vaccinationshæftet, i dens private appmappe på <strong>dit</strong> Google Drev. Mappen er skjult, kun denne app har adgang til den, og appen kan ikke se nogen af dine andre Drev-filer. Krypteringsnøglen opbevares i den samme private mappe, så på en ny telefon gendanner du dine data blot ved at logge ind med Google — ingen gendannelsesord er nødvendige. Dette betyder også, at Google, som lagringsudbyder, teknisk set er i stand til at få adgang til sikkerhedskopien, ligesom med alle andre data på din Google-konto. <strong>Ingen kopi af dine data gemmes på vores servere.</strong> Du kan slå sikkerhedskopien fra under Indstillinger, hvilket stopper yderligere uploads. For at slette selve sikkerhedskopien skal du fjerne appens skjulte data i Google Drev (Indstillinger → Administrer apps).</p>
+<p><strong>Synkronisering mellem dine enheder.</strong> Hvis du parrer enheder, rejser registreringer mellem dem end-to-end-krypteret gennem vores relæ (hostet af Cloudflare). Relæet gemmer kun krypterede data, som det ikke kan dekryptere, sammen med push-meddelelsestokens fra de parrede enheder, indtil du ophæver parringen eller i op til 365 dage efter den sidste aktivitet. Meddelelser om nye registreringer leveres via Expo push service og indeholder ingen vaccinationsdata.</p>
+<p><strong>Meddelelser og notifikationer.</strong> For at vise meddelelser i appen og sende notifikationer registrerer appen sig hos vores notifikationstjeneste (hostet af Cloudflare) med en tilfældig installationsidentifikator, et push-meddelelsestoken, platform, sprog, appversion, udgivelseskanal, og om Premium er aktivt. Dette indeholder ingen vaccinationsdata og opbevares, indtil du beder os om at slette det.</p>
+<p><strong>Krypteret fil.</strong> Du kan også eksportere en krypteret sikkerhedskopifil og opbevare den, hvor du vil, for eksempel iCloud Drive, Google Drev eller Filer.</p>
 <h3>3.3 Diagnostiske data (Sentry)</h3>
 <p>Moje Szczepienia integrerer Sentry (sentry.io) til rapportering af nedbrud og fejl. Sentry indsamler:</p>
 <ul>
@@ -116,7 +120,7 @@
 <p>Hver tilladelse anmodes om kontekstuelt. Du kan nægte enhver tilladelse og stadig bruge kernefunktionerne (hvor relevant).</p>
 <h3>3.7 Hvad vi IKKE indsamler</h3>
 <ul>
-<li>Dit navn, e-mail, telefonnummer, adresse (ingen konto er påkrævet).</li>
+<li>Dit navn, telefonnummer eller adresse. En konto er ikke påkrævet; din e-mailadresse behandles kun, hvis du vælger at logge ind (afsnit 3.2).</li>
 <li>Kontaktliste, kalender, SMS, opkaldslister.</li>
 <li>Præcis placering.</li>
 <li>Browserhistorik uden for appen.</li>
@@ -126,7 +130,7 @@
 <h2>4. Hvorfor vi behandler disse data (formål)</h2>
 <ul>
 <li><strong>Køre appen på din enhed</strong> — lokal lagring og (hvor relevant) kryptering lader dine data bevares mellem sessioner.</li>
-<li><strong>Synkronisere dine egne data på tværs af dine egne enheder</strong> — via din egen iCloud / Google Drev AppFolder; vi ser ikke disse data.</li>
+<li><strong>Sikkerhedskopiere og synkronisere dine egne data</strong> — en sikkerhedskopi på dit eget Google Drev og end-to-end-krypteret synkronisering mellem dine egne enheder; vi kan ikke læse disse data.</li>
 <li><strong>Forbedre stabilitet</strong> — Sentry-diagnostik hjælper med at rette nedbrud, der påvirker din brug.</li>
 <li><strong>Opretholde den gratis version</strong> — Unity Ads leverer ikke-invasive annoncer for at finansiere brugere, der ikke køber premium.</li>
 <li><strong>Behandle køb</strong> — Apple / Google-fakturering opfylder premium-berettigelser, du vælger at købe.</li>
@@ -134,7 +138,7 @@
 <h2>5. Retsgrundlag (GDPR artikel 6)</h2>
 <p>For brugere i Det Europæiske Økonomiske Samarbejdsområde, Storbritannien og Schweiz:</p>
 <ul>
-<li><strong>Opfyldelse af en kontrakt</strong> (GDPR art. 6, stk. 1, litra b) — drift af appen, behandling af dine køb.</li>
+<li><strong>Opfyldelse af en kontrakt</strong> (GDPR art. 6, stk. 1, litra b) — drift af appen, din valgfrie konto, sikkerhedskopi og enhed-til-enhed-synkronisering, meddelelser, behandling af dine køb.</li>
 <li><strong>Legitim interesse</strong> (GDPR art. 6, stk. 1, litra f) — Sentry-diagnostik, forebyggelse af svindel/misbrug, ikke-personaliserede annoncer. Vores interesse er at forbedre stabiliteten og opretholde den gratis version; dette tilsidesætter ikke dine grundlæggende rettigheder.</li>
 <li><strong>Samtykke</strong> (GDPR art. 6, stk. 1, litra a) — personaliserede annoncer, hvor du giver samtykke via ATT-prompten (iOS) eller i app-indstillinger. Du kan til enhver tid trække dit samtykke tilbage uden at påvirke tidligere behandling.</li>
 <li><strong>Retlig forpligtelse</strong> (GDPR art. 6, stk. 1, litra c) — kun når vi skal reagere på en lovlig anmodning fra myndigheder.</li>
@@ -148,8 +152,9 @@
 <tr><td>Functional Software Inc. (Sentry)</td><td>Rapportering af nedbrud</td><td>Stack-sporinger, enhedsmetadata</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>Behandling af køb i appen på iOS</td><td>Købstoken, berettigelse på kontoniveau</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
 <tr><td>Google LLC (Play Billing)</td><td>Behandling af køb i appen på Android</td><td>Købstoken, berettigelse på kontoniveau</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Apple Inc. (iCloud)</td><td>Valgfri synkronisering til din egen iCloud-konto (iOS)</td><td>Krypterede appdata i din private CloudKit-container</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
-<tr><td>Google LLC (Drive AppFolder)</td><td>Valgfri synkronisering til din egen Drev (Android)</td><td>Krypterede appdata i din private AppFolder</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
+<tr><td>Google LLC (Google Drev)</td><td>Valgfri sikkerhedskopi på dit eget Google Drev (iOS og Android)</td><td>Krypterede appdata og dens krypteringsnøgle i appens private mappe</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
+<tr><td>Cloudflare, Inc.</td><td>Hosting af kontologin, relæet til enhed-til-enhed-synkronisering og notifikationstjenesten</td><td>Kontoidentifikatorer og e-mail; end-to-end-krypterede synkroniseringsdata; installationsidentifikator, push-tokens og appoplysninger</td><td><a href="https://www.cloudflare.com/privacypolicy/">https://www.cloudflare.com/privacypolicy/</a></td></tr>
+<tr><td>650 Industries, Inc. (Expo push service)</td><td>Levering af meddelelser</td><td>Push-token, meddelelsestekst uden vaccinationsdata</td><td><a href="https://expo.dev/privacy">https://expo.dev/privacy</a></td></tr>
 </tbody></table>
 <p>Vi kan videregive data, hvis det kræves af en gyldig retskendelse eller anden bindende retlig proces, efter at have verificeret anmodningen og underrettet dig, hvor det er lovligt.</p>
 <h2>7. Internationale overførsler</h2>
@@ -165,7 +170,10 @@
 <thead><tr><th>Data</th><th>Hvor det opbevares</th><th>Hvor længe</th></tr></thead>
 <tbody>
 <tr><td>Dine data i appen</td><td>Kun din enhed (krypteret)</td><td>Indtil du sletter det, afinstallerer appen eller rydder appdata</td></tr>
-<tr><td>Synkroniseringsdata i din iCloud / Google Drev</td><td>Din egen Apple / Google-konto</td><td>Indtil du fjerner appens data fra din iCloud / Drev</td></tr>
+<tr><td>Sikkerhedskopi på dit Google Drev</td><td>Appens private mappe på din Google-konto</td><td>Indtil du fjerner appens skjulte data i Google Drev</td></tr>
+<tr><td>Loginoplysninger til konto</td><td>Vores kontotjeneste (Cloudflare)</td><td>Indtil du sletter kontoen i appen</td></tr>
+<tr><td>Krypterede data til enhed-til-enhed-synkronisering</td><td>Vores relæ (Cloudflare)</td><td>Indtil du ophæver parringen, eller op til 365 dage efter den sidste aktivitet</td></tr>
+<tr><td>Notifikationsregistrering</td><td>Vores notifikationstjeneste (Cloudflare)</td><td>Indtil du beder os om at slette den</td></tr>
 <tr><td>Annoncerings-ID</td><td>Unity Ads-systemer</td><td>I henhold til Unitys opbevaringspolitik</td></tr>
 <tr><td>Sentry-nedbrudsdata</td><td>Sentry-systemer</td><td>Op til 90 dage fra hændelsen</td></tr>
 <tr><td>IAP-købstoken / kvittering</td><td>Din enhed + Apple / Google</td><td>Indtil du afinstallerer; Apple / Google opbevarer transaktionsregistre i henhold til deres egne politikker</td></tr>
@@ -175,7 +183,7 @@
 <ul>
 <li><strong>Ret til indsigt (GDPR art. 15)</strong> — bekræftelse på, om vi behandler dine data, og en kopi heraf. De fleste af dine data er allerede på din enhed; eksporter fra appen eller skriv til os for resten.</li>
 <li><strong>Ret til berigtigelse (GDPR art. 16)</strong> — rette unøjagtige data. Rediger data direkte i appen.</li>
-<li><strong>Ret til sletning / "ret til at blive glemt" (GDPR art. 17)</strong> — slet alle data via Indstillinger → "Slet alle data", eller ved at afinstallere appen.</li>
+<li><strong>Ret til sletning / "ret til at blive glemt" (GDPR art. 17)</strong> — slet alle data via Indstillinger → "Slet alle data", eller ved at afinstallere appen; slet din konto i appen; fjern sikkerhedskopien fra Google Drev (Indstillinger → Administrer apps); for notifikationsregistreringen, skriv til os.</li>
 <li><strong>Ret til begrænsning af behandling (GDPR art. 18)</strong> — anmod om en midlertidig pause; skriv til os.</li>
 <li><strong>Ret til dataportabilitet (GDPR art. 20)</strong> — Indstillinger → "Eksporter data" genererer en JSON / Markdown-pakke.</li>
 <li><strong>Ret til indsigelse (GDPR art. 21)</strong> — gøre indsigelse mod behandling baseret på legitim interesse, især annoncer i profileringsstil. Deaktiver personaliserede annoncer i appens indstillinger eller via systemkontroller.</li>
@@ -192,7 +200,7 @@
 <h2>12. Sikkerhed</h2>
 <ul>
 <li><strong>Lokal krypteret lagring (ved hvile)</strong> — vaccinationsoplysninger, profiler og påmindelser gemmes i MMKV med en enhedsgenereret krypteringsnøgle opbevaret i Apple Keychain (iOS) / Android Keystore (Android). Nøglen forlader aldrig din enhed.</li>
-<li><strong>Ingen netværksoverførsel af medicinske data</strong> — vaccinationsoplysninger sendes aldrig over netværket til vores servere. Det eneste valgfri cloud-kontaktpunkt er din <strong>egen</strong> iCloud / Google Drev AppFolder, som kun du kan få adgang til.</li>
+<li><strong>Vi kan ikke læse dine vaccinationsdata</strong> — registreringer forlader kun din enhed, hvis du slår sikkerhedskopiering eller enhed-til-enhed-synkronisering til. Sikkerhedskopien går til dit eget Google Drev, aldrig til vores servere; synkronisering passerer kun gennem vores relæ som end-to-end-krypterede data, som vi ikke kan dekryptere.</li>
 <li><strong>Ingen HealthKit / Health Connect-integration</strong> — vi læser eller skriver ikke til systemets sundhedsregistre; vaccinationsoplysninger er kun brugerindtastede organisationsdata.</li>
 <li><strong>Transportsikkerhed</strong> — alle netværkskald (opdatering af eksterne vaccinationsreferencedata, annoncer, IAP) bruger HTTPS / TLS 1.2+.</li>
 <li><strong>Minimering</strong> — vi indsamler kun det, der er nødvendigt til de anførte organisationsformål.</li>

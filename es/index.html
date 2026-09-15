@@ -70,19 +70,23 @@
     </div>
 
 <h1>Política de Privacidad — Moje Szczepienia</h1>
-<p>Última actualización: 2026-09-15 · Fecha de entrada en vigor: 2026-05-06</p>
+<p>Última actualización: 2026-09-16 · Fecha de entrada en vigor: 2026-05-06</p>
 <h2>1. Quiénes somos</h2>
-<p><strong>Moje Szczepienia</strong> es un <strong>organizador de vacunación</strong> móvil para familias: un calendario, historial y recordatorios de vacunas para miembros de la familia. La aplicación es <strong>solo informativa y organizativa</strong>, no diagnostica, trata, previene enfermedades ni reemplaza la consulta médica. Todas las entradas de vacunación se almacenan <strong>localmente en su dispositivo</strong> en un almacenamiento cifrado; no se envía ningún dato médico a nuestros servidores.</p>
+<p><strong>Moje Szczepienia</strong> es un <strong>organizador de vacunación</strong> móvil para familias: un calendario, historial y recordatorios de vacunas para miembros de la familia. La aplicación es <strong>solo informativa y organizativa</strong>, no diagnostica, trata, previene enfermedades ni reemplaza la consulta médica. Todas las entradas de vacunación se almacenan <strong>localmente en su dispositivo</strong> en un almacenamiento cifrado; nunca se envía ningún dato médico legible a nuestros servidores. Lo que sí pasa a través de nuestros servidores se enumera en la sección 3.2: detalles de inicio de sesión opcionales, datos de sincronización cifrados de extremo a extremo que no podemos descifrar y datos técnicos necesarios para enviar notificaciones.</p>
 <p><strong>Responsable del tratamiento de datos:</strong> Maciej Siemiński — el desarrollador de Moje Szczepienia. <strong>Contacto:</strong> <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a></p>
 <p>Para la versión de la aplicación distribuida a través de Google Play, el responsable del tratamiento de los datos es LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>Esta Política de Privacidad explica qué datos personales procesa Moje Szczepienia, cómo, por qué y qué derechos tiene usted.</p>
 <h2>2. Resumen en lenguaje sencillo</h2>
-<p>Moje Szczepienia es un organizador personal de vacunación; los registros de vacunación permanecen en su dispositivo en un almacenamiento local cifrado. No operamos un servidor que almacene sus datos médicos. Utilizamos Unity Ads (solo en la pantalla de Ajustes, nunca en las pantallas de datos de salud), Sentry para informes de errores, sincronización opcional con su propio iCloud / Google Drive y facturación de Apple / Google para compras dentro de la aplicación. La aplicación <strong>no es un dispositivo médico</strong> y <strong>no</strong> proporciona diagnóstico, tratamiento o recomendaciones médicas. Usted tiene todos los derechos del RGPD, incluidos el acceso, la supresión y la portabilidad, la mayoría de los cuales puede ejercer directamente en la aplicación.</p>
+<p>Moje Szczepienia es un organizador personal de vacunación; los registros de vacunación permanecen en su dispositivo en un almacenamiento local cifrado. No operamos un servidor que almacene datos médicos legibles. Utilizamos Unity Ads (solo en la pantalla de Ajustes, nunca en las pantallas de datos de salud), Sentry para informes de errores, una copia de seguridad opcional en su propio Google Drive, sincronización opcional cifrada de extremo a extremo entre sus dispositivos y facturación de Apple / Google para compras dentro de la aplicación. La aplicación <strong>no es un dispositivo médico</strong> y <strong>no</strong> proporciona diagnóstico, tratamiento o recomendaciones médicas. Usted tiene todos los derechos del RGPD, incluidos el acceso, la supresión y la portabilidad, la mayoría de los cuales puede ejercer directamente en la aplicación.</p>
 <h2>3. Datos que procesamos</h2>
 <h3>3.1 Datos solo locales</h3>
-<p><strong>Los datos de vacunación</strong> (perfiles de miembros de la familia, vacunas, fechas, notas, fotos del carné/pegatina de vacunación) se almacenan <strong>solo localmente en su dispositivo</strong>, en un almacenamiento MMKV cifrado (clave generada aleatoriamente y guardada en Apple Keychain / Android Keystore). Nunca enviamos estos datos a nuestros servidores ni a terceros.</p>
-<h3>3.2 Sincronización opcional (su propio iCloud / Google Drive)</h3>
-<p>Moje Szczepienia puede ofrecer una copia de seguridad cifrada opcional vinculada a su cuenta. Tras iniciar sesión con Apple o Google, se almacena en nuestro servidor una copia cifrada de sus datos. <strong>La clave de cifrado se deriva de sus palabras de recuperación en su dispositivo y nunca se nos envía, por lo que no podemos leer esa copia.</strong> También puede sincronizar directamente entre sus propios dispositivos: ese canal está cifrado de extremo a extremo y nuestro relé solo ve texto cifrado. Por separado, puede exportar un archivo cifrado y guardarlo donde prefiera, por ejemplo en iCloud Drive, Google Drive o Archivos. La copia en la cuenta es opcional; puede desactivarla en cualquier momento en los ajustes, lo que detiene nuevas subidas, y eliminar su cuenta en la aplicación borra la copia almacenada de nuestro servidor.</p>
+<p><strong>Los datos de vacunación</strong> (perfiles de miembros de la familia, vacunas, fechas, notas, fotos del carné/pegatina de vacunación) se almacenan <strong>localmente en su dispositivo</strong>, en un almacenamiento MMKV cifrado (clave generada aleatoriamente y guardada en Apple Keychain / Android Keystore). Nunca enviamos estos datos en forma legible a nuestros servidores ni a ningún tercero. Salen de su dispositivo únicamente si activa una de las funciones opcionales descritas en la sección 3.2.</p>
+<h3>3.2 Cuenta opcional, copia de seguridad en su propio Google Drive, sincronización entre sus dispositivos y notificaciones</h3>
+<p><strong>Inicio de sesión en la cuenta.</strong> Puede iniciar sesión con Apple o Google. Nuestro servicio de cuentas (alojado en Cloudflare) almacena entonces un ID de usuario interno, el identificador de su cuenta de Apple / Google y su dirección de correo electrónico si el proveedor la comparte. No almacena ningún dato de vacunación. Eliminar la cuenta en la aplicación elimina esta información.</p>
+<p><strong>Copia de seguridad en su propio Google Drive.</strong> Si conecta una cuenta de Google, la aplicación mantiene una copia de seguridad cifrada de sus datos, incluidas las fotos del carné de vacunación, en su carpeta privada de la aplicación en <strong>su</strong> Google Drive. La carpeta está oculta, solo esta aplicación puede acceder a ella y la aplicación no puede ver ninguno de sus otros archivos de Drive. La clave de cifrado se guarda en la misma carpeta privada, por lo que en un teléfono nuevo restaurará sus datos simplemente iniciando sesión con Google, sin necesidad de palabras de recuperación. Esto también significa que Google, como proveedor de almacenamiento, tiene técnicamente la capacidad de acceder a la copia de seguridad, al igual que con cualquier otro dato en su cuenta de Google. <strong>No se almacena ninguna copia de sus datos en nuestros servidores.</strong> Puede desactivar la copia de seguridad en Ajustes, lo que detiene las subidas adicionales. Para eliminar la copia de seguridad en sí, elimine los datos ocultos de la aplicación en Google Drive (Ajustes → Administrar aplicaciones).</p>
+<p><strong>Sincronización entre sus dispositivos.</strong> Si empareja dispositivos, las entradas viajan entre ellos cifradas de extremo a extremo a través de nuestro relé (alojado en Cloudflare). El relé almacena únicamente datos cifrados que no puede descifrar, junto con los tokens de notificaciones push de los dispositivos emparejados, hasta que los desempareje o durante un máximo de 365 días después de la última actividad. Las notificaciones sobre nuevas entradas se envían a través del servicio push de Expo y no contienen ningún dato de vacunación.</p>
+<p><strong>Anuncios y notificaciones.</strong> Para mostrar anuncios dentro de la aplicación y enviar notificaciones, la aplicación registra en nuestro servicio de notificaciones (alojado en Cloudflare) un identificador de instalación aleatorio, un token de notificación push, la plataforma, el idioma, la versión de la aplicación, el canal de publicación y si Premium está activo. Esto no contiene ningún dato de vacunación y se conserva hasta que nos pida que lo eliminemos.</p>
+<p><strong>Archivo cifrado.</strong> También puede exportar un archivo de copia de seguridad cifrado y guardarlo donde prefiera, por ejemplo en iCloud Drive, Google Drive o Archivos.</p>
 <h3>3.3 Datos de diagnóstico (Sentry)</h3>
 <p>Moje Szczepienia integra Sentry (sentry.io) para informes de errores y fallos. Sentry recopila:</p>
 <ul>
@@ -116,7 +120,7 @@
 <p>Cada permiso se solicita contextualmente. Puede denegar cualquier permiso y aun así utilizar las funciones principales (cuando corresponda).</p>
 <h3>3.7 Lo que NO recopilamos</h3>
 <ul>
-<li>Su nombre, correo electrónico, número de teléfono, dirección (no se requiere una cuenta).</li>
+<li>Su nombre, número de teléfono o dirección. No se requiere una cuenta; su dirección de correo electrónico se procesa únicamente si elige iniciar sesión (sección 3.2).</li>
 <li>Lista de contactos, calendario, SMS, registros de llamadas.</li>
 <li>Ubicación precisa.</li>
 <li>Historial de navegación fuera de la aplicación.</li>
@@ -126,7 +130,7 @@
 <h2>4. Por qué procesamos estos datos (fines)</h2>
 <ul>
 <li><strong>Ejecutar la aplicación en su dispositivo</strong> — el almacenamiento local y el cifrado (cuando estén presentes) permiten que sus datos persistan entre sesiones.</li>
-<li><strong>Sincronizar sus propios datos entre sus propios dispositivos</strong> — a través de su propia iCloud / Google Drive AppFolder; no vemos estos datos.</li>
+<li><strong>Realizar copias de seguridad y sincronizar sus propios datos</strong> — una copia de seguridad en su propio Google Drive y sincronización cifrada de extremo a extremo entre sus propios dispositivos; no podemos leer estos datos.</li>
 <li><strong>Mejorar la estabilidad</strong> — los diagnósticos de Sentry ayudan a corregir los fallos que afectan a su uso.</li>
 <li><strong>Mantener el nivel gratuito</strong> — Unity Ads entrega anuncios no invasivos para financiar a los usuarios que no compran premium.</li>
 <li><strong>Procesar compras</strong> — la facturación de Apple / Google satisface los derechos premium que usted elige comprar.</li>
@@ -134,7 +138,7 @@
 <h2>5. Base jurídica (Artículo 6 RGPD)</h2>
 <p>Para usuarios en el Espacio Económico Europeo, el Reino Unido y Suiza:</p>
 <ul>
-<li><strong>Ejecución de un contrato</strong> (Art. 6.1.b) RGPD) — ejecutar la aplicación, procesar sus compras.</li>
+<li><strong>Ejecución de un contrato</strong> (Art. 6(1)(b) RGPD) — ejecutar la aplicación, su cuenta opcional, la copia de seguridad y la sincronización entre dispositivos, las notificaciones, y procesar sus compras.</li>
 <li><strong>Interés legítimo</strong> (Art. 6.1.f) RGPD) — diagnósticos de Sentry, prevención de fraude/abuso, publicidad no personalizada. Nuestro interés es mejorar la estabilidad y mantener el nivel gratuito; esto no anula sus derechos fundamentales.</li>
 <li><strong>Consentimiento</strong> (Art. 6.1.a) RGPD) — publicidad personalizada, donde usted otorga su consentimiento a través del aviso de ATT (iOS) o la preferencia en la aplicación. Puede retirar el consentimiento en cualquier momento sin afectar el procesamiento previo.</li>
 <li><strong>Obligación legal</strong> (Art. 6.1.c) RGPD) — solo cuando debamos responder a una solicitud legal de las autoridades.</li>
@@ -148,8 +152,9 @@
 <tr><td>Functional Software Inc. (Sentry)</td><td>Informes de fallos</td><td>Trazas de pila, metadatos del dispositivo</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>Procesamiento de compras dentro de la aplicación en iOS</td><td>Token de compra, derecho a nivel de cuenta</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
 <tr><td>Google LLC (Play Billing)</td><td>Procesamiento de compras dentro de la aplicación en Android</td><td>Token de compra, derecho a nivel de cuenta</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Apple Inc. (iCloud)</td><td>Sincronización opcional con su propia cuenta de iCloud (iOS)</td><td>Datos cifrados de la aplicación en su contenedor privado de CloudKit</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
-<tr><td>Google LLC (Drive AppFolder)</td><td>Sincronización opcional con su propio Drive (Android)</td><td>Datos cifrados de la aplicación en su AppFolder privada</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
+<tr><td>Google LLC (Google Drive)</td><td>Copia de seguridad opcional en su propio Google Drive (iOS y Android)</td><td>Datos cifrados de la aplicación y su clave de cifrado en la carpeta privada de la aplicación</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
+<tr><td>Cloudflare, Inc.</td><td>Alojamiento del inicio de sesión de cuenta, el relé de sincronización entre dispositivos y el servicio de notificaciones</td><td>Identificadores de cuenta y correo electrónico; datos de sincronización cifrados de extremo a extremo; identificador de instalación, tokens push y detalles de la aplicación</td><td><a href="https://www.cloudflare.com/privacypolicy/">https://www.cloudflare.com/privacypolicy/</a></td></tr>
+<tr><td>650 Industries, Inc. (servicio push de Expo)</td><td>Envío de notificaciones</td><td>Token push, texto de la notificación sin datos de vacunación</td><td><a href="https://expo.dev/privacy">https://expo.dev/privacy</a></td></tr>
 </tbody></table>
 <p>Podemos divulgar datos si así lo exige una orden judicial válida u otro proceso legal vinculante, después de verificar la solicitud y notificarle cuando sea legal.</p>
 <h2>7. Transferencias internacionales</h2>
@@ -165,7 +170,10 @@
 <thead><tr><th>Datos</th><th>Dónde reside</th><th>Cuánto tiempo</th></tr></thead>
 <tbody>
 <tr><td>Sus datos en la aplicación</td><td>Solo en su dispositivo (cifrados)</td><td>Hasta que los elimine, desinstale la aplicación o borre los datos de la aplicación</td></tr>
-<tr><td>Datos de sincronización en su iCloud / Google Drive</td><td>Su propia cuenta de Apple / Google</td><td>Hasta que elimine los datos de la aplicación de su iCloud / Drive</td></tr>
+<tr><td>Copia de seguridad en su Google Drive</td><td>Carpeta privada de la aplicación en su cuenta de Google</td><td>Hasta que elimine los datos ocultos de la aplicación en Google Drive</td></tr>
+<tr><td>Detalles de inicio de sesión de la cuenta</td><td>Nuestro servicio de cuentas (Cloudflare)</td><td>Hasta que elimine la cuenta en la aplicación</td></tr>
+<tr><td>Datos cifrados de sincronización entre dispositivos</td><td>Nuestro relé (Cloudflare)</td><td>Hasta que desempareje, o hasta 365 días después de la última actividad</td></tr>
+<tr><td>Registro de notificaciones</td><td>Nuestro servicio de notificaciones (Cloudflare)</td><td>Hasta que nos pida que lo eliminemos</td></tr>
 <tr><td>ID de Publicidad</td><td>Sistemas de Unity Ads</td><td>Según la política de retención de Unity</td></tr>
 <tr><td>Datos de fallos de Sentry</td><td>Sistemas de Sentry</td><td>Hasta 90 días desde el evento</td></tr>
 <tr><td>Token / recibo de compra IAP</td><td>Su dispositivo + Apple / Google</td><td>Hasta que desinstale; Apple / Google conservan los registros de transacciones según sus propias políticas</td></tr>
@@ -175,7 +183,7 @@
 <ul>
 <li><strong>Derecho de acceso (Art. 15 RGPD)</strong> — confirmación de si procesamos sus datos y una copia de los mismos. La mayoría de sus datos ya están en su dispositivo; exporte desde la aplicación o escríbanos para el resto.</li>
 <li><strong>Derecho de rectificación (Art. 16 RGPD)</strong> — corregir datos inexactos. Edite los datos directamente en la aplicación.</li>
-<li><strong>Derecho de supresión / "derecho al olvido" (Art. 17 RGPD)</strong> — eliminar todos los datos a través de Ajustes → "Borrar todos los datos", o desinstalando la aplicación.</li>
+<li><strong>Derecho de supresión / "derecho al olvido" (Art. 17 RGPD)</strong> — elimine todos los datos a través de Ajustes → "Borrar todos los datos", o desinstalando la aplicación; elimine su cuenta en la aplicación; elimine la copia de seguridad de Google Drive (Ajustes → Administrar aplicaciones); para el registro de notificaciones, escríbanos.</li>
 <li><strong>Derecho a la limitación del tratamiento (Art. 18 RGPD)</strong> — solicitar una interrupción temporal; escríbanos.</li>
 <li><strong>Derecho a la portabilidad de los datos (Art. 20 RGPD)</strong> — Ajustes → "Exportar datos" produce un paquete JSON / Markdown.</li>
 <li><strong>Derecho de oposición (Art. 21 RGPD)</strong> — oponerse al tratamiento basado en interés legítimo, especialmente a los anuncios de tipo perfilado. Desactive los anuncios personalizados en la configuración de la aplicación o a través de los controles del sistema.</li>
@@ -192,7 +200,7 @@
 <h2>12. Seguridad</h2>
 <ul>
 <li><strong>Almacenamiento local cifrado en reposo</strong> — las entradas de vacunación, perfiles y recordatorios se almacenan en MMKV con una clave de cifrado derivada del dispositivo, guardada en Apple Keychain (iOS) / Android Keystore (Android). La clave nunca sale de su dispositivo.</li>
-<li><strong>No podemos leer sus datos de vacunación</strong> — las entradas se almacenan localmente y salen de su dispositivo únicamente como texto cifrado, y solo si activa la copia en la cuenta o la sincronización entre dispositivos. La clave de cifrado permanece en su dispositivo, por lo que ni nosotros ni nadie que retransmita los datos puede descifrarlos.</li>
+<li><strong>No podemos leer sus datos de vacunación</strong> — las entradas salen de su dispositivo únicamente si activa la copia de seguridad o la sincronización entre dispositivos. La copia de seguridad va a su propio Google Drive, nunca a nuestros servidores; la sincronización pasa por nuestro relé solo como datos cifrados de extremo a extremo que no podemos descifrar.</li>
 <li><strong>No hay integración con HealthKit / Health Connect</strong> — no leemos ni escribimos en las tiendas de salud del sistema; las entradas de vacunación son solo datos organizativos introducidos por el usuario.</li>
 <li><strong>Seguridad de transporte</strong> — todas las llamadas de red (actualización de datos de referencia de vacunas remotas, anuncios, IAP) utilizan HTTPS / TLS 1.2+.</li>
 <li><strong>Minimización</strong> — solo recopilamos lo estrictamente necesario para los fines organizativos enumerados.</li>

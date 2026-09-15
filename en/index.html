@@ -70,19 +70,23 @@
     </div>
 
 <h1>Privacy Policy — Moje Szczepienia</h1>
-<p>Last updated: 2026-09-15 · Effective date: 2026-05-06</p>
+<p>Last updated: 2026-09-16 · Effective date: 2026-05-06</p>
 <h2>1. Who we are</h2>
-<p><strong>Moje Szczepienia</strong> is a mobile <strong>vaccination organizer</strong> for families: a calendar, history, and reminders for vaccinations of family members. The app is <strong>informational and organizational only</strong> — it does not diagnose, treat, prevent illness, nor replace medical consultation. All vaccination entries are stored <strong>locally on your device</strong> in encrypted storage; no medical data is sent to our servers.</p>
+<p><strong>Moje Szczepienia</strong> is a mobile <strong>vaccination organizer</strong> for families: a calendar, history, and reminders for vaccinations of family members. The app is <strong>informational and organizational only</strong> — it does not diagnose, treat, prevent illness, nor replace medical consultation. All vaccination entries are stored <strong>locally on your device</strong> in encrypted storage; no readable medical data is ever sent to our servers. What does pass through our servers is listed in section 3.2: optional sign-in details, end-to-end encrypted sync data that we cannot decrypt, and technical data needed to deliver notifications.</p>
 <p><strong>Data controller:</strong> Maciej Siemiński — the developer of Moje Szczepienia. <strong>Contact:</strong> <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a></p>
 <p>For the version of the app distributed via Google Play, the data controller is LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>This Privacy Policy explains what personal data Moje Szczepienia processes, how, why, and what rights you have.</p>
 <h2>2. Plain-language summary</h2>
-<p>Moje Szczepienia is a personal vaccination organizer — vaccination records stay on your device in encrypted local storage. We do not run a server that stores your medical data. We use Unity Ads (only on the Settings screen, never on health-data screens), Sentry for crash reporting, optional sync to your own iCloud / Google Drive, and Apple / Google billing for in-app purchases. The app is <strong>not a medical device</strong> and does <strong>not</strong> provide diagnosis, treatment, or medical recommendations. You have full GDPR rights including access, deletion, and portability — most exercisable directly in the app.</p>
+<p>Moje Szczepienia is a personal vaccination organizer — vaccination records stay on your device in encrypted local storage. We do not run a server that stores readable medical data. We use Unity Ads (only on the Settings screen, never on health-data screens), Sentry for crash reporting, an optional backup in your own Google Drive, optional end-to-end encrypted sync between your devices, and Apple / Google billing for in-app purchases. The app is <strong>not a medical device</strong> and does <strong>not</strong> provide diagnosis, treatment, or medical recommendations. You have full GDPR rights including access, deletion, and portability — most exercisable directly in the app.</p>
 <h2>3. Data we process</h2>
 <h3>3.1 Local-only data</h3>
-<p><strong>Vaccination data</strong> (family member profiles, vaccinations, dates, notes, photos of the vaccination booklet/sticker) are stored <strong>only locally on your device</strong>, in encrypted MMKV storage (key generated randomly and kept in Apple Keychain / Android Keystore). We never send this data to our servers or to any third party.</p>
-<h3>3.2 Optional sync (your own iCloud / Google Drive)</h3>
-<p>Moje Szczepienia may offer an optional encrypted backup tied to your account. After you sign in with Apple or Google, an encrypted copy of your data is stored on our server. <strong>The encryption key is derived from your recovery words on your device and is never sent to us, so we cannot read that copy.</strong> You can also sync directly between your own devices: that channel is end-to-end encrypted and our relay only ever sees ciphertext. Separately, you can export an encrypted file and keep it wherever you choose, for example iCloud Drive, Google Drive or Files. Account backup is optional; you can disable it at any time in Settings, which stops further uploads, and deleting your account in the app removes the stored copy from our server.</p>
+<p><strong>Vaccination data</strong> (family member profiles, vaccinations, dates, notes, photos of the vaccination booklet/sticker) are stored <strong>locally on your device</strong>, in encrypted MMKV storage (key generated randomly and kept in Apple Keychain / Android Keystore). We never send this data in readable form to our servers or to any third party. It leaves your device only if you turn on one of the optional features described in section 3.2.</p>
+<h3>3.2 Optional account, backup in your own Google Drive, sync between your devices, and notifications</h3>
+<p><strong>Account sign-in.</strong> You can sign in with Apple or Google. Our account service (hosted by Cloudflare) then stores an internal user ID, the identifier of your Apple / Google account and your email address if the provider shares it. It stores no vaccination data. Deleting the account in the app removes this information.</p>
+<p><strong>Backup in your own Google Drive.</strong> If you connect a Google account, the app keeps an encrypted backup of your data, including photos of the vaccination booklet, in its private app folder on <strong>your</strong> Google Drive. The folder is hidden, only this app can access it, and the app cannot see any of your other Drive files. The encryption key is kept in the same private folder, so on a new phone you restore your data just by signing in with Google — no recovery words needed. This also means that Google, as the storage provider, is technically able to access the backup, as with any other data in your Google account. <strong>No copy of your data is stored on our servers.</strong> You can turn the backup off in Settings, which stops further uploads. To delete the backup itself, remove the app's hidden data in Google Drive (Settings → Manage apps).</p>
+<p><strong>Sync between your devices.</strong> If you pair devices, entries travel between them end-to-end encrypted through our relay (hosted by Cloudflare). The relay stores only encrypted data that it cannot decrypt, together with the push notification tokens of the paired devices, until you unpair or for up to 365 days after the last activity. Notifications about new entries are delivered through the Expo push service and contain no vaccination data.</p>
+<p><strong>Announcements and notifications.</strong> To show in-app announcements and send notifications, the app registers with our notification service (hosted by Cloudflare) a random installation identifier, a push notification token, the platform, language, app version, release channel and whether Premium is active. This contains no vaccination data and is kept until you ask us to delete it.</p>
+<p><strong>Encrypted file.</strong> You can also export an encrypted backup file and keep it wherever you choose, for example iCloud Drive, Google Drive or Files.</p>
 <h3>3.3 Diagnostic data (Sentry)</h3>
 <p>Moje Szczepienia integrates Sentry (sentry.io) for crash and error reporting. Sentry collects:</p>
 <ul>
@@ -116,7 +120,7 @@
 <p>Each permission is requested contextually. You can deny any permission and still use the core features (where applicable).</p>
 <h3>3.7 What we do NOT collect</h3>
 <ul>
-<li>Your name, email, phone number, address (no account is required).</li>
+<li>Your name, phone number or address. An account is not required; your email address is processed only if you choose to sign in (section 3.2).</li>
 <li>Contacts list, calendar, SMS, call logs.</li>
 <li>Precise location.</li>
 <li>Browsing history outside the app.</li>
@@ -126,7 +130,7 @@
 <h2>4. Why we process this data (purposes)</h2>
 <ul>
 <li><strong>Run the app on your device</strong> — local storage and (where present) encryption let your data persist between sessions.</li>
-<li><strong>Sync your own data across your own devices</strong> — through your own iCloud / Google Drive AppFolder; we do not see this data.</li>
+<li><strong>Back up and sync your own data</strong> — a backup in your own Google Drive and end-to-end encrypted sync between your own devices; we cannot read this data.</li>
 <li><strong>Improve stability</strong> — Sentry diagnostics help fix crashes that affect your usage.</li>
 <li><strong>Sustain the free tier</strong> — Unity Ads delivers non-invasive ads to fund users who do not buy premium.</li>
 <li><strong>Process purchases</strong> — Apple / Google billing fulfils premium entitlements you choose to buy.</li>
@@ -134,7 +138,7 @@
 <h2>5. Legal basis (GDPR Article 6)</h2>
 <p>For users in the European Economic Area, United Kingdom, and Switzerland:</p>
 <ul>
-<li><strong>Performance of a contract</strong> (Art. 6(1)(b)) — running the app, processing your purchases.</li>
+<li><strong>Performance of a contract</strong> (Art. 6(1)(b)) — running the app, your optional account, backup and device-to-device sync, notifications, processing your purchases.</li>
 <li><strong>Legitimate interest</strong> (Art. 6(1)(f)) — Sentry diagnostics, fraud / abuse prevention, non-personalized advertising. Our interest is improving stability and sustaining the free tier; this does not override your fundamental rights.</li>
 <li><strong>Consent</strong> (Art. 6(1)(a)) — personalized advertising, where you grant consent via the ATT prompt (iOS) or in-app preference. You may withdraw consent at any time without affecting prior processing.</li>
 <li><strong>Legal obligation</strong> (Art. 6(1)(c)) — only when we must respond to a lawful request from authorities.</li>
@@ -148,8 +152,9 @@
 <tr><td>Functional Software Inc. (Sentry)</td><td>Crash reporting</td><td>Stack traces, device metadata</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>In-app purchase processing on iOS</td><td>Purchase token, account-level entitlement</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
 <tr><td>Google LLC (Play Billing)</td><td>In-app purchase processing on Android</td><td>Purchase token, account-level entitlement</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Apple Inc. (iCloud)</td><td>Optional sync to your own iCloud account (iOS)</td><td>Encrypted app data in your private CloudKit container</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
-<tr><td>Google LLC (Drive AppFolder)</td><td>Optional sync to your own Drive (Android)</td><td>Encrypted app data in your private AppFolder</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
+<tr><td>Google LLC (Google Drive)</td><td>Optional backup in your own Google Drive (iOS and Android)</td><td>Encrypted app data and its encryption key in the app's private folder</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
+<tr><td>Cloudflare, Inc.</td><td>Hosting of account sign-in, the device-to-device sync relay and the notification service</td><td>Account identifiers and email; end-to-end encrypted sync data; installation identifier, push tokens and app details</td><td><a href="https://www.cloudflare.com/privacypolicy/">https://www.cloudflare.com/privacypolicy/</a></td></tr>
+<tr><td>650 Industries, Inc. (Expo push service)</td><td>Delivery of notifications</td><td>Push token, notification text without vaccination data</td><td><a href="https://expo.dev/privacy">https://expo.dev/privacy</a></td></tr>
 </tbody></table>
 <p>We may disclose data if required by a valid court order or other binding legal process, after verifying the request and notifying you where lawful.</p>
 <h2>7. International transfers</h2>
@@ -165,7 +170,10 @@
 <thead><tr><th>Data</th><th>Where it lives</th><th>How long</th></tr></thead>
 <tbody>
 <tr><td>Your in-app data</td><td>Your device only (encrypted)</td><td>Until you delete it, uninstall the app, or wipe app data</td></tr>
-<tr><td>Sync data in your iCloud / Google Drive</td><td>Your own Apple / Google account</td><td>Until you remove the app's data from your iCloud / Drive</td></tr>
+<tr><td>Backup in your Google Drive</td><td>The app's private folder in your Google account</td><td>Until you delete the app's hidden data in Google Drive</td></tr>
+<tr><td>Account sign-in details</td><td>Our account service (Cloudflare)</td><td>Until you delete the account in the app</td></tr>
+<tr><td>Encrypted device-to-device sync data</td><td>Our relay (Cloudflare)</td><td>Until you unpair, or up to 365 days after the last activity</td></tr>
+<tr><td>Notification registration</td><td>Our notification service (Cloudflare)</td><td>Until you ask us to delete it</td></tr>
 <tr><td>Advertising ID</td><td>Unity Ads systems</td><td>Per Unity's retention policy</td></tr>
 <tr><td>Sentry crash data</td><td>Sentry systems</td><td>Up to 90 days from the event</td></tr>
 <tr><td>IAP purchase token / receipt</td><td>Your device + Apple / Google</td><td>Until you uninstall; Apple / Google keep transaction records per their own policies</td></tr>
@@ -175,7 +183,7 @@
 <ul>
 <li><strong>Right of access (Art. 15)</strong> — confirmation whether we process your data and a copy of it. Most of your data is already on your device; export from the app or write to us for the rest.</li>
 <li><strong>Right to rectification (Art. 16)</strong> — correct inaccurate data. Edit data directly in the app.</li>
-<li><strong>Right to erasure / "right to be forgotten" (Art. 17)</strong> — delete all data via Settings → "Erase all data", or by uninstalling the app.</li>
+<li><strong>Right to erasure / "right to be forgotten" (Art. 17)</strong> — delete all data via Settings → "Erase all data", or by uninstalling the app; delete your account in the app; remove the backup from Google Drive (Settings → Manage apps); for the notification registration, write to us.</li>
 <li><strong>Right to restrict processing (Art. 18)</strong> — request a temporary halt; write to us.</li>
 <li><strong>Right to data portability (Art. 20)</strong> — Settings → "Export data" produces a JSON / Markdown bundle.</li>
 <li><strong>Right to object (Art. 21)</strong> — object to processing based on legitimate interest, especially profiling-style ads. Disable personalized ads in app settings or via system controls.</li>
@@ -192,7 +200,7 @@
 <h2>12. Security</h2>
 <ul>
 <li><strong>Encrypted-at-rest local storage</strong> — vaccination entries, profiles, and reminders are stored in MMKV with a device-derived encryption key kept in Apple Keychain (iOS) / Android Keystore (Android). The key never leaves your device.</li>
-<li><strong>We cannot read your vaccination data</strong> — entries are stored locally and leave your device only as ciphertext, and only if you turn on account backup or device-to-device sync. The encryption key stays on your device, so neither we nor anyone relaying the data can decrypt it.</li>
+<li><strong>We cannot read your vaccination data</strong> — entries leave your device only if you turn on the backup or device-to-device sync. The backup goes to your own Google Drive, never to our servers; sync passes through our relay only as end-to-end encrypted data that we cannot decrypt.</li>
 <li><strong>No HealthKit / Health Connect integration</strong> — we do not read from or write to system health stores; vaccination entries are user-typed organizational data only.</li>
 <li><strong>Transport security</strong> — all network calls (remote vaccine reference data refresh, ads, IAP) use HTTPS / TLS 1.2+.</li>
 <li><strong>Minimization</strong> — we collect only what is required for the listed organizational purposes.</li>

@@ -70,19 +70,23 @@
     </div>
 
 <h1>Polityka prywatności — Moje Szczepienia</h1>
-<p>Ostatnia aktualizacja: 2026-09-15 · Data wejścia w życie: 2026-05-06</p>
+<p>Ostatnia aktualizacja: 2026-09-16 · Data wejścia w życie: 2026-05-06</p>
 <h2>1. Kim jesteśmy</h2>
-<p><strong>Moje Szczepienia</strong> to mobilny <strong>organizer szczepień</strong> dla rodziny: kalendarz, historia i przypomnienia o szczepieniach członków rodziny. Aplikacja ma charakter <strong>informacyjny i organizacyjny</strong> — nie diagnozuje, nie leczy, nie zapobiega chorobom ani nie zastępuje konsultacji medycznej. Wszystkie wpisy szczepień są przechowywane <strong>lokalnie na Twoim urządzeniu</strong> w zaszyfrowanym storage; żadne dane medyczne nie są wysyłane na nasze serwery.</p>
+<p><strong>Moje Szczepienia</strong> to mobilny <strong>organizer szczepień</strong> dla rodziny: kalendarz, historia i przypomnienia o szczepieniach członków rodziny. Aplikacja ma charakter <strong>informacyjny i organizacyjny</strong> — nie diagnozuje, nie leczy, nie zapobiega chorobom ani nie zastępuje konsultacji medycznej. Wszystkie wpisy szczepień są przechowywane <strong>lokalnie na Twoim urządzeniu</strong> w zaszyfrowanym storage; żadne czytelne dane medyczne nigdy nie są wysyłane na nasze serwery. To, co faktycznie przechodzi przez nasze serwery, opisuje punkt 3.2: opcjonalne dane logowania, zaszyfrowane od końca do końca dane synchronizacji, których nie jesteśmy w stanie odszyfrować, oraz dane techniczne potrzebne do dostarczania powiadomień.</p>
 <p><strong>Administrator danych:</strong> Maciej Siemiński — twórca aplikacji Moje Szczepienia. <strong>Kontakt:</strong> <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a></p>
 <p>W przypadku wersji aplikacji dystrybuowanej przez Google Play administratorem danych jest LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>Niniejsza polityka opisuje, jakie dane osobowe Moje Szczepienia przetwarza, w jaki sposób, w jakim celu i jakie prawa przysługują Tobie.</p>
 <h2>2. Streszczenie w prostym języku</h2>
-<p>Moje Szczepienia to osobisty organizer szczepień — wpisy szczepień pozostają na Twoim urządzeniu w zaszyfrowanej pamięci lokalnej. Nie utrzymujemy serwera, który przechowywałby Twoje dane medyczne. Korzystamy z Unity Ads (wyłącznie na ekranie Ustawień, nigdy na ekranach z danymi szczepień), Sentry (raportowanie awarii), opcjonalnej synchronizacji do Twojego iCloud / Google Drive oraz Apple / Google billing (zakupy w aplikacji). Aplikacja <strong>nie jest urządzeniem medycznym</strong> i <strong>nie</strong> świadczy diagnozy, leczenia ani rekomendacji medycznych. Masz pełne prawa wynikające z RODO: dostęp, sprostowanie, usunięcie, przenośność — większość możesz wykonać samodzielnie w aplikacji.</p>
+<p>Moje Szczepienia to osobisty organizer szczepień — wpisy szczepień pozostają na Twoim urządzeniu w zaszyfrowanej pamięci lokalnej. Nie utrzymujemy serwera, który przechowywałby czytelne dane medyczne. Korzystamy z Unity Ads (wyłącznie na ekranie Ustawień, nigdy na ekranach z danymi szczepień), Sentry (raportowanie awarii), opcjonalnej kopii na Twoim własnym Dysku Google, opcjonalnej synchronizacji między Twoimi urządzeniami szyfrowanej od końca do końca oraz Apple / Google billing (zakupy w aplikacji). Aplikacja <strong>nie jest urządzeniem medycznym</strong> i <strong>nie</strong> świadczy diagnozy, leczenia ani rekomendacji medycznych. Masz pełne prawa wynikające z RODO: dostęp, sprostowanie, usunięcie, przenośność — większość możesz wykonać samodzielnie w aplikacji.</p>
 <h2>3. Jakie dane przetwarzamy</h2>
 <h3>3.1 Dane wyłącznie lokalne</h3>
-<p><strong>Dane szczepień</strong> (profile członków rodziny, szczepienia, daty, notatki, zdjęcia książeczki/naklejki) są przechowywane <strong>wyłącznie lokalnie na Twoim urządzeniu</strong>, w zaszyfrowanym storage MMKV (klucz wygenerowany losowo i trzymany w Apple Keychain / Android Keystore). Nigdy nie przekazujemy tych danych na nasze serwery ani do osób trzecich.</p>
-<h3>3.2 Opcjonalna synchronizacja (Twoje własne iCloud / Google Drive)</h3>
-<p>Moje Szczepienia może oferować opcjonalną zaszyfrowaną kopię powiązaną z Twoim kontem. Po zalogowaniu się kontem Apple lub Google zaszyfrowana kopia Twoich danych jest przechowywana na naszym serwerze. <strong>Klucz szyfrujący powstaje z Twoich słów odzyskiwania na Twoim urządzeniu i nigdy do nas nie trafia, więc nie jesteśmy w stanie odczytać tej kopii.</strong> Możesz też synchronizować dane bezpośrednio między swoimi urządzeniami — ten kanał jest szyfrowany od końca do końca, a nasz pośrednik widzi wyłącznie szyfrogram. Niezależnie od tego możesz wyeksportować zaszyfrowany plik i trzymać go tam, gdzie chcesz, na przykład w iCloud Drive, na Dysku Google albo w Plikach. Kopia na koncie jest opcjonalna; możesz ją wyłączyć w dowolnym momencie w ustawieniach, co zatrzymuje dalsze uploady, a usunięcie konta w aplikacji kasuje przechowywaną kopię z naszego serwera.</p>
+<p><strong>Dane szczepień</strong> (profile członków rodziny, szczepienia, daty, notatki, zdjęcia książeczki/naklejki) są przechowywane <strong>lokalnie na Twoim urządzeniu</strong>, w zaszyfrowanym storage MMKV (klucz wygenerowany losowo i trzymany w Apple Keychain / Android Keystore). Nigdy nie przekazujemy tych danych w czytelnej postaci na nasze serwery ani do osób trzecich. Opuszczają Twoje urządzenie wyłącznie wtedy, gdy włączysz jedną z opcjonalnych funkcji opisanych w punkcie 3.2.</p>
+<h3>3.2 Opcjonalne konto, kopia na Twoim własnym Dysku Google, synchronizacja między urządzeniami i powiadomienia</h3>
+<p><strong>Logowanie do konta.</strong> Możesz zalogować się kontem Apple albo Google. Nasza usługa kont (hostowana przez Cloudflare) przechowuje wtedy wewnętrzny identyfikator użytkownika, identyfikator Twojego konta Apple / Google oraz Twój adres e-mail, jeśli dostawca go udostępni. Nie przechowuje żadnych danych szczepień. Usunięcie konta w aplikacji kasuje te informacje.</p>
+<p><strong>Kopia na Twoim własnym Dysku Google.</strong> Jeśli połączysz konto Google, aplikacja utrzymuje zaszyfrowaną kopię Twoich danych, łącznie ze zdjęciami książeczki szczepień, w swoim prywatnym folderze aplikacji na <strong>Twoim</strong> Dysku Google. Folder jest ukryty, dostęp do niego ma wyłącznie ta aplikacja, a aplikacja nie widzi żadnych innych Twoich plików na Dysku. Klucz szyfrujący leży w tym samym prywatnym folderze, więc na nowym telefonie odzyskujesz dane samym zalogowaniem przez Google — bez słów odzyskiwania. Oznacza to również, że Google jako dostawca magazynu jest technicznie w stanie uzyskać dostęp do kopii, tak jak do innych danych na Twoim koncie Google. <strong>Żadna kopia Twoich danych nie jest przechowywana na naszych serwerach.</strong> Kopię możesz wyłączyć w Ustawieniach, co zatrzymuje dalsze wysyłanie. Aby usunąć samą kopię, usuń ukryte dane aplikacji na Dysku Google (Ustawienia → Zarządzaj aplikacjami).</p>
+<p><strong>Synchronizacja między Twoimi urządzeniami.</strong> Jeśli sparujesz urządzenia, wpisy przechodzą między nimi zaszyfrowane od końca do końca przez nasz serwer pośredniczący (hostowany przez Cloudflare). Serwer pośredniczący przechowuje wyłącznie zaszyfrowane dane, których nie jest w stanie odszyfrować, wraz z tokenami powiadomień sparowanych urządzeń — do rozparowania albo przez maksymalnie 365 dni od ostatniej aktywności. Powiadomienia o nowych wpisach są dostarczane przez usługę powiadomień Expo i nie zawierają danych szczepień.</p>
+<p><strong>Ogłoszenia i powiadomienia.</strong> Aby wyświetlać ogłoszenia w aplikacji i wysyłać powiadomienia, aplikacja rejestruje w naszej usłudze powiadomień (hostowanej przez Cloudflare) losowy identyfikator instalacji, token powiadomień, platformę, język, wersję aplikacji, kanał wydania oraz informację, czy Premium jest aktywne. Nie zawiera to danych szczepień i jest przechowywane do czasu, gdy poprosisz nas o usunięcie.</p>
+<p><strong>Zaszyfrowany plik.</strong> Możesz też wyeksportować zaszyfrowany plik kopii i trzymać go tam, gdzie chcesz, na przykład w iCloud Drive, na Dysku Google albo w Plikach.</p>
 <h3>3.3 Dane diagnostyczne (Sentry)</h3>
 <p>Moje Szczepienia integruje Sentry (sentry.io) do raportowania awarii i błędów. Sentry zbiera:</p>
 <ul>
@@ -116,7 +120,7 @@
 <p>Każde uprawnienie jest proszone kontekstowo. Możesz odmówić dowolnego uprawnienia bez utraty dostępu do podstawowych funkcji (gdy to ma zastosowanie).</p>
 <h3>3.7 Czego NIE zbieramy</h3>
 <ul>
-<li>Twojego imienia, e-maila, numeru telefonu, adresu (konto nie jest wymagane).</li>
+<li>Twojego imienia, numeru telefonu, adresu. Konto nie jest wymagane; Twój adres e-mail przetwarzamy wyłącznie wtedy, gdy zdecydujesz się zalogować (punkt 3.2).</li>
 <li>Listy kontaktów, kalendarza, SMS, historii połączeń.</li>
 <li>Precyzyjnej lokalizacji.</li>
 <li>Historii przeglądania spoza aplikacji.</li>
@@ -126,7 +130,7 @@
 <h2>4. W jakim celu przetwarzamy te dane</h2>
 <ul>
 <li><strong>Uruchamianie aplikacji na Twoim urządzeniu</strong> — lokalna pamięć i (gdy ma to zastosowanie) szyfrowanie pozwalają zachować dane między sesjami.</li>
-<li><strong>Synchronizacja Twoich własnych danych między Twoimi urządzeniami</strong> — przez Twoje własne iCloud / Google Drive AppFolder; my nie widzimy tych danych.</li>
+<li><strong>Kopia i synchronizacja Twoich własnych danych</strong> — kopia na Twoim własnym Dysku Google oraz synchronizacja między Twoimi urządzeniami szyfrowana od końca do końca; nie jesteśmy w stanie odczytać tych danych.</li>
 <li><strong>Poprawa stabilności</strong> — diagnostyka Sentry pomaga naprawiać awarie wpływające na korzystanie.</li>
 <li><strong>Utrzymanie wersji bezpłatnej</strong> — Unity Ads dostarcza nieinwazyjne reklamy, finansujące użytkowników nieopłacających.</li>
 <li><strong>Realizacja zakupów</strong> — Apple / Google billing realizuje wykupione przez Ciebie uprawnienia premium.</li>
@@ -134,7 +138,7 @@
 <h2>5. Podstawa prawna (RODO art. 6)</h2>
 <p>Dla użytkowników w Europejskim Obszarze Gospodarczym, Wielkiej Brytanii i Szwajcarii:</p>
 <ul>
-<li><strong>Wykonanie umowy</strong> (art. 6 ust. 1 lit. b RODO) — uruchamianie aplikacji, realizacja zakupów.</li>
+<li><strong>Wykonanie umowy</strong> (art. 6 ust. 1 lit. b RODO) — uruchamianie aplikacji, opcjonalne konto, kopia i synchronizacja między urządzeniami, powiadomienia, realizacja zakupów.</li>
 <li><strong>Prawnie uzasadniony interes</strong> (art. 6 ust. 1 lit. f RODO) — diagnostyka Sentry, zapobieganie nadużyciom, reklamy nie-spersonalizowane. Naszym interesem jest poprawa stabilności i utrzymanie wersji bezpłatnej; nie narusza to Twoich praw podstawowych.</li>
 <li><strong>Zgoda</strong> (art. 6 ust. 1 lit. a RODO) — reklamy spersonalizowane, gdy wyrazisz zgodę przez monit ATT (iOS) lub ustawienia w aplikacji. Możesz wycofać zgodę w dowolnym momencie bez wpływu na wcześniejsze przetwarzanie.</li>
 <li><strong>Obowiązek prawny</strong> (art. 6 ust. 1 lit. c RODO) — wyłącznie gdy musimy odpowiedzieć na wiążące żądanie organu.</li>
@@ -148,8 +152,9 @@
 <tr><td>Functional Software Inc. (Sentry)</td><td>Raportowanie awarii</td><td>Stack traces, metadane urządzenia</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>Realizacja zakupów na iOS</td><td>Token zakupu, uprawnienia konta</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
 <tr><td>Google LLC (Play Billing)</td><td>Realizacja zakupów na Androidzie</td><td>Token zakupu, uprawnienia konta</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Apple Inc. (iCloud)</td><td>Opcjonalna synchronizacja do Twojego iCloud (iOS)</td><td>Zaszyfrowane dane aplikacji w Twoim prywatnym CloudKit</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
-<tr><td>Google LLC (Drive AppFolder)</td><td>Opcjonalna synchronizacja do Twojego Drive (Android)</td><td>Zaszyfrowane dane aplikacji w Twoim prywatnym AppFolder</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
+<tr><td>Google LLC (Dysk Google)</td><td>Opcjonalna kopia na Twoim własnym Dysku Google (iOS i Android)</td><td>Zaszyfrowane dane aplikacji i ich klucz szyfrujący w prywatnym folderze aplikacji</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
+<tr><td>Cloudflare, Inc.</td><td>Hosting logowania do konta, serwera pośredniczącego synchronizacji i usługi powiadomień</td><td>Identyfikatory konta i e-mail; dane synchronizacji zaszyfrowane od końca do końca; identyfikator instalacji, tokeny powiadomień i dane aplikacji</td><td><a href="https://www.cloudflare.com/privacypolicy/">https://www.cloudflare.com/privacypolicy/</a></td></tr>
+<tr><td>650 Industries, Inc. (usługa powiadomień Expo)</td><td>Dostarczanie powiadomień</td><td>Token powiadomień, treść powiadomienia bez danych szczepień</td><td><a href="https://expo.dev/privacy">https://expo.dev/privacy</a></td></tr>
 </tbody></table>
 <p>Możemy ujawnić dane, jeśli wymaga tego prawomocny nakaz sądowy lub inne wiążące żądanie prawne, po weryfikacji żądania i zawiadomieniu Cię, gdy jest to dopuszczalne.</p>
 <h2>7. Transfery międzynarodowe</h2>
@@ -165,7 +170,10 @@
 <thead><tr><th>Dane</th><th>Gdzie są przechowywane</th><th>Jak długo</th></tr></thead>
 <tbody>
 <tr><td>Twoje dane w aplikacji</td><td>Wyłącznie Twoje urządzenie (zaszyfrowane)</td><td>Do momentu usunięcia, odinstalowania aplikacji lub wyczyszczenia danych aplikacji</td></tr>
-<tr><td>Dane synchronizacji w Twoim iCloud / Google Drive</td><td>Twoje konto Apple / Google</td><td>Do momentu usunięcia danych aplikacji z Twojego iCloud / Drive</td></tr>
+<tr><td>Kopia na Twoim Dysku Google</td><td>Prywatny folder aplikacji na Twoim koncie Google</td><td>Do usunięcia ukrytych danych aplikacji na Dysku Google</td></tr>
+<tr><td>Dane logowania do konta</td><td>Nasza usługa kont (Cloudflare)</td><td>Do usunięcia konta w aplikacji</td></tr>
+<tr><td>Zaszyfrowane dane synchronizacji między urządzeniami</td><td>Nasz serwer pośredniczący (Cloudflare)</td><td>Do rozparowania albo maksymalnie 365 dni od ostatniej aktywności</td></tr>
+<tr><td>Rejestracja powiadomień</td><td>Nasza usługa powiadomień (Cloudflare)</td><td>Do czasu, gdy poprosisz nas o usunięcie</td></tr>
 <tr><td>Identyfikator reklamowy</td><td>Systemy Unity Ads</td><td>Zgodnie z polityką retencji Unity</td></tr>
 <tr><td>Dane awarii Sentry</td><td>Systemy Sentry</td><td>Do 90 dni od zdarzenia</td></tr>
 <tr><td>Token zakupu / paragon IAP</td><td>Twoje urządzenie + Apple / Google</td><td>Do odinstalowania; Apple / Google przechowują rekordy transakcji wg własnych polityk</td></tr>
@@ -175,7 +183,7 @@
 <ul>
 <li><strong>Prawo dostępu (art. 15 RODO)</strong> — potwierdzenie, czy przetwarzamy Twoje dane, oraz ich kopia. Większość Twoich danych znajduje się już na Twoim urządzeniu; eksportuj je z aplikacji lub napisz do nas.</li>
 <li><strong>Prawo do sprostowania (art. 16 RODO)</strong> — poprawa nieprawidłowych danych. Edytuj dane bezpośrednio w aplikacji.</li>
-<li><strong>Prawo do usunięcia / "prawo do bycia zapomnianym" (art. 17 RODO)</strong> — usuń wszystkie dane przez Ustawienia → "Usuń wszystkie dane" lub odinstaluj aplikację.</li>
+<li><strong>Prawo do usunięcia / "prawo do bycia zapomnianym" (art. 17 RODO)</strong> — usuń wszystkie dane przez Ustawienia → "Usuń wszystkie dane" lub odinstaluj aplikację; usuń konto w aplikacji; usuń kopię z Dysku Google (Ustawienia → Zarządzaj aplikacjami); w sprawie rejestracji powiadomień napisz do nas.</li>
 <li><strong>Prawo do ograniczenia przetwarzania (art. 18 RODO)</strong> — żądanie czasowego wstrzymania; napisz do nas.</li>
 <li><strong>Prawo do przenoszenia danych (art. 20 RODO)</strong> — Ustawienia → "Eksportuj dane" tworzy plik JSON / Markdown.</li>
 <li><strong>Prawo do sprzeciwu (art. 21 RODO)</strong> — sprzeciw wobec przetwarzania opartego na prawnie uzasadnionym interesie, w szczególności reklam o charakterze profilującym. Wyłącz reklamy spersonalizowane w ustawieniach aplikacji lub przez ustawienia systemowe.</li>
@@ -192,7 +200,7 @@
 <h2>12. Bezpieczeństwo</h2>
 <ul>
 <li><strong>Lokalna pamięć szyfrowana at-rest</strong> — wpisy szczepień, profile i przypomnienia są zapisane w MMKV z kluczem szyfrującym wyprowadzanym z urządzenia, trzymanym w Apple Keychain (iOS) / Android Keystore (Android). Klucz nigdy nie opuszcza Twojego urządzenia.</li>
-<li><strong>Nie jesteśmy w stanie odczytać Twoich danych szczepień</strong> — wpisy są przechowywane lokalnie i opuszczają urządzenie wyłącznie jako szyfrogram, i tylko jeśli włączysz kopię na koncie albo synchronizację między urządzeniami. Klucz szyfrujący zostaje na Twoim urządzeniu, więc ani my, ani nikt pośredniczący w transmisji nie jest w stanie ich odszyfrować.</li>
+<li><strong>Nie jesteśmy w stanie odczytać Twoich danych szczepień</strong> — wpisy opuszczają Twoje urządzenie wyłącznie wtedy, gdy włączysz kopię albo synchronizację między urządzeniami. Kopia trafia na Twój własny Dysk Google, nigdy na nasze serwery; synchronizacja przechodzi przez nasz serwer pośredniczący wyłącznie jako dane zaszyfrowane od końca do końca, których nie jesteśmy w stanie odszyfrować.</li>
 <li><strong>Brak integracji z HealthKit / Health Connect</strong> — nie czytamy ani nie zapisujemy danych w systemowych magazynach zdrowia; wpisy szczepień są wyłącznie wprowadzanymi przez użytkownika danymi organizacyjnymi.</li>
 <li><strong>Bezpieczeństwo transportu</strong> — wszystkie połączenia sieciowe (odświeżenie referencyjnych danych szczepień, reklamy, IAP) używają HTTPS / TLS 1.2+.</li>
 <li><strong>Minimalizacja</strong> — zbieramy wyłącznie dane niezbędne do wymienionych celów organizacyjnych.</li>

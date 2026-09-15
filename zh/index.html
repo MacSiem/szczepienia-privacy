@@ -70,19 +70,23 @@
     </div>
 
 <h1>隐私政策 — Moje Szczepienia</h1>
-<p>最后更新：2026-05-06 · 生效日期：2026-05-06</p>
+<p>最后更新：2026-09-16 · 生效日期：2026-05-06</p>
 <h2>1. 我们是谁</h2>
-<p><strong>Moje Szczepienia</strong> 是一款面向家庭的移动<strong>疫苗接种管理工具</strong>：用于管理家庭成员的疫苗接种日程、历史记录和提醒。本应用<strong>仅供信息和组织用途</strong> — 不用于诊断、治疗、预防疾病，也不替代医疗咨询。所有疫苗接种条目均<strong>本地存储在您的设备上</strong>的加密存储中；没有任何医疗数据发送到我们的服务器。</p>
+<p><strong>Moje Szczepienia</strong> 是一款面向家庭的移动<strong>疫苗接种管理工具</strong>：用于管理家庭成员的疫苗接种日程、历史记录和提醒。本应用<strong>仅供信息和组织用途</strong> — 不用于诊断、治疗、预防疾病，也不替代医疗咨询。所有疫苗接种条目均<strong>本地存储在您的设备上</strong>的加密存储中；绝不会将任何可读的医疗数据发送到我们的服务器。通过我们服务器传输的内容列在第 3.2 节中：可选的登录详情、我们无法解密的端到端加密同步数据，以及发送通知所需的技术数据。</p>
 <p><strong>数据控制者：</strong> Maciej Siemiński— Moje Szczepienia 的开发者。 <strong>联系方式：</strong> <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a></p>
 <p>对于通过 Google Play 分发的应用版本，数据控制者为 LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska。</p>
 <p>本隐私政策解释了 Moje Szczepienia 处理哪些个人数据、如何处理、为何处理以及您拥有的权利。</p>
 <h2>2. 简明摘要</h2>
-<p>Moje Szczepienia 是一款个人疫苗接种管理工具 — 疫苗接种记录保存在您设备的加密本地存储中。我们不运行存储您医疗数据的服务器。我们使用 Unity Ads（仅在“设置”屏幕上显示，绝不在健康数据屏幕上显示）、Sentry 用于崩溃报告、可选地同步到您自己的 iCloud / Google Drive，以及 Apple / Google 计费处理应用内购买。本应用<strong>不是医疗设备</strong>，也<strong>不</strong>提供诊断、治疗或医疗建议。您拥有完整的 GDPR 权利，包括访问、删除和数据可携性 — 大部分可在应用内直接行使。</p>
+<p>Moje Szczepienia 是一款个人疫苗接种管理工具 — 疫苗接种记录保存在您设备的加密本地存储中。我们不运行存储可读医疗数据的服务器。我们使用 Unity Ads（仅在“设置”屏幕上显示，绝不在健康数据屏幕上显示）、Sentry 用于崩溃报告、您自己的 Google Drive 中的可选备份、设备之间的可选端到端加密同步，以及 Apple / Google 计费处理应用内购买。本应用<strong>不是医疗设备</strong>，也<strong>不</strong>提供诊断、治疗或医疗建议。您拥有完整的 GDPR 权利，包括访问、删除和数据可携性 — 大部分可在应用内直接行使。</p>
 <h2>3. 我们处理的数据</h2>
 <h3>3.1 仅本地数据</h3>
-<p><strong>疫苗接种数据</strong>（家庭成员档案、疫苗接种记录、日期、备注、疫苗接种手册/贴纸照片）<strong>仅本地存储在您的设备上</strong>，使用加密的 MMKV 存储（密钥随机生成并保存在 Apple Keychain / Android Keystore 中）。我们从不将此数据发送到我们的服务器或任何第三方。</p>
-<h3>3.2 可选同步（您自己的 iCloud / Google Drive）</h3>
-<p>Moje Szczepienia 可能会提供使用<strong>您自己的</strong> iCloud (iOS) 或 Google Drive AppFolder (Android) 账户在您自己的设备之间进行可选同步。<strong>您的数据保留在您的 Apple / Google 账户中 — 绝不会到达我们的服务器。</strong> 应用将数据存储在专用的 AppFolder 区域，该区域对应用是私密的，并且仅您可访问。您可以随时在“设置”中禁用同步；禁用同步会停止后续上传，但不会删除您 iCloud / Google Drive 中已有的内容。</p>
+<p><strong>疫苗接种数据</strong>（家庭成员档案、疫苗接种、日期、备注、疫苗接种手册/贴纸照片）<strong>本地存储在您的设备上</strong>，使用加密的 MMKV 存储（密钥随机生成并保存在 Apple Keychain / Android Keystore 中）。我们从不将此数据以可读形式发送到我们的服务器或任何第三方。只有当您启用第 3.2 节中描述的可选功能之一时，它才会离开您的设备。</p>
+<h3>3.2 可选账户、您自己的 Google Drive 中的备份、设备间同步及通知</h3>
+<p><strong>账户登录。</strong>您可以使用 Apple 或 Google 登录。我们的账户服务（由 Cloudflare 托管）随后会存储内部用户 ID、您的 Apple / Google 账户标识符以及您的电子邮箱地址（如果提供商共享了该信息）。它不存储任何疫苗接种数据。在应用中删除账户会移除此信息。</p>
+<p><strong>您自己的 Google Drive 中的备份。</strong>如果您连接了 Google 账户，应用会将其数据的加密备份（包括疫苗接种手册的照片）保存在<strong>您的</strong> Google Drive 的私有应用文件夹中。该文件夹是隐藏的，只有此应用可以访问，并且该应用无法查看您的任何其他 Drive 文件。加密密钥保存在同一私有文件夹中，因此在新手机上，您只需登录 Google 即可恢复数据 — 无需恢复短语。这也意味着，作为存储提供商的 Google 技术上可以访问该备份，就像您 Google 账户中的任何其他数据一样。<strong>我们的服务器上不存储您的数据副本。</strong>您可以在“设置”中关闭备份，这将停止后续上传。要删除备份本身，请删除 Google Drive 中应用的隐藏数据（设置 → 管理应用）。</p>
+<p><strong>设备间同步。</strong>如果您配对设备，条目将通过我们的中继（由 Cloudflare 托管）以端到端加密方式在设备之间传输。中继仅存储其无法解密的加密数据，以及配对设备的推送通知令牌，直到您取消配对或自上次活动起最长 365 天。关于新条目的通知通过 Expo 推送服务发送，且不包含任何疫苗接种数据。</p>
+<p><strong>公告和通知。</strong>为了显示应用内公告并发送通知，应用会向我们的通知服务（由 Cloudflare 托管）注册随机安装标识符、推送通知令牌、平台、语言、应用版本、发布渠道以及 Premium 是否处于活动状态。这不包含任何疫苗接种数据，并将一直保留，直到您要求我们将其删除。</p>
+<p><strong>加密文件。</strong>您还可以导出加密备份文件并将其保存在您选择的任何位置，例如 iCloud Drive、Google Drive 或“文件”。</p>
 <h3>3.3 诊断数据 (Sentry)</h3>
 <p>Moje Szczepienia 集成 Sentry (sentry.io) 用于崩溃和错误报告。Sentry 收集：</p>
 <ul>
@@ -116,7 +120,7 @@
 <p>每个权限都是根据上下文请求的。您可以拒绝任何权限，并且仍然可以使用核心功能（如适用）。</p>
 <h3>3.7 我们<strong>不</strong>收集什么</h3>
 <ul>
-<li>您的姓名、电子邮件、电话号码、地址（无需账户）。</li>
+<li>您的姓名、电话号码或地址。不需要账户；仅当您选择登录时，才会处理您的电子邮件地址（第 3.2 节）。</li>
 <li>联系人列表、日历、短信、通话记录。</li>
 <li>精确位置。</li>
 <li>应用外的浏览历史。</li>
@@ -126,7 +130,7 @@
 <h2>4. 我们为何处理这些数据（目的）</h2>
 <ul>
 <li><strong>在您的设备上运行应用</strong> — 本地存储和（如果存在）加密让您的数据在会话之间保持持久。</li>
-<li><strong>在您自己的设备之间同步您自己的数据</strong> — 通过您自己的 iCloud / Google Drive AppFolder；我们看不到这些数据。</li>
+<li><strong>备份和同步您自己的数据</strong> — 您自己的 Google Drive 中的备份以及您自己的设备之间的端到端加密同步；我们无法读取此数据。</li>
 <li><strong>提高稳定性</strong> — Sentry 诊断有助于修复影响您使用的崩溃。</li>
 <li><strong>维持免费层级</strong> — Unity Ads 提供非侵入性广告，为不购买高级版的用户提供资金。</li>
 <li><strong>处理购买</strong> — Apple / Google 计费实现您选择购买的高级授权。</li>
@@ -134,7 +138,7 @@
 <h2>5. 法律依据 (GDPR Art. 6)</h2>
 <p>对于欧洲经济区、英国和瑞士的用户：</p>
 <ul>
-<li><strong>履行合同</strong> (Art. 6(1)(b)) — 运行应用，处理您的购买。</li>
+<li><strong>履行合同</strong> (Art. 6(1)(b)) — 运行应用、您的可选账户、备份及设备间同步、通知、处理您的购买。</li>
 <li><strong>合法权益</strong> (Art. 6(1)(f)) — Sentry 诊断、欺诈/滥用预防、非个性化广告。我们的目的是提高稳定性和维持免费层级；这不会凌驾于您的基本权利之上。</li>
 <li><strong>同意</strong> (Art. 6(1)(a)) — 个性化广告，您通过 ATT 提示 (iOS) 或应用内偏好设置授予同意。您可以随时撤回同意，而不影响之前的处理。</li>
 <li><strong>法律义务</strong> (Art. 6(1)(c)) — 仅当我们必须回应当局的合法请求时。</li>
@@ -148,8 +152,9 @@
 <tr><td>Functional Software Inc. (Sentry)</td><td>崩溃报告</td><td>堆栈跟踪、设备元数据</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>iOS 上的应用内购买处理</td><td>购买令牌、账户级授权</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
 <tr><td>Google LLC (Play Billing)</td><td>Android 上的应用内购买处理</td><td>购买令牌、账户级授权</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Apple Inc. (iCloud)</td><td>可选同步到您自己的 iCloud 账户 (iOS)</td><td>您私有 CloudKit 容器中的加密应用数据</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
-<tr><td>Google LLC (Drive AppFolder)</td><td>可选同步到您自己的 Drive (Android)</td><td>您私有 AppFolder 中的加密应用数据</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
+<tr><td>Google LLC (Google Drive)</td><td>您自己的 Google Drive 中的可选备份（iOS 和 Android）</td><td>加密的应用数据及其在应用私有文件夹中的加密密钥</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
+<tr><td>Cloudflare, Inc.</td><td>托管账户登录、设备间同步中继及通知服务</td><td>账户标识符和电子邮件；端到端加密同步数据；安装标识符、推送令牌和应用详情</td><td><a href="https://www.cloudflare.com/privacypolicy/">https://www.cloudflare.com/privacypolicy/</a></td></tr>
+<tr><td>650 Industries, Inc. (Expo push service)</td><td>发送通知</td><td>推送令牌、不含疫苗接种数据的通知文本</td><td><a href="https://expo.dev/privacy">https://expo.dev/privacy</a></td></tr>
 </tbody></table>
 <p>如果有效的法院命令或其他具有约束性的法律程序要求，我们可能会在验证请求并依法通知您后披露数据。</p>
 <h2>7. 国际数据传输</h2>
@@ -165,7 +170,10 @@
 <thead><tr><th>数据</th><th>存储位置</th><th>保留时长</th></tr></thead>
 <tbody>
 <tr><td>您的应用内数据</td><td>仅您的设备（加密）</td><td>直到您删除、卸载应用或清除应用数据</td></tr>
-<tr><td>您 iCloud / Google Drive 中的同步数据</td><td>您自己的 Apple / Google 账户</td><td>直到您从 iCloud / Drive 中删除应用数据</td></tr>
+<tr><td>Google Drive 中的备份</td><td>您 Google 账户中的应用私有文件夹</td><td>直到您删除 Google Drive 中应用的隐藏数据</td></tr>
+<tr><td>账户登录详情</td><td>我们的账户服务 (Cloudflare)</td><td>直到您在应用中删除账户</td></tr>
+<tr><td>加密的设备间同步数据</td><td>我们的中继 (Cloudflare)</td><td>直到您取消配对，或自上次活动起最长 365 天</td></tr>
+<tr><td>通知注册</td><td>我们的通知服务 (Cloudflare)</td><td>直到您要求我们将其删除</td></tr>
 <tr><td>广告 ID</td><td>Unity Ads 系统</td><td>根据 Unity 的保留政策</td></tr>
 <tr><td>Sentry 崩溃数据</td><td>Sentry 系统</td><td>自事件发生之日起最长 90 天</td></tr>
 <tr><td>IAP 购买令牌/收据</td><td>您的设备 + Apple / Google</td><td>直到您卸载；Apple / Google 根据其自身政策保留交易记录</td></tr>
@@ -175,7 +183,7 @@
 <ul>
 <li><strong>访问权 (Art. 15)</strong> — 确认我们是否处理您的数据以及数据的副本。您的大部分数据已在您的设备上；您可以从应用中导出，或联系我们获取其余数据。</li>
 <li><strong>更正权 (Art. 16)</strong> — 更正不准确的数据。直接在应用中编辑数据。</li>
-<li><strong>删除权 / “被遗忘权” (Art. 17)</strong> — 通过“设置”→“擦除所有数据”或卸载应用来删除所有数据。</li>
+<li><strong>删除权 / “被遗忘权” (Art. 17)</strong> — 通过“设置”→“擦除所有数据”或通过卸载应用来删除所有数据；在应用中删除您的账户；从 Google Drive 中移除备份（设置 → 管理应用）；对于通知注册，请写信联系我们。</li>
 <li><strong>限制处理权 (Art. 18)</strong> — 请求暂时中止；联系我们。</li>
 <li><strong>数据可携权 (Art. 20)</strong> — “设置”→“导出数据”会生成一个 JSON / Markdown 包。</li>
 <li><strong>反对权 (Art. 21)</strong> — 反对基于合法权益的处理，特别是画像式广告。在应用设置中或通过系统控件禁用个性化广告。</li>
@@ -192,7 +200,7 @@
 <h2>12. 安全性</h2>
 <ul>
 <li><strong>静态加密本地存储</strong> — 疫苗接种条目、档案和提醒存储在 MMKV 中，使用设备派生的加密密钥，该密钥保存在 Apple Keychain (iOS) / Android Keystore (Android) 中。密钥绝不会离开您的设备。</li>
-<li><strong>无医疗数据网络传输</strong> — 疫苗接种条目绝不会通过网络发送到我们的服务器。唯一可选的云接触点是您<strong>自己的</strong> iCloud / Google Drive AppFolder，只有您才能访问。</li>
+<li><strong>我们无法读取您的疫苗接种数据</strong> — 只有当您启用备份或设备间同步时，条目才会离开您的设备。备份发送到您自己的 Google Drive，绝不会发送到我们的服务器；同步仅作为我们无法解密的端到端加密数据通过我们的中继传输。</li>
 <li><strong>无 HealthKit / Health Connect 集成</strong> — 我们不读取或写入系统健康存储；疫苗接种条目仅是用户输入的组织性数据。</li>
 <li><strong>传输安全</strong> — 所有网络调用（远程疫苗参考数据刷新、广告、IAP）均使用 HTTPS / TLS 1.2+。</li>
 <li><strong>数据最小化</strong> — 我们仅收集列出的组织目的所需的数据。</li>
