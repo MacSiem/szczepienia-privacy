@@ -95,12 +95,13 @@
 <li>informații despre dispozitiv (model, versiune OS, locație),</li>
 <li>versiunea aplicației și numărul build-ului.</li>
 </ul>
-<p>Sentry <strong>nu</strong> colectează conținutul dumneavoastră (înregistrări, fișiere, registre de vaccinare, fotografii, arhive), nume de utilizator sau alte PII. Datele diagnostice sunt reținute de Sentry pentru o perioadă de până la <strong>90 de zile</strong>.</p>
+<p>Datele diagnostice sunt reținute de Sentry pentru o perioadă de până la <strong>90 de zile</strong>.</p>
 <h3>3.4 Publicitate (Unity Ads)</h3>
 <p>Moje Szczepienia afișează reclame non-invazive doar pe ecranul de Setări (fără reclame pe ecranele cu date de vaccinare). Reclamele sunt livrate de <strong>Unity Ads</strong>, al cărui SDK colectează:</p>
 <ul>
-<li><strong>ID-ul de publicitate</strong> (ID-ul de publicitate Android / IDFA Apple), partajat cu Google pentru a difuza reclame;</li>
+<li><strong>ID-ul de publicitate</strong> (ID-ul de publicitate Android / IDFA Apple), partajat cu Unity Ads pentru a difuza reclame;</li>
 <li>date diagnostice (modelul dispozitivului, locația la nivel de țară, limba).</li>
+<li>Unity poate colecta și partaja locația aproximativă, istoricul achizițiilor și interacțiunile cu reclamele, precum vizualizările și atingerile din reclamă, pentru publicitate și analiză.</li>
 </ul>
 <p>Modul implicit este <strong>reclame non-personalizate</strong>. Pe iOS, solicitarea App Tracking Transparency (ATT) cere consimțământul dumneavoastră înainte de utilizarea oricărui identificator de urmărire; pe Android, controlați ID-ul de publicitate în Setările sistemului. Reclamele pot fi dezactivate permanent prin IAP-ul Lifetime / Premium.</p>
 <h3>3.5 Achiziții în aplicație (IAP)</h3>
@@ -149,7 +150,7 @@
 <table>
 <thead><tr><th>Destinatar</th><th>Scop</th><th>Categoria de date</th><th>Politica de confidențialitate</th></tr></thead>
 <tbody>
-<tr><td>Unity Technologies (Unity Ads)</td><td>Difuzare reclame</td><td>ID de publicitate, metrici dispozitiv și reclame</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
+<tr><td>Unity Technologies (Unity Ads)</td><td>Difuzare reclame</td><td>Identificatori publicitari și alți identificatori, locație aproximativă, diagnostic, istoric al achizițiilor și interacțiuni cu reclamele</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>Raportare erori</td><td>Urme ale stivei de erori, metadate dispozitiv</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>Procesare achiziții în aplicație pe iOS</td><td>Token de achiziție, drept la nivel de cont</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
 <tr><td>Google LLC (Play Billing)</td><td>Procesare achiziții în aplicație pe Android</td><td>Token de achiziție, drept la nivel de cont</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>

@@ -95,12 +95,13 @@
 <li>デバイス情報（モデル、OSバージョン、ロケール）</li>
 <li>アプリのバージョンとビルド番号</li>
 </ul>
-<p>Sentryは、お客様のコンテンツ（エントリー、ファイル、予防接種記録、写真、アーカイブ）、ユーザー名、またはその他のPIIを<strong>収集しません</strong>。診断データはSentryによって最大<strong>90日間</strong>保持されます。</p>
+<p>診断データはSentryによって最大<strong>90日間</strong>保持されます。</p>
 <h3>3.4 広告（Unity Ads）</h3>
 <p>Moje Szczepieniaは、設定画面のみで非侵入型の広告を表示します（予防接種データ画面では広告は表示されません）。広告は<strong>Unity Ads</strong>によって配信され、そのSDKは以下を収集します。</p>
 <ul>
-<li><strong>Advertising ID</strong>（Android Advertising ID / Apple IDFA）。広告配信のためにGoogleと共有されます。</li>
+<li><strong>Advertising ID</strong>（Android Advertising ID / Apple IDFA）。広告配信のためにUnity Adsと共有されます。</li>
 <li>診断データ（デバイスモデル、国レベルの位置情報、言語）。</li>
+<li>Unityは、おおよその位置情報、購入履歴、広告内での表示やタップなどの広告操作を、広告と分析のために収集・共有する場合があります。</li>
 </ul>
 <p>デフォルトモードは<strong>パーソナライズされていない広告</strong>です。iOSでは、App Tracking Transparency（ATT）プロンプトが、トラッキングレベルの識別子が使用される前にお客様の同意を求めます。Androidでは、システム設定でAdvertising IDを管理できます。広告は、Lifetime / Premium IAPを通じて永続的に無効にできます。</p>
 <h3>3.5 アプリ内購入（IAP）</h3>
@@ -149,7 +150,7 @@
 <table>
 <thead><tr><th>受領者</th><th>目的</th><th>データカテゴリ</th><th>プライバシーポリシー</th></tr></thead>
 <tbody>
-<tr><td>Unity Technologies (Unity Ads)</td><td>広告配信</td><td>Advertising ID、デバイスと広告の指標</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
+<tr><td>Unity Technologies (Unity Ads)</td><td>広告配信</td><td>広告IDなどの識別子、おおよその位置情報、診断情報、購入履歴、広告内の操作</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>クラッシュ報告</td><td>Stack traces、デバイスメタデータ</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>iOSでのアプリ内購入処理</td><td>購入トークン、アカウントレベルの資格</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
 <tr><td>Google LLC (Play Billing)</td><td>Androidでのアプリ内購入処理</td><td>購入トークン、アカウントレベルの資格</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>

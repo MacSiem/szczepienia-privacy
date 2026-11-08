@@ -95,12 +95,13 @@
 <li>informacje o urządzeniu (model, wersja systemu, locale);</li>
 <li>wersję aplikacji i build number.</li>
 </ul>
-<p>Sentry <strong>nie</strong> zbiera Twoich treści (wpisów, plików, danych szczepień, zdjęć, archiwów), nazw użytkownika ani innych PII. Dane diagnostyczne są przechowywane przez Sentry do <strong>90 dni</strong>.</p>
+<p>Aplikacja jest zaprojektowana tak, aby wykluczać dane szczepień, nazwy użytkowników i inne wrażliwe informacje z raportów diagnostycznych, oraz filtruje znane pola wrażliwe. Raporty błędów mogą jednak zawierać informacje obecne w błędzie lub jego kontekście. Dane diagnostyczne są przechowywane przez Sentry do <strong>90 dni</strong>.</p>
 <h3>3.4 Reklamy (Unity Ads)</h3>
 <p>Moje Szczepienia wyświetla nieinwazyjne reklamy na ekranach: wyłącznie Ustawienia (brak reklam na ekranach z danymi o szczepieniach). Reklamy są dostarczane przez <strong>Unity Ads</strong>, którego SDK zbiera:</p>
 <ul>
 <li><strong>identyfikator reklamowy</strong> (Android Advertising ID / Apple IDFA), udostępniany Unity Ads w celu serwowania reklam;</li>
-<li>dane diagnostyczne (model urządzenia, lokalizacja na poziomie kraju, język).</li>
+<li>dane diagnostyczne i przybliżoną lokalizację;</li>
+<li>historię zakupów oraz interakcje z reklamami, takie jak wyświetlenia i kliknięcia, na potrzeby reklam i analityki; interakcje służą także zapobieganiu oszustwom. Unity może zbierać i udostępniać te dane; według dokumentacji interakcje są zbierane wyłącznie podczas kontaktu z samą reklamą.</li>
 </ul>
 <p>Domyślnym trybem są <strong>reklamy nie-spersonalizowane</strong>. Na iOS, przed użyciem identyfikatora typu tracking, Moje Szczepienia wyświetla systemowy monit App Tracking Transparency (ATT); na Androidzie identyfikatorem reklamowym zarządzasz w ustawieniach systemu. Reklamy możesz trwale wyłączyć jednorazowym zakupem IAP Lifetime / Premium.</p>
 <h3>3.5 Zakupy w aplikacji (IAP)</h3>
@@ -149,7 +150,7 @@
 <table>
 <thead><tr><th>Odbiorca</th><th>Cel</th><th>Kategoria danych</th><th>Polityka prywatności</th></tr></thead>
 <tbody>
-<tr><td>Unity Technologies (Unity Ads)</td><td>Serwowanie reklam</td><td>Identyfikator reklamowy, metryki urządzenia i reklam</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
+<tr><td>Unity Technologies (Unity Ads)</td><td>Serwowanie reklam</td><td>Identyfikator reklamowy i inne identyfikatory, przybliżona lokalizacja, diagnostyka, historia zakupów i interakcje z reklamami</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>Raportowanie awarii</td><td>Stack traces, metadane urządzenia</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>Realizacja zakupów na iOS</td><td>Token zakupu, uprawnienia konta</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
 <tr><td>Google LLC (Play Billing)</td><td>Realizacja zakupów na Androidzie</td><td>Token zakupu, uprawnienia konta</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>

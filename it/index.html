@@ -95,12 +95,13 @@
 <li>informazioni sul dispositivo (modello, versione del sistema operativo, lingua),</li>
 <li>versione dell'app e numero di build.</li>
 </ul>
-<p>Sentry <strong>non</strong> raccoglie i tuoi contenuti (voci, file, registri di vaccinazione, foto, archivi), nomi utente o altre PII. I dati diagnostici sono conservati da Sentry per un massimo di <strong>90 giorni</strong>.</p>
+<p>I dati diagnostici sono conservati da Sentry per un massimo di <strong>90 giorni</strong>.</p>
 <h3>3.4 Pubblicità (Unity Ads)</h3>
 <p>Moje Szczepienia mostra annunci non invasivi solo nelle Impostazioni (nessun annuncio nelle schermate dei dati di vaccinazione). Gli annunci sono forniti da <strong>Unity Ads</strong>, il cui SDK raccoglie:</p>
 <ul>
-<li>l'<strong>ID pubblicitario</strong> (Android Advertising ID / Apple IDFA), condiviso con Google per la pubblicazione degli annunci;</li>
+<li>l'<strong>ID pubblicitario</strong> (Android Advertising ID / Apple IDFA), condiviso con Unity Ads per la pubblicazione degli annunci;</li>
 <li>dati diagnostici (modello del dispositivo, posizione a livello di paese, lingua).</li>
+<li>Unity può raccogliere e condividere la posizione approssimativa, la cronologia degli acquisti e le interazioni con gli annunci, come visualizzazioni e tocchi all’interno dell’annuncio, per pubblicità e analisi.</li>
 </ul>
 <p>La modalità predefinita è <strong>annunci non personalizzati</strong>. Su iOS, il prompt App Tracking Transparency (ATT) richiede il tuo consenso prima che venga utilizzato qualsiasi identificatore di livello di tracciamento; su Android controlli l'ID pubblicitario nelle Impostazioni di sistema. Gli annunci possono essere disabilitati permanentemente tramite l'IAP Lifetime / Premium.</p>
 <h3>3.5 Acquisti in-app (IAP)</h3>
@@ -149,7 +150,7 @@
 <table>
 <thead><tr><th>Destinatario</th><th>Scopo</th><th>Categoria di dati</th><th>Informativa sulla privacy</th></tr></thead>
 <tbody>
-<tr><td>Unity Technologies (Unity Ads)</td><td>Pubblicazione annunci</td><td>ID pubblicitario, metriche dispositivo e annunci</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
+<tr><td>Unity Technologies (Unity Ads)</td><td>Pubblicazione annunci</td><td>Identificativi pubblicitari e altri identificativi, posizione approssimativa, diagnostica, cronologia degli acquisti e interazioni con gli annunci</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>Segnalazione crash</td><td>Tracce di stack, metadati del dispositivo</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>Elaborazione acquisti in-app su iOS</td><td>Token di acquisto, diritto a livello di account</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
 <tr><td>Google LLC (Play Billing)</td><td>Elaborazione acquisti in-app su Android</td><td>Token di acquisto, diritto a livello di account</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>

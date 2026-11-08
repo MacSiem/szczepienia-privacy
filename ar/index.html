@@ -95,12 +95,13 @@
 <li>معلومات الجهاز (النموذج، إصدار نظام التشغيل، اللغة المحلية)،</li>
 <li>إصدار التطبيق ورقم البناء.</li>
 </ul>
-<p>Sentry <strong>لا</strong> تجمع المحتوى الخاص بك (الإدخالات، الملفات، سجلات التطعيم، الصور، الأرشيفات)، أسماء المستخدمين، أو أي معلومات تعريف شخصية أخرى. يتم الاحتفاظ ببيانات التشخيص بواسطة Sentry لمدة تصل إلى <strong>90 يومًا</strong>.</p>
+<p>يتم الاحتفاظ ببيانات التشخيص بواسطة Sentry لمدة تصل إلى <strong>90 يومًا</strong>.</p>
 <h3>3.4 الإعلانات (Unity Ads)</h3>
 <p>يعرض Moje Szczepienia إعلانات غير تدخلية في شاشة الإعدادات فقط (لا توجد إعلانات على شاشات بيانات التطعيم). تُقدم الإعلانات بواسطة <strong>Unity Ads</strong>، الذي يجمع SDK الخاص به:</p>
 <ul>
-<li><strong>معرّف الإعلان</strong> (Android Advertising ID / Apple IDFA)، المشترك مع Google لتقديم الإعلانات؛</li>
+<li><strong>معرّف الإعلان</strong> (Android Advertising ID / Apple IDFA)، المشترك مع Unity Ads لتقديم الإعلانات؛</li>
 <li>بيانات التشخيص (طراز الجهاز، الموقع على مستوى البلد، اللغة).</li>
+<li>قد تجمع Unity بيانات الموقع التقريبي وسجل المشتريات وتفاعلات الإعلانات، مثل المشاهدات والنقرات داخل الإعلان، وتشاركها للإعلان والتحليلات.</li>
 </ul>
 <p>الوضع الافتراضي هو <strong>إعلانات غير مخصصة</strong>. على نظام iOS، يطلب تنبيه App Tracking Transparency (ATT) موافقتك قبل استخدام أي معرّف لتتبع؛ على نظام Android تتحكم في Advertising ID ضمن إعدادات النظام. يمكن تعطيل الإعلانات بشكل دائم عبر IAP Lifetime / Premium.</p>
 <h3>3.5 المشتريات داخل التطبيق (IAP)</h3>
@@ -149,7 +150,7 @@
 <table>
 <thead><tr><th>المستلم</th><th>الغرض</th><th>فئة البيانات</th><th>سياسة الخصوصية</th></tr></thead>
 <tbody>
-<tr><td>Unity Technologies (Unity Ads)</td><td>عرض الإعلانات</td><td>Advertising ID، مقاييس الجهاز والإعلانات</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
+<tr><td>Unity Technologies (Unity Ads)</td><td>عرض الإعلانات</td><td>معرّف الإعلان ومعرّفات أخرى، الموقع التقريبي، بيانات التشخيص، سجل المشتريات وتفاعلات الإعلانات</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>الإبلاغ عن الأعطال</td><td>تتبع المكدس، بيانات تعريف الجهاز</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>معالجة المشتريات داخل التطبيق على iOS</td><td>رمز الشراء، الاستحقاق على مستوى الحساب</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
 <tr><td>Google LLC (Play Billing)</td><td>معالجة المشتريات داخل التطبيق على Android</td><td>رمز الشراء، الاستحقاق على مستوى الحساب</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>

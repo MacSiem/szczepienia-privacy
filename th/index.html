@@ -95,12 +95,13 @@
 <li>ข้อมูลอุปกรณ์ (รุ่น, เวอร์ชันระบบปฏิบัติการ, ภาษา),</li>
 <li>เวอร์ชันแอปและหมายเลขบิลด์</li>
 </ul>
-<p>Sentry <strong>ไม่</strong>รวบรวมเนื้อหาของคุณ (รายการ, ไฟล์, บันทึกการฉีดวัคซีน, รูปภาพ, ไฟล์เก็บถาวร), ชื่อผู้ใช้ หรือ PII อื่นๆ Sentry เก็บข้อมูลการวินิจฉัยไว้ไม่เกิน <strong>90 วัน</strong></p>
+<p>Sentry เก็บข้อมูลการวินิจฉัยไว้ไม่เกิน <strong>90 วัน</strong></p>
 <h3>3.4 การโฆษณา (Unity Ads)</h3>
 <p>Moje Szczepienia แสดงโฆษณาที่ไม่รบกวนเฉพาะในการตั้งค่าเท่านั้น (ไม่มีโฆษณาบนหน้าจอข้อมูลการฉีดวัคซีน) โฆษณาถูกส่งโดย <strong>Unity Ads</strong> ซึ่ง SDK จะรวบรวม:</p>
 <ul>
-<li><strong>Advertising ID</strong> (Android Advertising ID / Apple IDFA) ซึ่งแชร์กับ Google เพื่อแสดงโฆษณา;</li>
+<li><strong>Advertising ID</strong> (Android Advertising ID / Apple IDFA) ซึ่งแชร์กับ Unity Ads เพื่อแสดงโฆษณา;</li>
 <li>ข้อมูลการวินิจฉัย (รุ่นอุปกรณ์, ตำแหน่งระดับประเทศ, ภาษา)</li>
+<li>Unity อาจเก็บรวบรวมและแบ่งปันตำแหน่งโดยประมาณ ประวัติการซื้อ และการโต้ตอบกับโฆษณา เช่น การดูและการแตะภายในโฆษณา เพื่อการโฆษณาและการวิเคราะห์</li>
 </ul>
 <p>โหมดเริ่มต้นคือ <strong>โฆษณาที่ไม่ปรับให้เป็นส่วนตัว</strong> บน iOS, ข้อความแจ้ง App Tracking Transparency (ATT) จะขอความยินยอมจากคุณก่อนที่จะมีการใช้ตัวระบุการติดตามใดๆ; บน Android คุณสามารถควบคุม Advertising ID ได้ภายใต้การตั้งค่าระบบ โฆษณาสามารถปิดใช้งานได้อย่างถาวรผ่าน Lifetime / Premium IAP</p>
 <h3>3.5 การซื้อภายในแอป (IAP)</h3>
@@ -149,7 +150,7 @@
 <table>
 <thead><tr><th>ผู้รับ</th><th>วัตถุประสงค์</th><th>ประเภทข้อมูล</th><th>นโยบายความเป็นส่วนตัว</th></tr></thead>
 <tbody>
-<tr><td>Unity Technologies (Unity Ads)</td><td>แสดงโฆษณา</td><td>Advertising ID, device &amp; ad metrics</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
+<tr><td>Unity Technologies (Unity Ads)</td><td>แสดงโฆษณา</td><td>รหัสโฆษณาและตัวระบุอื่น ตำแหน่งโดยประมาณ ข้อมูลการวินิจฉัย ประวัติการซื้อ และการโต้ตอบกับโฆษณา</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>การรายงานข้อผิดพลาด</td><td>Stack traces, device metadata</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>การประมวลผลการซื้อภายในแอปบน iOS</td><td>Purchase token, account-level entitlement</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
 <tr><td>Google LLC (Play Billing)</td><td>การประมวลผลการซื้อภายในแอปบน Android</td><td>Purchase token, account-level entitlement</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>

@@ -95,12 +95,13 @@
 <li>laitetiedot (malli, käyttöjärjestelmän versio, maa-asetus),</li>
 <li>sovelluksen versio ja koontinumero.</li>
 </ul>
-<p>Sentry <strong>ei</strong> kerää sisältöäsi (merkintöjä, tiedostoja, rokotustietoja, valokuvia, arkistoja), käyttäjätunnuksia tai muita henkilökohtaisesti tunnistettavia tietoja (PII). Diagnostiset tiedot säilytetään Sentryssä enintään <strong>90 päivän ajan</strong>.</p>
+<p>Diagnostiset tiedot säilytetään Sentryssä enintään <strong>90 päivän ajan</strong>.</p>
 <h3>3.4 Mainonta (Unity Ads)</h3>
 <p>Moje Szczepienia näyttää häiritsemättömiä mainoksia vain Asetuksissa (ei mainoksia rokotustietonäytöillä). Mainokset toimittaa <strong>Unity Ads</strong>, jonka SDK kerää:</p>
 <ul>
-<li><strong>Mainostunnisteen</strong> (Android Advertising ID / Apple IDFA), joka jaetaan Googlen kanssa mainosten näyttämiseksi;</li>
+<li><strong>Mainostunnisteen</strong> (Android Advertising ID / Apple IDFA), joka jaetaan Unity Adsin kanssa mainosten näyttämiseksi;</li>
 <li>diagnostiset tiedot (laitteen malli, maakohtainen sijainti, kieli).</li>
+<li>Unity voi kerätä ja jakaa likimääräisen sijainnin, ostohistorian ja mainoksen sisäiset katselu- ja painallustiedot mainontaan ja analytiikkaan.</li>
 </ul>
 <p>Oletustila on <strong>ei-personoidut mainokset</strong>. iOS-käyttöjärjestelmässä App Tracking Transparency (ATT) -kehotus pyytää suostumuksesi ennen minkään seurantaan käytettävän tunnisteen käyttöä; Androidissa hallitset mainostunnusta järjestelmän Asetuksissa. Mainokset voidaan poistaa käytöstä pysyvästi Elinikäinen / Premium IAP -ostoksella.</p>
 <h3>3.5 Sovelluksen sisäiset ostokset (IAP)</h3>
@@ -149,7 +150,7 @@
 <table>
 <thead><tr><th>Vastaanottaja</th><th>Tarkoitus</th><th>Tietoluokka</th><th>Tietosuojaseloste</th></tr></thead>
 <tbody>
-<tr><td>Unity Technologies (Unity Ads)</td><td>Mainosten näyttäminen</td><td>Mainostunniste, laite- ja mainostiedot</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
+<tr><td>Unity Technologies (Unity Ads)</td><td>Mainosten näyttäminen</td><td>Mainostunniste ja muut tunnisteet, likimääräinen sijainti, diagnostiikka, ostohistoria ja mainosvuorovaikutukset</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>Kaatumisraportointi</td><td>Jäljitystiedot, laitteen metatiedot</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>Sovelluksen sisäisten ostosten käsittely iOS:llä</td><td>Ostotunnus, tilitason käyttöoikeus</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
 <tr><td>Google LLC (Play Billing)</td><td>Sovelluksen sisäisten ostosten käsittely Androidilla</td><td>Ostotunnus, tilitason käyttöoikeus</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>

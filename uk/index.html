@@ -95,12 +95,13 @@
 <li>інформацію про пристрій (модель, версія ОС, локаль),</li>
 <li>версію та номер збірки додатка.</li>
 </ul>
-<p>Sentry <strong>не</strong> збирає ваш вміст (записи, файли, записи про щеплення, фотографії, архіви), імена користувачів або інші PII. Діагностичні дані зберігаються Sentry до <strong>90 днів</strong>.</p>
+<p>Діагностичні дані зберігаються Sentry до <strong>90 днів</strong>.</p>
 <h3>3.4 Реклама (Unity Ads)</h3>
 <p>Moje Szczepienia показує неінвазивну рекламу лише в Налаштуваннях (без реклами на екранах з даними про щеплення). Реклама надається <strong>Unity Ads</strong>, чий SDK збирає:</p>
 <ul>
-<li><strong>Рекламний ідентифікатор</strong> (Android Advertising ID / Apple IDFA), що передається Google для показу реклами;</li>
+<li><strong>Рекламний ідентифікатор</strong> (Android Advertising ID / Apple IDFA), що передається Unity Ads для показу реклами;</li>
 <li>діагностичні дані (модель пристрою, місцезнаходження на рівні країни, мова).</li>
+<li>Unity може збирати й передавати приблизне місцезнаходження, історію покупок і взаємодії з рекламою, наприклад перегляди та натискання всередині оголошення, для реклами та аналітики.</li>
 </ul>
 <p>Режим за замовчуванням — <strong>неперсоналізована реклама</strong>. На iOS запит App Tracking Transparency (ATT) вимагає вашої згоди перед використанням будь-якого ідентифікатора для відстеження; на Android ви керуєте Рекламним ідентифікатором у системних Налаштуваннях. Рекламу можна повністю вимкнути через IAP "Довічна / Преміум".</p>
 <h3>3.5 Покупки в додатку (IAP)</h3>
@@ -149,7 +150,7 @@
 <table>
 <thead><tr><th>Одержувач</th><th>Мета</th><th>Категорія даних</th><th>Політика конфіденційності</th></tr></thead>
 <tbody>
-<tr><td>Unity Technologies (Unity Ads)</td><td>Показувати рекламу</td><td>Рекламний ідентифікатор, показники пристрою та реклами</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
+<tr><td>Unity Technologies (Unity Ads)</td><td>Показувати рекламу</td><td>Рекламний та інші ідентифікатори, приблизне місцезнаходження, діагностика, історія покупок і взаємодії з рекламою</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>Звітування про збої</td><td>Стеки викликів, метадані пристрою</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>Обробка покупок у додатку на iOS</td><td>Токен покупки, право на рівні облікового запису</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
 <tr><td>Google LLC (Play Billing)</td><td>Обробка покупок у додатку на Android</td><td>Токен покупки, право на рівні облікового запису</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>

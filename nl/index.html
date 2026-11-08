@@ -95,12 +95,13 @@
 <li>apparaatinformatie (model, OS-versie, landinstelling),</li>
 <li>app-versie en buildnummer.</li>
 </ul>
-<p>Sentry verzamelt <strong>geen</strong> uw inhoud (items, bestanden, vaccinatiegegevens, foto's, archieven), gebruikersnamen of andere PII. Diagnostische gegevens worden door Sentry maximaal <strong>90 dagen</strong> bewaard.</p>
+<p>Diagnostische gegevens worden door Sentry maximaal <strong>90 dagen</strong> bewaard.</p>
 <h3>3.4 Advertenties (Unity Ads)</h3>
 <p>Moje Szczepienia toont niet-invasieve advertenties alleen op Instellingen (geen advertenties op schermen met vaccinatiegegevens). Advertenties worden geleverd door <strong>Unity Ads</strong>, wiens SDK verzamelt:</p>
 <ul>
-<li>de <strong>Reclame-ID</strong> (Android Advertising ID / Apple IDFA), gedeeld met Google om advertenties te leveren;</li>
+<li>de <strong>Reclame-ID</strong> (Android Advertising ID / Apple IDFA), gedeeld met Unity Ads om advertenties te leveren;</li>
 <li>diagnostische gegevens (apparaatmodel, locatie op landniveau, taal).</li>
+<li>Unity kan de geschatte locatie, aankoopgeschiedenis en advertentie-interacties zoals weergaven en tikken binnen de advertentie verzamelen en delen voor advertenties en analyse.</li>
 </ul>
 <p>De standaardmodus is <strong>niet-gepersonaliseerde advertenties</strong>. Op iOS vraagt de App Tracking Transparency (ATT)-prompt om uw toestemming voordat een tracking-identificator wordt gebruikt; op Android beheert u de Advertising ID onder systeeminstellingen. Advertenties kunnen permanent worden uitgeschakeld via de Levenslange / Premium IAP.</p>
 <h3>3.5 In-app aankopen (IAP)</h3>
@@ -149,7 +150,7 @@
 <table>
 <thead><tr><th>Ontvanger</th><th>Doel</th><th>Gegevenscategorie</th><th>Privacybeleid</th></tr></thead>
 <tbody>
-<tr><td>Unity Technologies (Unity Ads)</td><td>Advertenties weergeven</td><td>Advertising ID, apparaat- &amp; advertentiemetrieken</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
+<tr><td>Unity Technologies (Unity Ads)</td><td>Advertenties weergeven</td><td>Advertentie-ID en andere identificatoren, geschatte locatie, diagnostiek, aankoopgeschiedenis en advertentie-interacties</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>Crashrapportage</td><td>Stack traces, apparaatmetadata</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>Verwerking van in-app aankopen op iOS</td><td>Aankooptoken, recht op accountniveau</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
 <tr><td>Google LLC (Play Billing)</td><td>Verwerking van in-app aankopen op Android</td><td>Aankooptoken, recht op accountniveau</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>

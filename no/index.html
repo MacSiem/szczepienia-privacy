@@ -95,12 +95,13 @@
 <li>enhetsinformasjon (modell, OS-versjon, språkinnstillinger),</li>
 <li>appversjon og byggnummer.</li>
 </ul>
-<p>Sentry <strong>samler ikke inn</strong> ditt innhold (innførsler, filer, vaksinasjonsjournaler, bilder, arkiver), brukernavn eller annen personlig identifiserbar informasjon (PII). Diagnosedata oppbevares av Sentry i opptil <strong>90 dager</strong>.</p>
+<p>Diagnosedata oppbevares av Sentry i opptil <strong>90 dager</strong>.</p>
 <h3>3.4 Annonsering (Unity Ads)</h3>
 <p>Moje Szczepienia viser ikke-invasive annonser kun på Innstillinger (ingen annonser på skjermer med vaksinasjonsdata). Annonser leveres av <strong>Unity Ads</strong>, hvis SDK samler inn:</p>
 <ul>
-<li>annonse-ID-en (Android Advertising ID / Apple IDFA), delt med Google for å vise annonser;</li>
+<li>annonse-ID-en (Android Advertising ID / Apple IDFA), delt med Unity Ads for å vise annonser;</li>
 <li>diagnosedata (enhetsmodell, landbasert plassering, språk).</li>
+<li>Unity kan samle inn og dele omtrentlig posisjon, kjøpshistorikk og annonseinteraksjoner som visninger og trykk inne i annonsen til annonsering og analyse.</li>
 </ul>
 <p>Standardmodus er <strong>ikke-personaliserte annonser</strong>. På iOS ber App Tracking Transparency (ATT)-spørringen om ditt samtykke før noen sporingsgrad-identifikator brukes; på Android kontrollerer du annonse-ID-en under systeminnstillinger. Annonser kan deaktiveres permanent via Lifetime / Premium IAP.</p>
 <h3>3.5 Kjøp i appen (IAP)</h3>
@@ -149,7 +150,7 @@
 <table>
 <thead><tr><th>Mottaker</th><th>Formål</th><th>Datakategori</th><th>Personvernerklæring</th></tr></thead>
 <tbody>
-<tr><td>Unity Technologies (Unity Ads)</td><td>Vise annonser</td><td>Annonse-ID, enhets- og annonsestatistikk</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
+<tr><td>Unity Technologies (Unity Ads)</td><td>Vise annonser</td><td>Annonse-ID og andre identifikatorer, omtrentlig posisjon, diagnostikk, kjøpshistorikk og annonseinteraksjoner</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>Krasjrapportering</td><td>Stack-spor, enhetsmetadata</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>Behandling av kjøp i appen på iOS</td><td>Kjøpstoken, kontonivårettighet</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
 <tr><td>Google LLC (Play Billing)</td><td>Behandling av kjøp i appen på Android</td><td>Kjøpstoken, kontonivårettighet</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>

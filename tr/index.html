@@ -95,12 +95,13 @@
 <li>cihaz bilgileri (model, işletim sistemi sürümü, yerel ayar),</li>
 <li>uygulama sürümü ve yapı numarası.</li>
 </ul>
-<p>Sentry içeriğinizi (girdiler, dosyalar, aşı kayıtları, fotoğraflar, arşivler), kullanıcı adlarınızı veya diğer PII'nizi <strong>toplamaz</strong>. Tanı verileri Sentry tarafından en fazla <strong>90 gün</strong> boyunca saklanır.</p>
+<p>Tanı verileri Sentry tarafından en fazla <strong>90 gün</strong> boyunca saklanır.</p>
 <h3>3.4 Reklamcılık (Unity Ads)</h3>
 <p>Moje Szczepienia, yalnızca Ayarlar ekranında müdahaleci olmayan reklamlar gösterir (aşı verileri ekranlarında reklam yoktur). Reklamlar, SDK'sı şunları toplayan <strong>Unity Ads</strong> tarafından sunulur:</p>
 <ul>
-<li>reklam sunmak için Google ile paylaşılan <strong>Reklam Kimliği</strong> (Android Reklam Kimliği / Apple IDFA);</li>
+<li>reklam sunmak için Unity Ads ile paylaşılan <strong>Reklam Kimliği</strong> (Android Reklam Kimliği / Apple IDFA);</li>
 <li>tanı verileri (cihaz modeli, ülke düzeyinde konum, dil).</li>
+<li>Unity yaklaşık konumu, satın alma geçmişini ve reklam içindeki görüntüleme ve dokunma gibi reklam etkileşimlerini reklam ve analiz amacıyla toplayıp paylaşabilir.</li>
 </ul>
 <p>Varsayılan mod <strong>kişiselleştirilmemiş reklamlardır</strong>. iOS'ta, herhangi bir izleme derecesinde tanımlayıcı kullanılmadan önce Uygulama İzleme Şeffaflığı (ATT) istemi onayınızı ister; Android'de Reklam Kimliğini sistem Ayarları altında kontrol edersiniz. Reklamlar, Ömür Boyu / Premium Uygulama İçi Satın Alma (IAP) yoluyla kalıcı olarak devre dışı bırakılabilir.</p>
 <h3>3.5 Uygulama içi satın almalar (IAP)</h3>
@@ -149,7 +150,7 @@
 <table>
 <thead><tr><th>Alıcı</th><th>Amaç</th><th>Veri kategorisi</th><th>Gizlilik politikası</th></tr></thead>
 <tbody>
-<tr><td>Unity Technologies (Unity Ads)</td><td>Reklam sunma</td><td>Reklam Kimliği, cihaz ve reklam metrikleri</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
+<tr><td>Unity Technologies (Unity Ads)</td><td>Reklam sunma</td><td>Reklam kimliği ve diğer tanımlayıcılar, yaklaşık konum, tanı verileri, satın alma geçmişi ve reklam etkileşimleri</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>Kilitlenme raporlama</td><td>Yığın izleri, cihaz meta verileri</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>iOS'ta uygulama içi satın alma işlemleri</td><td>Satın alma jetonu, hesap düzeyinde hak</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
 <tr><td>Google LLC (Play Billing)</td><td>Android'de uygulama içi satın alma işlemleri</td><td>Satın alma jetonu, hesap düzeyinde hak</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>

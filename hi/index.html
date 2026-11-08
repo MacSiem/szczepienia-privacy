@@ -95,12 +95,13 @@
 <li>डिवाइस की जानकारी (मॉडल, OS संस्करण, स्थानीय भाषा),</li>
 <li>ऐप संस्करण और बिल्ड संख्या।</li>
 </ul>
-<p>Sentry आपकी सामग्री (प्रविष्टियां, फ़ाइलें, टीकाकरण रिकॉर्ड, तस्वीरें, अभिलेखागार), उपयोगकर्ता नाम, या अन्य PII <strong>एकत्रित नहीं करता है</strong>। निदान डेटा Sentry द्वारा <strong>90 दिनों</strong> तक बनाए रखा जाता है।</p>
+<p>निदान डेटा Sentry द्वारा <strong>90 दिनों</strong> तक बनाए रखा जाता है।</p>
 <h3>3.4 विज्ञापन (Unity Ads)</h3>
 <p>Moje Szczepienia केवल सेटिंग्स पर गैर-आक्रामक विज्ञापन दिखाता है (टीकाकरण डेटा स्क्रीन पर कोई विज्ञापन नहीं)। विज्ञापन <strong>Unity Ads</strong> द्वारा प्रदान किए जाते हैं, जिसका SDK निम्नलिखित एकत्र करता है:</p>
 <ul>
-<li><strong>विज्ञापन ID</strong> (Android Advertising ID / Apple IDFA), विज्ञापनों को दिखाने के लिए Google के साथ साझा की जाती है;</li>
+<li><strong>विज्ञापन ID</strong> (Android Advertising ID / Apple IDFA), विज्ञापनों को दिखाने के लिए Unity Ads के साथ साझा की जाती है;</li>
 <li>निदान डेटा (डिवाइस मॉडल, देश-स्तर का स्थान, भाषा)।</li>
+<li>Unity अनुमानित स्थान, खरीद इतिहास और विज्ञापन के भीतर देखे जाने या टैप जैसी विज्ञापन इंटरैक्शन की जानकारी विज्ञापन और विश्लेषण के लिए एकत्र और साझा कर सकता है।</li>
 </ul>
 <p>डिफ़ॉल्ट मोड <strong>गैर-व्यक्तिगत विज्ञापन</strong> है। iOS पर, ऐप ट्रैकिंग पारदर्शिता (ATT) प्रॉम्प्ट किसी भी ट्रैकिंग-ग्रेड पहचानकर्ता का उपयोग करने से पहले आपकी सहमति मांगता है; Android पर आप सिस्टम सेटिंग्स के तहत विज्ञापन ID को नियंत्रित करते हैं। Lifetime / Premium IAP के माध्यम से विज्ञापनों को स्थायी रूप से अक्षम किया जा सकता है।</p>
 <h3>3.5 इन-ऐप खरीदारी (IAP)</h3>
@@ -149,7 +150,7 @@
 <table>
 <thead><tr><th>प्राप्तकर्ता</th><th>उद्देश्य</th><th>डेटा श्रेणी</th><th>गोपनीयता नीति</th></tr></thead>
 <tbody>
-<tr><td>Unity Technologies (Unity Ads)</td><td>विज्ञापन दिखाएं</td><td>विज्ञापन ID, डिवाइस और विज्ञापन मेट्रिक्स</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
+<tr><td>Unity Technologies (Unity Ads)</td><td>विज्ञापन दिखाएं</td><td>विज्ञापन और अन्य पहचानकर्ता, अनुमानित स्थान, निदान डेटा, खरीद इतिहास और विज्ञापन इंटरैक्शन</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>क्रैश रिपोर्टिंग</td><td>स्टैक ट्रेस, डिवाइस मेटाडेटा</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>iOS पर इन-ऐप खरीदारी प्रसंस्करण</td><td>खरीद टोकन, खाता-स्तरीय पात्रता</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
 <tr><td>Google LLC (Play Billing)</td><td>Android पर इन-ऐप खरीदारी प्रसंस्करण</td><td>खरीद टोकन, खाता-स्तरीय पात्रता</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>

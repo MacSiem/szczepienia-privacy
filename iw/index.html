@@ -95,12 +95,13 @@
 <li>מידע על המכשיר (דגם, גרסת מערכת הפעלה, אזור),</li>
 <li>גרסת האפליקציה ומספר Build.</li>
 </ul>
-<p>Sentry <strong>אינו</strong> אוסף את התוכן שלך (רשומות, קבצים, רישומי חיסונים, תמונות, ארכיונים), שמות משתמש, או PII אחרים. נתוני אבחון נשמרים על ידי Sentry למשך עד <strong>90 יום</strong>.</p>
+<p>נתוני אבחון נשמרים על ידי Sentry למשך עד <strong>90 יום</strong>.</p>
 <h3>3.4 פרסום (Unity Ads)</h3>
 <p>Moje Szczepienia מציג פרסומות לא פולשניות במסך ההגדרות בלבד (אין פרסומות במסכי נתוני חיסונים). פרסומות מוגשות על ידי <strong>Unity Ads</strong>, אשר ה-SDK שלו אוסף:</p>
 <ul>
-<li>את <strong>מזהה הפרסום</strong> (Android Advertising ID / Apple IDFA), המשותף ל-Google להצגת פרסומות;</li>
+<li>את <strong>מזהה הפרסום</strong> (Android Advertising ID / Apple IDFA), המשותף ל-Unity Ads להצגת פרסומות;</li>
 <li>נתוני אבחון (דגם מכשיר, מיקום ברמת מדינה, שפה).</li>
+<li>Unity עשויה לאסוף ולשתף מיקום משוער, היסטוריית רכישות ואינטראקציות עם מודעות כגון צפיות והקשות בתוך המודעה, לצורכי פרסום וניתוח.</li>
 </ul>
 <p>מצב ברירת המחדל הוא <strong>מודעות לא מותאמות אישית</strong>. ב-iOS, הנחיית App Tracking Transparency (ATT) מבקשת את הסכמתך לפני השימוש בכל מזהה ברמת מעקב; ב-Android אתה שולט במזהה הפרסום תחת הגדרות המערכת. ניתן להשבית פרסומות לצמיתות באמצעות IAP Lifetime / Premium.</p>
 <h3>3.5 רכישות בתוך האפליקציה (IAP)</h3>
@@ -149,7 +150,7 @@
 <table>
 <thead><tr><th>נמען</th><th>מטרה</th><th>קטגוריית נתונים</th><th>מדיניות פרטיות</th></tr></thead>
 <tbody>
-<tr><td>Unity Technologies (Unity Ads)</td><td>הצגת מודעות</td><td>Advertising ID, מדדי מכשיר ומודעות</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
+<tr><td>Unity Technologies (Unity Ads)</td><td>הצגת מודעות</td><td>מזהי פרסום ומזהים אחרים, מיקום משוער, נתוני אבחון, היסטוריית רכישות ואינטראקציות עם מודעות</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>דיווח על קריסות</td><td>עקבות מחסנית, מטא-נתונים של מכשיר</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>עיבוד רכישות בתוך האפליקציה ב-iOS</td><td>אסימון רכישה, זכאות ברמת חשבון</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
 <tr><td>Google LLC (Play Billing)</td><td>עיבוד רכישות בתוך האפליקציה ב-Android</td><td>אסימון רכישה, זכאות ברמת חשבון</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
